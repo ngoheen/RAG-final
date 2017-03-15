@@ -8281,10 +8281,12 @@ a.expand-link {
 .post .ad-widget {
     margin: auto auto 30px;
     padding-bottom: 20px;
-    padding-top: 25px;
+    padding-top: 0;
     text-align:center;
 }
-
+.post .ad-widget {
+    padding-top: 5px;
+}
 .blogs img.ad,
 .post img.ad {
     float: none;
