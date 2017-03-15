@@ -23,6 +23,7 @@ Lots can be removed from the last two scripts
 * lg-share-3.js - is for sharing social media on the lightgallery popups and needs work.
 
 ### This js is just to make the video play onclick and is way more than needed
+All I want is to be able to click on the video that pops up - once - and have it play. Right now, without the following js, I have to click on the video and then on the controls that pop in.
 * http://vjs.zencdn.net/5.16.0/video.js
 ``` 
 <script>
@@ -32,7 +33,6 @@ Lots can be removed from the last two scripts
 </script>
 ```
 
-<br><br>
 ### This script runs all the carousels
 * owl.carousel.min.js
 
