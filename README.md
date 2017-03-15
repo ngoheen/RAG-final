@@ -18,7 +18,7 @@ Lots can be removed from the last two scripts
 * lg-zoom.js
 * lg-hash.js
 <br><br>
-* lg.min.js is a minified version of the above scripts
+* lg.min.js is a **__minified version__** of the above scripts
 <br><br>
 * lg-share-3.js - is for sharing social media on the lightgallery popups and needs work.
 
@@ -39,3 +39,9 @@ All I want is to be able to click **once** on the video that pops up and have it
 
 ### This script calls lightbox and owlcarousel where needed
 * lightbox-script.js
+
+## Css used:
+
+* bootstrap.css
+* style.css
+* lightgallery.css
