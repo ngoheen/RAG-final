@@ -24,11 +24,13 @@ Lots can be removed from the last two scripts
 
 ### This js is just to make the video play onclick and is way more than needed
 * http://vjs.zencdn.net/5.16.0/video.js
-``` <script>
+``` 
+<script>
     $('.lg-video').on('click', function() {
         $(this).find('video').play();
     });
-    </script>```
+</script>
+```
 
 <br><br>
 ### This script runs all the carousels
