@@ -8,7 +8,7 @@
 * jquery.plugins.js - this is all the plugins they used, in one script
 * custom.js
 
-Lots can be removed from the last two scripts
+Lots can be removed from the last two scripts, above.
 
 ### These scripts all came with lightgallery which is used for popups
 
@@ -39,6 +39,7 @@ All I want is to be able to click **once** on the video that pops up and have it
 
 ### This script calls lightbox and owlcarousel where needed
 * lightbox-script.js
+
 
 ## Css used:
 
