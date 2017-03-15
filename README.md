@@ -46,3 +46,9 @@ All I want is to be able to click **once** on the video that pops up and have it
 * bootstrap.css
 * style.css
 * lightgallery.css
+
+<br><br>
+## Folders:
+* images need to be uploaded and are a structural part of the site
+* pics contains dummies for the flat html pages.
+* photos contains dummies for the flat gallery pages.
