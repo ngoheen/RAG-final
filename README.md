@@ -49,6 +49,6 @@ All I want is to be able to click **once** on the video that pops up and have it
 
 <br><br>
 ## Folders:
-* images need to be uploaded and are a structural part of the site
-* pics contains dummies for the flat html pages.
-* photos contains dummies for the flat gallery pages.
+* 'images' needs to be uploaded and contains images used throughout the site.
+* 'pics' contains dummies for the flat html pages.
+* 'photos' contains dummies for the flat gallery pages.
