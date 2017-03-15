@@ -40,7 +40,7 @@ All I want is to be able to click **once** on the video that pops up and have it
 ### This script calls lightbox and owlcarousel where needed
 * lightbox-script.js
 
-
+<br><br>
 ## Css used:
 
 * bootstrap.css
