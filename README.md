@@ -20,16 +20,16 @@ Lots can be removed from the last two scripts
 <br><br>
 * lg.min.js is a minified version of the above scripts
 <br><br>
-* lg-share-3.js - is for sharing social media and needs work.
+* lg-share-3.js - is for sharing social media on the lightgallery popups and needs work.
 
 ### This js is just to make the video play onclick and is way more than needed
 * http://vjs.zencdn.net/5.16.0/video.js
-<br><script>
-<br>$('.lg-video').on('click', function() {
-<br>        $(this).find('video').play();
- <br>   });
-
-<br></script>
+``` <script>
+    $('.lg-video').on('click', function() {
+        $(this).find('video').play();
+    });
+    </script>
+    ```
 <br><br>
 ### This script runs all the carousels
 * owl.carousel.min.js
