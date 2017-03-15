@@ -33,9 +33,9 @@ All I want is to be able to click **once** on the video that pops up and have it
 </script>
 ```
 
-### This script runs all the <span style="color:red">carousels</span>
+### This script runs all the carousels
 * owl.carousel.min.js
 
 
 ### This script calls lightbox and owlcarousel where needed
-* lightbox-script.js
+* lightbox-script.<span style="color:red">js</span>
