@@ -33,7 +33,7 @@ All I want is to be able to click **once** on the video that pops up and have it
 </script>
 ```
 
-### This script runs all the carousels
+### This script runs all the <span style="color:red">carousels</span>
 * owl.carousel.min.js
 
 
