@@ -18,7 +18,7 @@ Lots can be removed from the last two scripts
 * lg-zoom.js
 * lg-hash.js
 <br><br>
-* lg.min.js is a **__minified version__** of the above scripts
+* lg.min.js is a __minified version__ of the above scripts
 <br><br>
 * lg-share-3.js - is for sharing social media on the lightgallery popups and needs work.
 
