@@ -15,23 +15,21 @@ Lots can be removed from the last two scripts
 
 
 <script src="js/lg.min.js"></script>
-### above is the minified version of all the scripts below, in one script -->
+### above is the minified version of all the scripts below, in one script
 
 ### These scripts all came with lightgallery which is used for popups
 
-<script src="lightGallery-master/demo/js/lightgallery.js"></script>
-<script src="lightGallery-master/demo/js/lg-fullscreen.js"></script>
-<script src="lightGallery-master/demo/js/lg-video.js"></script>
-<script src="lightGallery-master/demo/js/lg-zoom.js"></script>
-<script src="lightGallery-master/demo/js/lg-hash.js"></script>
+* lightgallery.js
+* lg-fullscreen.js
+* lg-video.js
+* lg-zoom.js
+* lg-hash.js
 
+* lg.min.js is a minified version of the above scripts
 
+* lg-share-3.js - is for sharing social media and needs work.
 
-
-<script src="js/lg-share-3.js"></script><!-- this needs to properly add the social media links -->
-<!-- /.lightgallery -->
-
-<!-- this js is just to make the video play onclick and is way more than needed -->
+### This js is just to make the video play onclick and is way more than needed
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
 <script>
 $('.lg-video').on('click', function() {
