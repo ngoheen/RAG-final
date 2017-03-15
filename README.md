@@ -5,25 +5,29 @@
 ### These scripts came with the template
 * <script src="js/jquery-2.1.1.min.js"></script>
 * <script src="js/bootstrap.min.js"></script>
+* <script src="js/jquery.plugins.js"></script>
+* <script src="js/custom.js"></script>
 
-Lots can be removed from the two following scripts
-<script src="js/jquery.plugins.js"></script>
-<script src="js/custom.js"></script>
+Lots can be removed from the last two scripts
+
 
 
 
 
 <script src="js/lg.min.js"></script>
-<!-- above is the minified version of all the scripts below, in one script -->
+### above is the minified version of all the scripts below, in one script -->
 
-<!-- these scripts all came with lightgallery which is used for popups -->
-<!--
+### These scripts all came with lightgallery which is used for popups
+
 <script src="lightGallery-master/demo/js/lightgallery.js"></script>
 <script src="lightGallery-master/demo/js/lg-fullscreen.js"></script>
 <script src="lightGallery-master/demo/js/lg-video.js"></script>
 <script src="lightGallery-master/demo/js/lg-zoom.js"></script>
 <script src="lightGallery-master/demo/js/lg-hash.js"></script>
--->
+
+
+
+
 <script src="js/lg-share-3.js"></script><!-- this needs to properly add the social media links -->
 <!-- /.lightgallery -->
 
