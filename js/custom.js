@@ -172,6 +172,7 @@
                 $this.parent().attr('maskheight', $(this).parent().height());
                 realHeight = +$this.parent().attr('maskheight');
                 $this.height(realHeight);
+                console.log('did');
 
             });
 

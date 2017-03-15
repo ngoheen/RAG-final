@@ -2674,6 +2674,7 @@ a.a-menu {
     color: #fff;
     position: relative;
     z-index: 4;
+    padding-bottom: 0;
     overflow: hidden;
 }
 
@@ -2693,7 +2694,9 @@ a.a-menu {
     font-weight: 400;
     margin:0;
 }
-
+.home h1.slide-title {
+    color: #000;
+}
 .home h1 + .btn,
 .home h1 + p {
     margin-top: 20px;
@@ -2798,7 +2801,7 @@ p.lead {
     line-height: 26px;
 }
 .my-three {
-    background-image: url('../images/slidethree.png');
+    background-image: url('../pics/slidethree.png');
     background-size: contain;
     background-position: right;
     margin: 0 auto;
@@ -2806,7 +2809,7 @@ p.lead {
     z-index: 2;
 }
 .my-two {
-    background-image: url('../images/slidetwo.png');
+    background-image: url('../pics/slidetwo.png');
     background-size: contain;
     background-position: right;
     margin: 0 auto;
@@ -2814,7 +2817,7 @@ p.lead {
     z-index: 2;
 }
 .my-about {
-    background-image: url('../images/slideone.png');
+    background-image: url('../pics/slideone.png');
     background-size: contain;
     background-position: right;
     margin: 0 auto;
@@ -7329,6 +7332,7 @@ ul.footer-list li p {
     max-width: 400px;
     margin: 0 auto;
     height: 263px;
+    position: relative;
     z-index: 1;
 }
 .home .owl-carousel .item {
@@ -7405,6 +7409,10 @@ ul.footer-list li p {
     vertical-align: middle;
     width: 10px;
 }
+#photos .owl-dots .owl-dot.active,
+#photos .owl-dots .owl-dot:hover,
+#videos .owl-dots .owl-dot.active,
+#videos .owl-dots .owl-dot:hover,
 #sponsors .owl-dots .owl-dot.active,
 #sponsors .owl-dots .owl-dot:hover,
 #events .owl-dots .owl-dot.active,
@@ -7657,7 +7665,7 @@ span.more-social:hover {
    opacity: .5;
 }
 .logo.pull-left a:hover,
-.slider.logos li a:hover {
+.logos a:hover {
     opacity: .25;
 }
 .logo.pull-left img {
@@ -7780,7 +7788,7 @@ span.more-social:hover {
     .my-three {
         background-position: center 0;
     }
-   
+    
     .container.vmiddle {
         height: 100% !important;
         margin-top: 220px !important;
@@ -7905,6 +7913,9 @@ span.more-social:hover {
     .tabs.plain .nav-tabs > li > a > span {
         padding: 0;
     }  
+    .home {
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 414px) {

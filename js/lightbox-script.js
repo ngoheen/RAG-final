@@ -108,7 +108,7 @@ $(document).ready(function(){
         nav: true,
         navText: false,
         margin: 0,
-        autoplay: false,
+        autoplay: true,
         //stagePadding: 40,
         responsiveClass: true,
         slideBy: 'page',
