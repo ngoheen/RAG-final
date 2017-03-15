@@ -49,6 +49,6 @@ All I want is to be able to click **once** on the video that pops up and have it
 
 
 ## Image folders:
-* _images folder_ needs to be uploaded and contains images used throughout the site.
+* _*images folder*_ needs to be uploaded and contains images used throughout the site.
 * *pics folder* contains dummies for the flat html pages.
 * *photos folder* contains dummies for the flat gallery pages.
