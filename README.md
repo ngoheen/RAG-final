@@ -10,13 +10,6 @@
 
 Lots can be removed from the last two scripts
 
-
-
-
-
-<script src="js/lg.min.js"></script>
-### above is the minified version of all the scripts below, in one script
-
 ### These scripts all came with lightgallery which is used for popups
 
 * lightgallery.js
@@ -24,9 +17,7 @@ Lots can be removed from the last two scripts
 * lg-video.js
 * lg-zoom.js
 * lg-hash.js
-
-* lg.min.js is a minified version of the above scripts
-
+* lg.min.js is a minified version of the above scripts<br><br>
 * lg-share-3.js - is for sharing social media and needs work.
 
 ### This js is just to make the video play onclick and is way more than needed
