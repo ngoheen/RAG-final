@@ -28,8 +28,8 @@ Lots can be removed from the last two scripts
     $('.lg-video').on('click', function() {
         $(this).find('video').play();
     });
-    </script>
-    ```
+    </script>```
+
 <br><br>
 ### This script runs all the carousels
 * owl.carousel.min.js
