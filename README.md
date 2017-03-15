@@ -2,10 +2,9 @@
 
 ## Scripts used:
 
-
-###These scripts came with the template
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+### These scripts came with the template
+* <script src="js/jquery-2.1.1.min.js"></script>
+* <script src="js/bootstrap.min.js"></script>
 
 Lots can be removed from the two following scripts
 <script src="js/jquery.plugins.js"></script>
