@@ -17,20 +17,23 @@ Lots can be removed from the last two scripts
 * lg-video.js
 * lg-zoom.js
 * lg-hash.js
-* lg.min.js is a minified version of the above scripts<br><br>
+<br><br>
+* lg.min.js is a minified version of the above scripts
+<br><br>
 * lg-share-3.js - is for sharing social media and needs work.
 
 ### This js is just to make the video play onclick and is way more than needed
-<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
-<script>
-$('.lg-video').on('click', function() {
-        $(this).find('video').play();
-    });
-</script>
+* http://vjs.zencdn.net/5.16.0/video.js
+<br><script>
+<br>$('.lg-video').on('click', function() {
+<br>        $(this).find('video').play();
+ <br>   });
 
-<!-- this script runs all the carousels -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- /.carousels -->
+<br></script>
+<br><br>
+### This script runs all the carousels
+* owl.carousel.min.js
 
-<!-- this script calls lightbox and owlcarousel where needed-->
-<script src="js/lightbox-script.js"></script>
+
+### This script calls lightbox and owlcarousel where needed
+* lightbox-script.js
