@@ -10,7 +10,7 @@
 
 Lots can be removed from the last two scripts, above.
 
-### These scripts all came with lightgallery which is used for popups
+#### These scripts all came with lightgallery which is used for popups
 
 * lightgallery.js
 * lg-fullscreen.js
