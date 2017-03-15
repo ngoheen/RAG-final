@@ -3,10 +3,10 @@
 ## Scripts used:
 
 ### These scripts came with the template
-* <script src="js/jquery-2.1.1.min.js"></script>
-* <script src="js/bootstrap.min.js"></script>
-* <script src="js/jquery.plugins.js"></script>
-* <script src="js/custom.js"></script>
+* jquery-2.1.1.min.js
+* bootstrap.min.js
+* jquery.plugins.js - this is all the plugins they used, in one script
+* custom.js
 
 Lots can be removed from the last two scripts
 
@@ -38,4 +38,4 @@ All I want is to be able to click **once** on the video that pops up and have it
 
 
 ### This script calls lightbox and owlcarousel where needed
-* lightbox-script.<span style="color:red">js</span>
+* lightbox-script.js
