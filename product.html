@@ -11,10 +11,121 @@
     <link rel="stylesheet" href="css/lightgallery.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+   .product-info .cost {
+    color: #E7543D;
+    }
+    .product-variation td {
+        padding: 5px 0;
+    }
+    .product-variation td:first-child {
+        padding-right: 15px;
+        width: 100px;
+    }
+    .product-variation td.quantity {
+        padding: 20px 15px 0 0;
+    }
+    .product-variation td.quantity-add {
+        padding-top: 20px;
+    }
+    .product-variation td .btn {
+        line-height: 43px;
+        margin-bottom: 0;
+    }
+    .product-variation tbody tr:last-child td {
+        padding-bottom: 5px;
+    }
+    .product-variation td.available-qty {
+        padding-top: 40px;
+    }
+    table.product-variation tbody tr:first-child td {
+        padding-top: 0;
+    }
+    .product-gallery .owl-carousel .owl-item img {
+        max-height: 95%;
+        width: auto;
+        max-width: 100%;
+        margin-top:20px;
+    }
+    
+  .product-gallery .owl-carousel {
+    height: 600px;
+    }
+.product-gallery .owl-centered .owl-item {
+        display: table-cell;
+        float: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+.product-gallery .owl-centered .owl-item > img {
+  text-align: center;
+    height: auto;
+}
+.product-gallery .owl-carousel .owl-dot {float: left; background-size: cover; margin-top: 10px;}
+.product-gallery .owl-dots { 
+    font-size: 1px;
+    line-height:1;
+    margin:35px auto 0;
+    position: relative;
+    text-align: center;
+    width: 350px;
+}
+.product-gallery .owl-dots .owl-dot {   
+    background-color: transparent;
+    border-radius: 0%;
+    display: inline-block;    
+    height: 80px;
+    margin:0 5px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-indent:- 9999px;
+    vertical-align: middle;
+    width: 80px;
+}
+
+.owl-dots .owl-dot.active,
+.owl-dots .owl-dot:hover {
+    background-color:transparent;
+    border: 1px solid #ddd;
+    width: 80px;
+    height: 80px;
+    margin:0 5px;
+}
+.owl-dots .owl-dot:first-child {
+    margin-left: 0;
+}
+.owl-dots .owl-dot:last-child {
+    margin-right: 0;
+}
+.tab-pane h2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+.highlight .container.tab-content {
+    padding-top: 40px;
+}
+.highlight .container.tab-content h2 {
+    margin-bottom: 40px;
+}
+
+.container.tab-content img.user-img {
+    float: left;
+    height: 60px;
+    margin-right: 15px;
+    max-width: 60px;
+    width: 60px;
+}
+
+
+    </style>
 </head>
 <body>
 
-<!-- WRAPPER -->
+
 <div class="wrapper">
 
     <!-- HEADER -->
@@ -138,234 +249,215 @@
         </div>
     </header>
     <!-- /.header -->
-
-    <div class="border-top"></div>
     
-    <div class="overlay home small-size">
-        <div class="bg bg-section"></div>
-        <div class="container">
-            <div class="row text-center">
-                <h1>Podcasts</h1>
-            </div>
-        </div>
-    </div>
-   
     <!-- CONTENT -->
     <div class="content">
-        <div class="container blogs">
-
+        <div class="border-top"></div>
+        
+        <div class="container breadcrumbs">
             <div class="row">
-                <div class="flexy-post">
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">8</span>
-                                <span class="mounth">Mar</span>
-                            </div>
-                          
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                           
-                           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/311223390&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">1</span>
-                                <span class="mounth">Mar</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/310018707&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                           
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">23</span>
-                                <span class="mounth">Feb</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308910204&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">16</span>
-                                <span class="mounth">Feb</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307748959&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">14</span>
-                                <span class="mounth">Feb</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/306622026&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">12</span>
-                                <span class="mounth">Feb</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/306139961&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 text-right">
-                            <div class="blog-date">
-                                <span class="day">1</span>
-                                <span class="mounth">Feb</span>
-                            </div>
-                        </div>
-
-                        <!-- POST -->
-                        <div class="col-md-11 col-sm-10 post">
-                           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305458513&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
-                        <!-- /.post -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-           
-                <!-- SIDEBAR -->
-                <div class="col-fixed-300">
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <div class="ad-widget">
-                            <img src="pics/ad.jpg" class="ad">
-                        </div>
-                    </div>
-                    <!-- widget -->
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <div class="widget">
-                            <h3 class="widget-title"">Latest Gallery</h3>
-                            <img src="images/latest-gal.jpg">
-                            <div class="bottom-more-link"><a href="">More Galleries</a></div>
-                        </div>
-                    </div>
-                    <!-- /.widget -->
-                    
-                    <!-- widget -->
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <div class="widget">
-                            <h3 class="widget-title">Latest Video</h3>
-                            <img src="images/bus-vid.jpg">
-                            <div class="bottom-more-link"><a href="">More Videos</a></div>
-                        </div>
-                    </div>
-                    <!-- /.widget -->
-
-                    <!-- widget -->
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <div class="widget">
-                        <h3>Tags Cloud</h3>
-                        <div class="tagcloud">
-                            <a href="">Orange</a>
-                            <a href="">Spencer</a>
-                            <a href="">Algona</a>
-                            <a href="">Clear Lake</a>
-                            <a href="">Charles City</a>
-                            <a href="">Cresco</a>
-                            <a href="">Food</a>
-                            <a href="">Waukon</a>
-                            <a href="">Lansing</a>
-                            <a href="">Livestrong</a>
-                            <a href="">Mileage</a>
-                            <a href="">Photos</a>
-                            <a href="">Spider-man</a>
-                            <a href="">Podcasts</a>
-                            <a href="">Videos</a>
-                           
-                        </div>
-                    </div>
-                    </div>
-                    <!-- /.widget -->
-
-                </div>
-                <!-- /.sidebar -->
-            </div>
-            <!-- /.row -->
-       
-            <!-- ROW -->
-            <div class="row">
-                <div class="col-sm-7 col-xs-12 bottom-pagination">
-                    <ul class="pagination">
-                        <li><a href="#"><i class="custom-icon custom-icon-page-prev"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">…</a></li>
-                        <li><a href="#">36</a></li>
-                        <li><a href="#">37</a></li>
-                        <li><a href="#"><i class="custom-icon custom-icon-page-next"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-5 col-xs-12 text-right displaying">
-                    <p class="light-grey">Displaying 1 to 12 (of 60 posts)</p>  
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li><a href="start_agency.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li><a href="catalog_grid.html">Shop</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li><a href="catalog_list_sidebar_2.html">RAGBRAI XLV</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                       
+                        <li class="active">2017 Women's Logo Tee</li>
+                    </ol>
                 </div>
             </div>
-        <!-- /.row -->
         </div>
-        <!-- /.container -->
+        <div class="container product padding-top">
+
+            <!-- Product Gallery -->
+            <div class="col-sm-6 product-gallery">
+
+                 <div class="owl-carousel owl-centered productgallery">
+                    <a href="pics/shirt1.jpg"><img src="pics/shirt1.jpg" data-gallery="#product"></a>
+                    <a href="pics/Red-Back.jpg"><img src="pics/Red-Back.jpg" data-gallery="#product"></a>
+                    <a href="pics/grey-front.jpg"><img src="pics/grey-front.jpg" data-gallery="#product"></a>
+                    <a href="pics/grey-back.jpg"><img src="pics/grey-back.jpg" data-gallery="#product"></a>
+                </div>
+
+            </div>
+            <!-- /product gallery -->
+            
+            <div class="col-sm-6 product-info">
+                <div class="row">
+                    <h2>2017 Women's Logo Tee</h2>
+                    <div class="cost">
+                        $25.00
+                    </div>
+                </div>
+             
+                <div class="row margin-top-0">
+                    <p>Get ready for summer with this super soft tee, which features the 2017 XLV RAGBRAI logo screened in blue and white. IOWA is screened on the back. Shirt by District Made in heathered red and charcoal.</p>
+                    <p>Heathered Red Available in: Small, Medium, Large, XLarge, 2XLarge</p>
+                    <p>Charcoal Available in: Small, Medium, Large, XLarge, 2XLarge, 3XLarge</p>
+                </div>
+                
+                <div class="row margin-top-0">
+                    <table class="product-variation">
+                        <tr>
+                            <td><b>SIZE:</b></td>
+                            <td>
+                                <select>
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                    <option value="4">XLarge</option>
+                                    <option value="5">2XLarge</option>
+                                    <option value="6">3XLarge</option>
+                                </select>
+                            </td>
+                        </tr>      
+                        <tr>
+                            <td><b>COLOR:</b></td>
+                   
+                            <td>
+                                <select>
+                                    <option value="1">Heathered Red</option>
+                                    <option value="2">Charcoal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="quantity"><input type="number" step="1" min="" max="" name="quantity" value="1" title="Qty" class="input-text qty text" pattern="[0-9]*" inputmode="numeric"></td>
+                            <td class="quantity-add"><a class="btn btn-primary add-cart" href="">Add to Cart</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="available-qty reddish">6 in stock</td>
+                        </tr>
+                    </table>  
+               
+            </div>
+        </div>
+
+        </div>
     </div>
-    <!-- /.content -->
+    
+    <div class="tabs">
+        <ul class="container nav nav-tabs text-center">
+            <li class="active"><a href="#related" data-toggle="tab"><span>Related Products</span></a></li>
+            <li><a href="#reviews" data-toggle="tab"><span>Reviews</span></a></li>
+        </ul>
+        <div class="highlight">
+            <div class="container tab-content">
+                    <div class="tab-pane fade in active" id="related">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 text-center">
+                            <img src="pics/2017-Long-Sleeve-Tee-300x300.jpg">
+                                <h1 class="shop-item">2017 Long-sleeve Logo Tee</h1>
+                                <p class="grey">$20</p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <img src="pics/shirt3.jpg">
+                                <h1 class="shop-item">2017 Hooded Sweatshirt</h1>
+                                <p class="grey">$45.00</p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <img src="pics/shirt4.png">
+                               <h1 class="shop-item">2017 Men's Logo Tee</h1>
+                                <p class="grey">$25.00</p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <img src="pics/2015SouvenirT_front-300x300.png">
+                                <h1 class="shop-item">2015 Souvenir T-Shirt</h1>
+                                <p class="grey">$8.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="row">
+                            <h2>2 Reviews</h2>
+                            <div  class="border-top"></div>
+                            <div class="col-sm-3" style="padding-top:50px;">
+                                <a href="team_person.html"><img src="images/generic-user-avatar.jpg" alt="" class="user-img"></a>
+                                <p class="grey">Susana Jacobs
+                                <br>Jul. 12, 2016</p>
+                            </div>
+                            <div class="col-sm-9 padding-top-small">
+                                <div class="row comment">
+                                    
+                                    <div class="col-xs-10">
+                                        <div class="comment-line">
+                                           <div class="raty inline-block" data-score="5" data-readonly="true"></div>
+                                        </div>
+                                        <p>Just received it in the mail and it looks great! Awesome shirt!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="team_person.html"><img src="images/generic-user-avatar.jpg" alt="" class="user-img"></a>
+                                <p class="grey">Aaron Baumann
+                                <br>Aug. 12, 2016</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row comment">
+                                    <div class="col-xs-10">
+                                        <div class="comment-line">
+                                           <div class="raty inline-block" data-score="2" data-readonly="true"></div>
+                                        </div>
+                                        <p>Was so excited to get my jersey I ordered during registration. Tried it on and was disappointed. Love the jersey! Was too small overall, especially in the arm openings. Going to order the next size up (women’s XL) and keep my fingers crossed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h2 style="margin-left:-15px;margin-bottom: 10px;">Add Your Review</h2>
+                                <p class="grey" style="margin-bottom: 8px;">Choose your rating</p>
+                                 <div class="rating-wrap">
+                                        <div class="raty"></div>
+                                    </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row comment">
+                                    <div class="col-xs-10">
+                                        <div class="comment-line">
+                                            <p>Write your review</p>
+                                            <form class="comment-form">
+                                                <div class="formwrap">
+                                                    <div class="form-group">
+                                                        <textarea rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="checkbox margin-bottom-20">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        Yes, add me to your newsletter mailing list
+                                                    </label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-validation">Submit Review</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="slide-title">About Our Store</h1>
+            </div>
+            <div class="col-sm-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin lobortis mauris. Vivamus cursus mi ac laoreet sagittis. Sed vulputate lectus ut dui aliquet pretium. Quisque elementum elit id ipsum condimentum, id vehicula massa facilisis.</p><p> Mauris rhoncus vulputate tellus tincidunt dapibus. Sed nibh eros, blandit ut tellus eu, semper blandit felis. Suspendisse ut dignissim orci. Praesent commodo dictum lobortis. Cras eget imperdiet ipsum. Donec congue ac nisi id tempus. Pellentesque venenatis eget est eget pretium.</p>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- /.wrapper -->
-
 <!-- FOOTER -->
 <footer class="footer">
     <!-- CONTAINER -->
