@@ -7708,6 +7708,9 @@ span.more-social:hover {
      .bg.bg-section {
         max-width: none;
     }
+    .blogs .ad-widget {
+        padding-top: 0;
+    }
 }
 @media (max-width: 1200px) {
     .navbar-header {
@@ -8271,7 +8274,7 @@ a.expand-link {
 .post .ad-widget {
     margin: auto auto 30px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     text-align:center;
 }
 
@@ -8332,7 +8335,6 @@ video {
         margin: auto;
     }
     .ad-img {
-
        padding: 20px 0;
        text-align: center;
         margin-bottom: 30px;
@@ -8340,7 +8342,9 @@ video {
     .col-fixed-300 .widget {
         text-align: left;
     }
-     
+     .blogs .ad-widget {
+        padding-top: 25px;
+    }
     .flexy {
         margin-bottom: 30px;
         margin-left: 15px;
