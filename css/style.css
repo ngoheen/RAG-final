@@ -306,6 +306,7 @@ table .pclose {
 
 table .td-descr {
     white-space:normal;
+    min-width: 200px;
 }
 
 table .counting {
@@ -475,7 +476,7 @@ body.container .footer .container:last-child{
     padding-left: 0;
 }
 .padding-left-15 {
-    padding-left: 15px;
+    padding-left: 15px !important;
 }
 .padding-right-0 {
     padding-right: 0;
@@ -530,6 +531,9 @@ body.container .footer .container:last-child{
 }
 .no-margin{
     margin: 0 !important;
+}
+.s {
+    margin-bottom: 10px !important;
 }
 .margin-bottom-20 {
     margin-bottom: 20px;
@@ -6810,7 +6814,7 @@ ul.footer-list li p {
     }
 
     .form-inline{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .circle{
@@ -7072,7 +7076,7 @@ ul.footer-list li p {
         margin-right: 20px;
         font-size: 26px;
     }
-
+   
     .nav-tabs{
         margin-bottom: 0;
     }
@@ -7531,7 +7535,7 @@ ul.footer-list li p {
     font-size: 24px;
     font-weight: 300;
     letter-spacing: -1px;
-    padding-left: 15px;
+    padding-left: 0;
 }
 .highlight .container.tab-content {
     padding-top: 40px;
@@ -7559,6 +7563,12 @@ table .td-descr a {
     #events .owl-next,
     #sponsors .owl-next {
         right: 0px;
+    }
+    .btn {
+        margin-bottom: 0;
+    }
+     h3.margin-top-30 {
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 600px) {
