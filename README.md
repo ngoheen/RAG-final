@@ -12,6 +12,12 @@
 [SHOP: checkout/payment](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout2.html)
 <br>
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
+<br>
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ### Scripts used:
 
