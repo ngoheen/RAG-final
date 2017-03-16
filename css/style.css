@@ -1007,7 +1007,12 @@ a img,
 
 
 /* [ 2.2 BUTTONS ] */
-
+a#cancelButton,
+input.submitButton {
+    font-weight: 400;
+}
+a#cancelButton,
+input.submitButton,
 .btn {
     border-radius: 4px;
     cursor: pointer;
@@ -1024,17 +1029,35 @@ a img,
     -ms-transition: color .3s ease, background .3s ease, border-color .3s ease, opacity .3s ease;
     transition: color .3s ease, background .3s ease, border-color .3s ease, opacity .3s ease;
 }
-
+select#card_type.creTypeField {
+    width: 100% !important;
+    min-width:403px;
+}
+label a u i {
+    font-size: 16px;
+    font-style: normal;
+    color: #E7543D;
+}
+label a u {
+    text-decoration: none !important;
+}
+a#cancelButton,
+input.submitButton:active,
 .btn:active {
     box-shadow: none;
 }
-
+a#cancelButton,
+input.submitButton,
 .btn.btn-primary {
     background-color: #e7543d;
     border-color: transparent;
     color: #fff;
 }
-
+a#cancelButton {
+    background-color: #999;
+}
+a#cancelButton,
+input.submitButton: hover,
 .btn.btn-primary:hover {
     border-color:transparent;
     opacity: .85 !important;
@@ -2820,6 +2843,7 @@ p.lead {
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
+input.submitButton,
 .btn {
     margin-bottom: 20px;
     padding: 0 15px;
@@ -7051,7 +7075,8 @@ ul.footer-list li p {
 
 
 @media only screen and (max-width: 479px) {
-
+    a#cancelButton,
+    input.submitButton,
     .btn{
         font-size: 15px;
     }
@@ -7564,6 +7589,8 @@ table .td-descr a {
     #sponsors .owl-next {
         right: 0px;
     }
+    a#cancelButton,
+    input.submitButton,
     .btn {
         margin-bottom: 0;
     }

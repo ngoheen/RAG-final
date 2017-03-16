@@ -1,5 +1,8 @@
 # RAGBRAI
 
+### Links to flat pages:
+
+[shop cart] (http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)
 ### Scripts used:
 
 #### These scripts came with the template

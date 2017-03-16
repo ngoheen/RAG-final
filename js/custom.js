@@ -49,11 +49,6 @@
 
             that.headerScroll();
 
-            if (!onMobile){
-                    $win.stellar({
-                        horizontalScrolling: false
-                    });
-                }
 
         }).scroll(function(){  // onScroll function
             that.fNum();
@@ -88,16 +83,16 @@
             this.body = $(document.body);
             this.wrapper = $('.wrapper');
             this.home = $('.home');
-            this.slider = $('.slider');
-            this.oneslider = $('.oneslider');
-            this.gallery = $('.gallery');
-            this.ribbon = $('.ribbon');
+            //this.slider = $('.slider');
+            //this.oneslider = $('.oneslider');
+            //this.gallery = $('.gallery');
+            //this.ribbon = $('.ribbon');
             this.popup = $('.popup');
             this.pclose = $('.pclose');
             this.vmiddle = $('.vmiddle');
             this.fullsize = $('.full-size');
             this.internalLinks = $('.internal');
-            this.tooltipstered = $('.tooltipstered');
+            //this.tooltipstered = $('.tooltipstered');
             this.header = $('.header');
             this.search = this.header.find('.search');
             this.aMenu = $('.a-menu');
@@ -140,7 +135,7 @@
             this.tabLink = $('.tab-link');
             this.dataToggleTab = $('[data-toggle="tab"]');
             this.btnValid = $('.btn-validation');
-            this.inputMask = $('[data-inputmask]');
+            //this.inputMask = $('[data-inputmask]');
             this.faq = $('.faq');
             this.navFaq = this.faq.find('.nav-category');
             this.faqGroup = this.faq.find('.panel-group');
@@ -216,7 +211,7 @@
                 });
             }
 
-            instance.inputMask.inputmask();
+            //instance.inputMask.inputmask();
 
             // RATING
             if (instance.rating.length > 0){
@@ -439,18 +434,7 @@
                 });
             }
 
-            if (instance.gallery.length > 0) {
-                instance.mixList.children().toggle();
-                instance.mask.each(function(){
-                    var $this = $(this),
-                        realHeight;
-                    $this.parent().attr('maskheight', $(this).parent().height());
-                    realHeight = +$this.parent().attr('maskheight') + 1;
-                    $this.height(realHeight);
-
-                });
-            }
-
+           
             instance.mixList.find(instance.filterLink).on('click', function(e){
                 e.preventDefault();
                 var self = $(this),
@@ -505,69 +489,6 @@
                 }
 
             });
-
-            instance.magnificWrap.each(function() {
-                $(this).find(instance.magnific).magnificPopup({
-                    type: 'image',
-                    tLoading: '',
-                    gallery: {
-                        enabled: true,
-                        navigateByImgClick: true
-                    },
-                    image: {
-                        titleSrc: function (item) {
-                            return item.el.attr('title');
-                        }
-                    }
-                });
-            });
-
-            instance.magnificVideo.magnificPopup({
-                type: 'iframe',
-                fixedContentPos: false
-            });
-
-            instance.magnificGallery.on('click', function(e) {
-                e.preventDefault();
-
-                var $this = $(this),
-                    items = [],
-                    im = $this.data('gallery'),
-                    imA = im.split(','),
-                    imL = imA.length,
-                    titl = $this.attr('title');
-console.log(imA);
-                    for (var i = 0; i < imL; i++){
-                        items.push({
-                            src: imA[i]
-                        });
-                    }
-                items["title"] = $this.data('titles');
-                $.magnificPopup.open({
-                    items: items,
-                    type: 'image',
-                    //swipe: true,
-                    gallery: {
-                        enabled: true
-                    },
-                    image: {
-                        titleSrc: function () {
-                            return titl;
-                        }
-                    }
-                });
-            });
-            
-            $("body").swipe({
-        swipeLeft: function(event, direction, distance, duration, fingerCount) {
-            $(".mfp-arrow-left").magnificPopup("prev");
-        },
-        swipeRight: function() {
-            $(".mfp-arrow-right").magnificPopup("next");
-        },
-        threshold: 50
-    });
-
 
             if (instance.passw.length > 0){
                 instance.passw.each(function(){
@@ -808,80 +729,6 @@ console.log(imA);
                 });
             });
 
-            // Activate the subscribe form
-            if(this.newsletter.length === 1) {
-                this.newsletter.find('input[type=email]').on('keyup', function(){
-                    var sucBlock = $('.success');
-                    if (sucBlock.is(':visible'))
-                        sucBlock.css('display','none');
-                });
-
-                this.newsletter.validatr({
-                    showall: true,
-                    location: 'top',
-                    template: '<div class="error-email">'+instance.options.errorText+'</div>',
-                    valid: function(){
-                        var form = instance.newsletter,
-                            msgwrap = form.next(),
-                            url = form.attr('action'),
-                            email = form.find('input[type=email]');
-
-                        url = url.replace('/post?', '/post-json?').concat('&c=?');
-
-                        var data = {};
-                        var dataArray = form.serializeArray();
-
-                        $.each(dataArray, function (index, item) {
-                            data[item.name] = item.value;
-                        });
-
-                        $.ajax({
-                            url: url,
-                            data: data,
-                            success: function(resp){
-                                var successText = instance.options.successText;
-                                function notHide(){
-                                    form.attr('style',' ');
-                                }
-
-                                if(resp.result === 'success') {
-                                    msgwrap.html('<p class="success">'+successText+'</p>');
-                                    setTimeout(notHide, 0);
-                                }
-                                else {
-                                    setTimeout(notHide, 0);
-                                    var msg;
-                                    try {
-                                        var parts = resp.msg.split(' - ', 2);
-                                        if (parts[1] === undefined) {
-                                            msg = resp.msg;
-                                        } else {
-                                            var i = parseInt(parts[0], 10);
-                                            if (i.toString() === parts[0]) {
-                                                msg = parts[1];
-                                            } else {
-                                                msg = resp.msg;
-                                            }
-                                        }
-                                    }
-                                    catch (e) {
-                                        msg = resp.msg;
-                                    }
-                                    msgwrap.html('<p class="error">' + msg + '</p>');
-                                }
-                                form.slideUp(0,function () {
-                                    msgwrap.slideDown();
-                                });
-                            },
-                            dataType: 'jsonp',
-                            error: function (resp, text) {
-                                alert('Oops! AJAX error: ' + text);
-                            }
-                        });
-                        return false;
-                    }
-                });
-            }
         },
 
       
