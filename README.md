@@ -14,8 +14,8 @@
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 <br>
 
-|: Shop                                                                                        | GALLERIES           | Cool  |
-|: ------------------------------------------------------------------------------------------- |:-------------------:| -----:|
+| Shop                                                                                        | GALLERIES           | Cool  |
+| ------------------------------------------------------------------------------------------- |:-------------------:| -----:|
 | [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |    right-aligned    | $1600 |
 
 | Tables        | Are           | Cool  |
