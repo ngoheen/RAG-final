@@ -14,10 +14,10 @@
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 <br>
 
-| Shop pages                                                                                  |
-|---------------------------------------------------------------------------------------------|
-| [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
-| [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |
+| Shop pages                                                                                  | Gallery pages |
+|---------------------------------------------------------------------------------------------|-------------- |
+| [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
+| [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)|
 | [cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |
 
 | Tables        | Are           | Cool  |
