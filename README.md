@@ -4,6 +4,8 @@
 
 | Page Links    |                                                                                                   |
 | ------------- | ------------------------------------------------------------------------------------------------- |
+|__Homepage__   |[index page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/ragbrai-home.html)                |
+|              |     |
 | __Shop__      |[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)        |
 |               |[product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)              |
 |               |[cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)                         |
@@ -12,6 +14,9 @@
 |               |[confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)         |
 |__Galleries__  |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
 |               |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)       |
+|               |[podcasts](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-podcast.html)          |
+|__Blog__       |[blog front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-blog.html)           |
+|               |[blog post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/blog-post.html)                    |
 
 <br>
 
