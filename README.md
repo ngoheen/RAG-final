@@ -18,6 +18,9 @@
 | ------------------------------------------------------------------------------------------- |:-------------------:| -----:|
 | [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |    right-aligned    | $1600 |
 
+| Shop pages | [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
+|------------|---------------------------------------------------------------------------------------------|
+|            | [SHOP: product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html) |
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
