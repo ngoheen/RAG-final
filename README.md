@@ -14,11 +14,11 @@
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 <br>
 
-| Shop pages |                                                                                             |
-|------------|---------------------------------------------------------------------------------------------|
-|            | [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
-|            | [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |
-
+| Shop pages                                                                                  |
+|---------------------------------------------------------------------------------------------|
+| [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
+| [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |
+| [cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
