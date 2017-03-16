@@ -2,12 +2,15 @@
 
 ### Links to flat pages:
 
-|Links     |                                                                                                   |
+| Links    |                                                                                                   |
 | -------- | ------------------------------------------------------------------------------------------------- |
 | __Shop__ |[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)        |
 |          |[product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)              |
 |          |[cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)                         |
-|          |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
+|          |[checkout](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout.html)                 |
+|          |[payment](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout2.html)                 |
+|          |[confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)         |
+|__Galleries__         |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
 |          |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)       |
 
 <br>
