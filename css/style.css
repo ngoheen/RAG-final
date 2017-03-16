@@ -1524,16 +1524,7 @@ a:hover .custom-icon-scrolltop {
     margin-top: 0;
 }
 
-.bg-about {
-    background-image: url('../images/rear-gear-sm.jpg');
-    background-position: 10% 25%;
-    background-size: 135%;
-    max-width: 100%;
-    height: 270px;
-    position: absolute;
-    width: 100%;
-    z-index: 20;
-}
+
 
 .inverse,
 .inverse *{
@@ -6388,7 +6379,6 @@ ul.footer-list li p {
 }
 
 .bg-section {
-    background-image: url('../images/rear-gear.png');
     background-image: url('../images/rear-gear-sm.jpg');
     background-position: 100% 45%;
     width: 130%;
@@ -7700,9 +7690,9 @@ span.more-social:hover {
     .countdown-row .container.vmiddle {
         margin: 0 auto !important;
     }
-    .bg {
+   /* .bg {
         max-width: 1070px;
-    }
+    }*/
      .bg.bg-section {
         max-width: none;
     }
@@ -7746,9 +7736,9 @@ span.more-social:hover {
     .collapse.in{
         display:block !important;
     }
-    .bg {
+    /*.bg {
         max-width: 960px;
-    }
+    }*/
     .bg.bg-section {
         max-width: none;
     }
