@@ -18,7 +18,7 @@
 |---------------------------------------------------------------------------------------------|-------------- |
 | [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
 | [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)|
-| [cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |
+| [cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |*a bold*|
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
