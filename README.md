@@ -4,9 +4,13 @@
 [SHOP: section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)
 <br>
 [SHOP: product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)
+<br>
 [SHOP: cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)
+<br>
 [SHOP: checkout](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout.html)
+<br>
 [SHOP: checkout/payment](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout2.html)
+<br>
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 
 ### Scripts used:
