@@ -14,12 +14,15 @@
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 <br>
 
+| -------- | -------------- |
+| __Shop__ |[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
+|          |[product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |
+|          |[cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)                  |
+|          |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
+|          |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)|
 
-| __Shop__|[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
-| |[product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |
-| |[cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |__a bold__|
-| [photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
-|[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)|
+<br>
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
