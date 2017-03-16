@@ -16,7 +16,7 @@
 |               |[podcasts](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-podcast.html)          |
 |__Blog__       |[blog front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-blog.html)           |
 |               |[blog post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/blog-post.html)                    |
-
+|__User__       |[create account](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-create-account.html)     |
 <br>
 
 ### Scripts used:

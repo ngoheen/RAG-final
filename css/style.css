@@ -1007,6 +1007,9 @@ a img,
 
 
 /* [ 2.2 BUTTONS ] */
+.g-recaptcha {
+    margin: 20px 0;
+}
 a#cancelButton,
 input.submitButton {
     font-weight: 400;
