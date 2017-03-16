@@ -2,6 +2,7 @@
 
 ### Links to flat pages:
 [SHOP: section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)
+<br>
 [SHOP: product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)
 [SHOP: cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)
 [SHOP: checkout](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout.html)
