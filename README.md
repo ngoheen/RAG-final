@@ -14,9 +14,9 @@
 [SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 <br>
 
-| Shop pages                                                                                  | Gallery pages |
+| RAGBRAI                                                                                  | |
 |---------------------------------------------------------------------------------------------|-------------- |
-| [section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)|
+| __Shop__|[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html) |
 | [product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)       |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)|
 | [cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)       |__a bold__|
 
