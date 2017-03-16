@@ -1,8 +1,13 @@
 # RAGBRAI
 
 ### Links to flat pages:
+[SHOP: section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)
+[SHOP: product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)
+[SHOP: cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)
+[SHOP: checkout](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout.html)
+[SHOP: checkout/payment](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout2.html)
+[SHOP: confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)
 
-[shop cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)
 ### Scripts used:
 
 #### These scripts came with the template
