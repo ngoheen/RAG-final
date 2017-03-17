@@ -545,6 +545,9 @@ body.container .footer .container:last-child{
 .margin-top {
     margin-top: 90px !important;
 }
+.margin-right-30 {
+    margin-right: 30px;
+}
 .margin-left-0 {
     margin-left: 0 !important;
 }
@@ -1609,6 +1612,9 @@ a:hover .custom-icon-scrolltop {
 }
 .dkgrey {
     color: #666;
+}
+.dkestgrey {
+    color: #333;
 }
 a.dkgrey:hover,
 a.grey:hover{
