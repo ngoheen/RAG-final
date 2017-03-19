@@ -536,6 +536,121 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                    <div class="container container-pad">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="list-group category" role="tablist">
+          <li class="list-group-item">
+            <a role="button" data-toggle="collapse"  href="#collapseOne">
+              categories 1
+            </a>
+          </li>
+          <ul id="collapseOne" class="panel-collapse collapse">
+            <li class="list-group-item" role="presentation">
+              <a href="#category1" aria-controls="category1" role="tab" data-toggle="tab">category 1<span class="badge">1</span></a>
+            </li>
+            <li class="list-group-item" role="presentation">
+              <a href="#category2" aria-controls="category2" role="tab" data-toggle="tab">category 2<span class="badge">2</span></a>
+            </li>
+          </ul>
+          <li class="list-group-item">
+            <a role="button" data-toggle="collapse"  href="#collapseTwo">
+              categories 2
+            </a>
+          </li>
+          <ul id="collapseTwo" class="panel-collapse collapse">
+            <li class="list-group-item" role="presentation">
+              <a href="#category3" aria-controls="category3" role="tab" data-toggle="tab">category 3<span class="badge">3</span></a>
+            </li>
+          </ul>
+          <li class="list-group-item">
+            <a role="button" data-toggle="collapse"  href="#collapseThree">
+              categories 3
+            </a>
+          </li>
+          <ul id="collapseThree" class="panel-collapse collapse">
+            <li class="list-group-item" role="presentation">
+              <a href="#category4" aria-controls="category4" role="tab" data-toggle="tab">category 4<span class="badge">4</span></a>
+            </li>
+            <li class="list-group-item" role="presentation">
+              <a href="#category5" aria-controls="category5" role="tab" data-toggle="tab">category 5<span class="badge">5</span></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="category1">
+            <ul class="list-group products">
+             <li class="list-group-item">
+               product 1
+             </li>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category2">
+            <ul class="list-group products">
+              <li class="list-group-item">
+                product 2
+              </li>
+              <li class="list-group-item">
+               product 3
+              </li>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category3">
+            <ul class="list-group products">
+              <li class="list-group-item">
+                product 4
+              </li>
+              <li class="list-group-item">
+               product 5
+              </li>
+              <li class="list-group-item">
+                product 6
+              </li>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category4">
+            <ul class="list-group products">
+              <li class="list-group-item">
+                product 7
+              </li>
+              <li class="list-group-item">
+                product 8
+              </li>
+              <li class="list-group-item">
+                product 9
+              </li>
+              <li class="list-group-item">
+                product 10
+              </li>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category5">
+            <ul class="list-group products">
+              <li class="list-group-item">
+                product 11
+              </li>
+              <li class="list-group-item">
+                product 12
+              </li>
+              <li class="list-group-item">
+                product 13
+              </li>
+              <li class="list-group-item">
+                product 14
+              </li>
+               <li class="list-group-item">
+                product 15
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>             
                         <p><b>Still can't find an answer to your question?</b> <a href="">Contact us.</a></p>
                     </div>
                 </div>
@@ -768,7 +883,14 @@ $('.lg-video').on('click', function() {
         $(this).find('video').play();
     });
 </script>
-
+<script>
+$('ul.panel-collapse li').click(function (e) { 
+    $('ul li.active').removeClass('active')
+    e.preventDefault()
+    .tab('show');
+    $(this).addClass('active')
+});
+</script>
 <!-- this script runs all the carousels -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- /.carousels -->

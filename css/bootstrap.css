@@ -63,17 +63,17 @@ h1 {
   font-size: 2em;
 }
 mark {
+  background-color: #ff0;
   color: #000;
-  background: #ff0;
 }
 small {
   font-size: 80%;
 }
 sub,
 sup {
-  position: relative;
   font-size: 75%;
   line-height: 0;
+  position: relative;
   vertical-align: baseline;
 }
 sup {
