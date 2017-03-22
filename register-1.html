@@ -34,13 +34,67 @@
     padding-top: 16px;
     padding-bottom: 16px;
     margin-left:0;
+    width: 100%;
 }
 .panel-body{
     background:#fff;
 }
 .accordeon-content {
    margin-left: 0;
-   }
+}
+.sidemenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    width: 300px;
+    box-sizing: border-box;
+    min-height: 100%;
+    height: 100%;
+    background-color: #212121;
+    z-index: 100;
+    color: #fff;
+    display: none;
+    padding: 70px 40px 20px;
+}
+.sidemenu h2 {
+    color: #fff;
+    font-weight: 300;
+}
+.fa.fa-bars {
+    background: green;
+}
+nav ul ul li {
+    margin-left: 20px;
+}
+a.whitelink {
+    color: #fff;
+}
+h4.totals {
+    color: #fff;
+    display: inline;
+    font-size: 20px;
+    font-weight: 400;
+}
+.panel-group div[class^="col-"]:first-child{ padding-left:0; } 
+.panel-group div[class^="col-"]:last-child{ padding-right:0; }
+
+ul.search.pagination li i {
+    vertical-align: middle;
+   
+}
+
+ul.search.pagination li {
+    display: inline-block;
+    list-style-type:none;
+}
+ul.search.pagination li a {
+    background: #e8e8e8;
+    vertical-align: middle;
+
+     width: 43px;
+    height: 43px; 
+}
 </style>
 </head>
 <body>
@@ -61,13 +115,15 @@
                 <div class="hcart pull-left">
                     <a href="cart.html"><i class="custom-icon custom-icon-ico-cart"></i> 3 items - $164,50</a>
                 </div>
-                <a href="" data-popup="loggedin" class="a-login btn btn-default pull-right">Login</a>
+                <a href="" data-popup="loggedin" class="a-login btn btn-default pull-right">My Account</a>
             </div>
         </div>
         <div class="hbottom left-pos border-top">
             <div class="container">
-                <div class="col-md-1 col-sm-1 iconmenu pull-right text-right padding-right-0">
+                <div class="col-md-1 col-sm-1 iconmenu pull-right text-right">
                     <a href="" class="a-search"><i class="custom-icon custom-icon-ico-search"></i></a>
+                    <a href="" class="a-menu" style="font-size:18px;"><i class="fa fa-list-ol" aria-hidden="true"></i></a>
+                   
                 </div>
                
                 <div class="col-sm-11 mainmenu padding-left-0">
@@ -171,7 +227,7 @@
     <!-- /.header -->
 
     <div class="border-top"></div>
-    
+
     <div class="overlay home small-size">
         <div class="bg bg-section"></div>
         <div class="container over">
@@ -182,15 +238,15 @@
     </div>
     
     <!-- CONTENT -->
-    <div class="content narrow">
+    <div class="content">
 
         <!-- CONTAINTER -->
-        <div class="container narrow">
-
+        <div class="container">
+            
             <!-- row: registration -->
-            <div class="container panel-group" id="faq"  data-filter="all" style="width:1020px">
+            <div class="container panel-group" id="faq"  data-filter="all">
                 <!-- COL -->
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12">
                     <div class="row">
                         <div class="accordeon-content bar">
                             <h3 class="hand open" data-parent="#faq"  data-target="#faq-1" data-toggle="collapse">1. Login/Create Profile</h3>
@@ -248,23 +304,45 @@
                                 <p>If your are a group contact, you are responsible for ensuring all members of the group have properly registered for the ride, signed their waiver, and submitted their payment. You are also responsible for registering and paying for any motor vehicles you plan to use on the ride.</p>
                                 <form action="/" class="loginform">
                                     <div class="row padding-top-small">
-                                    
-                                    <button type="submit" class="btn btn-primary pull-left margin-right-30 ">Create Group - I'll be the group contact</button>
-                                
-                                        
-                                        <button type="submit" class="btn btn-primary pull-left">Skip this step Group - I'll register as an individual</button>
-                                
-                                    </div>                         
+                                        <button type="submit" class="btn btn-primary pull-left margin-right-30 ">Create Group - I'll be the group contact</button>
+                                        <button type="submit" class="btn btn-primary pull-left">Skip this step - I'll register as an individual</button>
+                                    </div>
+                                    <div class="row padding-top-0">
+                                        <div class="col-md-6 col-sm-12">
+                                            <input type="text" placeholder="Search">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="row pull-right">
+                                            <form class="loginform" action="\">
+                                                <ul class="search pagination">
+                                                    <li><a href=""><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                                    <li class="text-center"><input type="text" placeholder="1" style="margin-top:0px;height: 43px;width:43px;margin-left:4px;margin-right: 4px;padding-left:5px;padding-right:5px;"></li>
+                                                    <li style="padding-top:9px;margin-right:4px;">l of 114</li>
+                                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div> 
+                                    </div>
                                 </form>
-                                <h4 class="normal dkestgrey">To join a group, search for a group name or select from the list below.</h4>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="accordeon-content bar">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-3" data-toggle="collapse">3. Ride Options</h3>
+                       
+                                    </div>
+                                </form>
+                                <div class="row highlight">
+                                    <div class="col-md-2"><img src="images/generic-group-avatar.jpg"></div>
+                                    <div class="col-md-7"></div>
+                                    <div class="col-md-3"></div>
+                                 </div>
+                            </div>
                         </div>
-                        <div class="panel-body collapse" id="faq-3">
+                        
+                            <div class="accordeon-content bar">
+                                <h3 class="hand" data-parent="#faq"  data-target="#faq-3" data-toggle="collapse">3. Ride Options</h3>
+                            </div>
+                            <div class="panel-body collapse" id="faq-3">
                             <div>
                                 <h4 class="normal">Login to your RAGBRAI.com user account</h4>
                                 <p>Before you begin registering for the RAGBRAI ride, you must first log in to your RAGBRAI.com user account. The username and password you used to log into the old registration system is no longer valid.</p>
@@ -307,9 +385,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#faq-4" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-4" data-toggle="collapse">If my entry is drawn, what kind of services can I expect for my fee?</h3>
+                        <div class="accordeon-content bar">
+                            <h3 class="hand" data-parent="#faq"  data-target="#faq-4" data-toggle="collapse">4. Merchandise (optional)</h3>
                             <div class="panel-body collapse" id="faq-4">
                                 <div>
                                     <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
@@ -318,350 +395,52 @@
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#faq-5" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-5" data-toggle="collapse">Are wristbands refundable?</h3>
+                        <div class="accordeon-content bar">
+                            <h3 class="hand" data-parent="#faq"  data-target="#faq-5" data-toggle="collapse">5. Personal Info</h3>
                             <div class="panel-body collapse" id="faq-5">
                                 <div>
-                                    <p>Yes. Wristbands will become nonrefundable as of a request date of May 15th. A $25 processing fee per person is deducted for refunds.  Email info@ragbrai.com to request a refund or to contact us regarding questions about this procedure.</p>
+                                    <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#faq-6" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-6" data-toggle="collapse">Can I resell my wristband if I find out after May 15 that I cannot go on RAGBRAI?</h3>
+                        <div class="accordeon-content bar">
+                            <h3 class="hand" data-parent="#faq"  data-target="#faq-6" data-toggle="collapse">6. Your Story (optional)</h3>
                             <div class="panel-body collapse" id="faq-6">
                                 <div>
-                                    <p>Yes, RAGBRAI is not in the business of reselling credentials. The sale of ride credentials is a private transaction, and RAGBRAI is not responsible for misunderstandings between the two parties, misplaced credentials, or the failure to transfer the credentials into the new owner’s name. The week-long rider credential items include a numbered wristband, bike band, and baggage tag, and an unnumbered bike license plate and redeemable patch certificate.  The wristband packet will be sent to the original owner or to the group contact if in a group.  If in a group, contact the group contact first before selling your wristbands. The group contact may know of someone to purchase your wristbands.</p>
-                                    <p>A resold credential will not be valid unless it is officially transferred in the RAGBRAI office to the new owner before the event begins. This procedure not only transfers the wristband, but also the liability associated with it. The new owner will transfer the wristbands to their name with our online transfer form and waiver before the ride.   If we do not receive this transfer document and waiver, the wristband and the liability for it will remain in the original purchaser’s name.  Minors will still need to send us the 2-page signed minor waiver. We will also have the transfer application and waiver at the registration table at the expo for you to fill out and turn in before the ride.</p>
-                                   <p><a href="">RAGBRAI Forum</a></p>
-<p>Many people post messages looking to sell or buy credentials in this forum. You might be able to find a person that is looking to sell and transfer their credentials on the RAGBRAI message board. If you do purchase credentials through a private sale, the credentials MUST be transferred. Email us at info@ragbrai.com if you have questions about this procedure.</p>
+                                    <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#faq-7" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-7" data-toggle="collapse">What kinds of accommodations are available in the overnight towns?</h3>
+                        <div class="accordeon-content bar">
+                            <h3 class="hand" data-parent="#faq"  data-target="#faq7" data-toggle="collapse">7. Waiver</h3>
                             <div class="panel-body collapse" id="faq-7">
                                 <div>
-                                    <p>Because of the small size of the towns, RAGBRAI is primarily a camping event. All towns provide adequate space in their official campgrounds at no charge, so the best option is to pack a tent. Most communities don’t have hotels or housing for the large numbers of riders.  You can check for hotels in the area after the route is announced in January.  You can request housing in the overnight towns after May 1st.</p>
+                                    <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#faq-8" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-8" data-toggle="collapse">How many bags am I allowed on the RAGBRAI baggage semitruck?</h3>
-                            <div class="panel-body collapse" id="faq-8">
+                        <div class="accordeon-content bar">
+                            <h3 class="hand" data-parent="#faq"  data-target="#faq8" data-toggle="collapse">8. Make a Payment</h3>
+                            <div class="panel-body collapse" id="faq-78">
                                 <div>
-                                    <p>You are allowed one large soft-texture bag up to 50 pounds.  In addition, your tent and sleeping bag can be tied with the bag. We do not have the capacity to transport bike cases.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-9" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-9" data-toggle="collapse">Can I ship my bike?</h3>
-                            <div class="panel-body collapse" id="faq-9">
-                                <div>
-                                    <p>Yes. Shipping information will be in RAGBRAI’s Participant Guide, sent with your participant packet in June.  Bike shipping information is also on on web site. <a href="http://ragbrai.com/index.php/about/bike-shipping/">Click here for bike shipping information.</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-10" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-10" data-toggle="collapse">Can I bring a support vehicle?</h3>
-                            <div class="panel-body collapse" id="faq-10">
-                                <div>
-                                    <p>You MUST register as a group, and you MUST have at least 3 members in your group to qualify for a vehicle pass.  The Group Contact must apply for a vehicle pass with the group’s RAGBRAI entry.  We allow 1,500 vehicle passes for each ride. Any vehicle taken on the route must have a vehicle pass, and campgrounds will deny entry for vehicles without a vehicle pass.  The driver and passengers who are not already entered as riders must complete an entry form for a non-rider wristband.</p>
-                                    <ul>
-                                        <li>Families and Children</li>
-                                        <li>Community Enrichment</li>
-                                    </ul>
+                                    <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /.col -->
-
-                <!-- COL -->
-                <div class="col-md-12">
-                    <div class="row">
-                        <a href="#faq-11" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-11" data-toggle="collapse">Can I leave a vehicle at the ending or beginning town?</h3>
-                            <div class="panel-body collapse" id="faq-11">
-                                <div>
-                                    <p>Yes. Charter service is available at both ends of the route. There also will be charter service from Des Moines and other cities. There will be a nominal charge for parking for the week in the beginning or ending town.  Long term parking information will be on the starting and ending town’s web sites as well as the RAGBRAI website around May 1st.  It will also be in RAGBRAI’s Participant Guide, which is sent with your wristband packet in June.  Do not contact the starting or ending town for parking information prior to May 1st.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-12" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-12" data-toggle="collapse">Can I get transportation from home to the start and back again from the finish?</h3>
-                            <div class="panel-body collapse" id="faq-12">
-                                <div>
-                                    <p>There are round-trip charters from Des Moines, St. Louis, Omaha, the Quad Cities, Lanesboro, Minnesota, and other towns.  Information about these charters can be found on the RAGBRAI Web site under RAGBRAI Charter Services. <a href="http://ragbrai.com/index.php/about/charter-services/">Click here for Charter Services.</a> Many of these charters were sold out well before the ride started, so be sure to arrange your services early. You may be able to link up with fellow travelers on the Forum on RAGBRAI’s Web site.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-13" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-13" data-toggle="collapse">How many bags am I allowed on the RAGBRAI baggage semitruck?</h3>
-                            <div class="panel-body collapse" id="faq-13">
-                                <div>
-                                    <p>You are allowed one large soft-texture bag up to 50 pounds.  In addition, your tent and sleeping bag can be tied with the bag. We do not have the capacity to transport bike cases.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-14" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-14" data-toggle="collapse">Can I get transportation from the ending town to the starting town?</h3>
-                            <div class="panel-body collapse" id="faq-14">
-                                <div>
-                                    <p>Yes, there are several charters that offer this service that can be found on the RAGBRAI Web site under RAGBRAI Charter Services. Many of these charters were sold out well before the ride started, so be sure to arrange your services early. <a href="http://ragbrai.com/index.php/about/charter-services/">Click here for Charter Services.</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-15" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-15" data-toggle="collapse">Can I join a team?</h3>
-                            <div class="panel-body collapse" id="faq-15">
-                                <div>
-                                    <p>You must make individual contact with clubs and teams to join.  Belonging to a team doesn’t give you an advantage in the lottery, however.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-16" class="accordeon-toggle"  data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-16" data-toggle="collapse">What time can I start biking on RAGBRAI?</h3>
-                            <div class="panel-body collapse" id="faq-16">
-                                <div>
-                                    <p>Designated RAGBRAI hours are 6 a.m. to 6 p.m. when support vehicles will be on the route. We recommend that no biker start out before sunrise or finish after 6 p.m.  On the final day, Saturday, the route closes at 2 p.m.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-17" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-17" data-toggle="collapse">Do you encounter much traffic on the route?</h3>
-                            <div class="panel-body collapse" id="faq-17">
-                                <div>
-                                    <p>We cannot close roads, but we discourage use of the route during RAGBRAI. Law enforcement officers, including the Iowa State Patrol, control select high-traffic intersections.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-18" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-18" data-toggle="collapse">Will there be gravel?</h3>
-                            <div class="panel-body collapse" id="faq-18">
-                                <div>
-                                    <p>Possibly. This may be necessary to keep us off an unsafe highway, or a stretch of construction may force us to take some gravel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-19" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-19" data-toggle="collapse">Why does the ride always go from west to east?</h3>
-                            <div class="panel-body collapse" id="faq-19">
-                                <div>
-                                    <p>Headwinds are grueling for riders. Weather statistics show that during this week in July prevailing winds are normally from the southwest. This is not always the case but playing the odds helps the riders most years. Another factor in riding from west to east is to avoid riding into the mid afternoon sun when riders are most tired.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-20" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-20" data-toggle="collapse">How are the overnight towns selected? And how is the route selected?</h3>
-                            <div class="panel-body collapse" id="faq-20">
-                                <div>
-                                    <p>RAGBRAI has received more than 200 requests from towns that want to be either overnight or pass-through towns on RAGBRAI. RAGBRAI Director T.J. Juskiewicz reviews those requests looking for route possibilities across Iowa. The primary goal is safety. Can we get 10,000 riders and their support crews from point A to point B safely? When a route is found, it is driven multiple times in late fall and winter to make sure it will work.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-21" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-21" data-toggle="collapse">Where do profits from RAGBRAI go?</h3>
-                            <div class="panel-body collapse" id="faq-21">
-                                <div class="highlight darker">
-                                    <p>After expenses are met, funds are given to nonprofit Iowa programs and organizations through the Register’s community investment program.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#faq-22" class="accordeon-toggle" data-parent="#faq" data-toggle="collapse">+</a>
-                        <div class="accordeon-content">
-                            <h3 class="hand" data-parent="#faq"  data-target="#faq-22" data-toggle="collapse">What is the focus of the Register/Gannett Foundation contributions?</h3>
-                            <div class="panel-body collapse" id="faq-22">
-                                <div class="highlight darker">
-                                    <p>Each year, approximately 20 charities receive contributions on behalf of RAGBRAI, Des Moines Register Media and the Gannett Foundation. For example in 2010, Central Iowa Shelter & Services, Big Brothers Big Sister of Central Iowa and Variety, The Children’s Charity benefitted.  Additionally, we provide financial support to the eight RAGBRAI overnight host communities.</p>
-                                    <p>The primary geographic focus is the greater Des Moines area and central Iowa. Additionally, we support unique statewide initiatives with the potential to benefit all Iowans. We focus our contributions on programs that address the following priority issues:</p>
-                                    <ul><li>Families and Children</li><li>Community Enrichment</li></ul>
-                                    <p>For more information, guidelines and an application form visit <a href="http://www.desmoinesregister.com/help/grants.html">www.desmoinesregister.com/help/grants.html</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col -->
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                    <div class="container container-pad">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-3">
-        <ul class="list-group category" role="tablist">
-          <li class="list-group-item">
-            <a role="button" data-toggle="collapse"  href="#collapseOne">
-              categories 1
-            </a>
-          </li>
-          <ul id="collapseOne" class="panel-collapse collapse">
-            <li class="list-group-item" role="presentation">
-              <a href="#category1" aria-controls="category1" role="tab" data-toggle="tab">category 1<span class="badge">1</span></a>
-            </li>
-            <li class="list-group-item" role="presentation">
-              <a href="#category2" aria-controls="category2" role="tab" data-toggle="tab">category 2<span class="badge">2</span></a>
-            </li>
-          </ul>
-          <li class="list-group-item">
-            <a role="button" data-toggle="collapse"  href="#collapseTwo">
-              categories 2
-            </a>
-          </li>
-          <ul id="collapseTwo" class="panel-collapse collapse">
-            <li class="list-group-item" role="presentation">
-              <a href="#category3" aria-controls="category3" role="tab" data-toggle="tab">category 3<span class="badge">3</span></a>
-            </li>
-          </ul>
-          <li class="list-group-item">
-            <a role="button" data-toggle="collapse"  href="#collapseThree">
-              categories 3
-            </a>
-          </li>
-          <ul id="collapseThree" class="panel-collapse collapse">
-            <li class="list-group-item" role="presentation">
-              <a href="#category4" aria-controls="category4" role="tab" data-toggle="tab">category 4<span class="badge">4</span></a>
-            </li>
-            <li class="list-group-item" role="presentation">
-              <a href="#category5" aria-controls="category5" role="tab" data-toggle="tab">category 5<span class="badge">5</span></a>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <div class="col-md-9">
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="category1">
-            <ul class="list-group products">
-             <li class="list-group-item">
-               product 1
-             </li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="category2">
-            <ul class="list-group products">
-              <li class="list-group-item">
-                product 2
-              </li>
-              <li class="list-group-item">
-               product 3
-              </li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="category3">
-            <ul class="list-group products">
-              <li class="list-group-item">
-                product 4
-              </li>
-              <li class="list-group-item">
-               product 5
-              </li>
-              <li class="list-group-item">
-                product 6
-              </li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="category4">
-            <ul class="list-group products">
-              <li class="list-group-item">
-                product 7
-              </li>
-              <li class="list-group-item">
-                product 8
-              </li>
-              <li class="list-group-item">
-                product 9
-              </li>
-              <li class="list-group-item">
-                product 10
-              </li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="category5">
-            <ul class="list-group products">
-              <li class="list-group-item">
-                product 11
-              </li>
-              <li class="list-group-item">
-                product 12
-              </li>
-              <li class="list-group-item">
-                product 13
-              </li>
-              <li class="list-group-item">
-                product 14
-              </li>
-               <li class="list-group-item">
-                product 15
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>             
-                        <p><b>Still can't find an answer to your question?</b> <a href="">Contact us.</a></p>
-                    </div>
-                </div>
             </div>
             <!-- /.row -->
         </div>
-        <!-- /.container -->
-
-      
+        <!-- /.container -->  
     </div>
-    <!-- /.content -->
     <!-- /.content -->
 </div>
 <!-- /.wrapper -->
@@ -852,7 +631,65 @@
 <a href="#" class="scrolltop">
     <i class="custom-icon custom-icon-scrolltop"></i>
 </a>
-
+<!-- Sidemenu -->
+<div class="sidemenu none">
+    <a href="" class="sclose"><i class="custom-icon custom-icon-lightclose"></i></a>
+    <h2>Registration</h2>
+    <nav>
+        <ul>
+            <li>
+                <a class="whitelink" href="">Group (edit)</a>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a class="whitelink" href="">Ride Choice (edit)</a>
+                <ul class="grey">
+                    <li><span class="normal">Minor?</span> No</li>
+                    <li><span class="normal">Weeklong rider</span></li>
+                </ul>
+            </li>
+            <li><a class="whitelink" href="">Merchandise</a>
+                <ul class="grey">
+                    <li>
+                        <span class="normal">2017 Jersey</span>
+                        <br>Women, Medium Qty: 1
+                    </li>
+                </ul>
+            </li>
+            <li><a class="whitelink" href="">Personal Info (edit)</a>
+                <ul class="grey">
+                    <li>
+                        <span class="normal">Name:</span>
+                        <br><span class="normal">Gender:</span>
+                        <br><span class="normal">Birth Date:</span>
+                        <br><span class="normal">Address:</span>
+                        <br>City, State ZIP
+                        <br>US
+                    </li>
+                </ul>
+            </li>
+            <li><a class="whitelink" href="">Phone number(s)</a>
+                 <ul class="grey">
+                    <li></li>
+                </ul>
+            </li>
+            <li class="padding-top-small">
+                <div><h4 class="totals">Ride Total:</h4> $175</div>
+                <div><h4 class="totals">Merchandise Total:</h4> $110</div>
+                <div><h4 class="totals">Grand Total:</h4> $285</div>
+            <li>
+        </ul>
+    </nav>
+   
+    <div class="login">
+        <a href="" data-popup="Waiver" class="btn btn-inverse">Sign Waiver</a>
+    </div>
+</div>
+<!-- /.sidemenu -->
 <!-- these scripts came with the template -->
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -880,17 +717,11 @@
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
 <script>
 $('.lg-video').on('click', function() {
-        $(this).find('video').play();
-    });
-</script>
-<script>
-$('ul.panel-collapse li').click(function (e) { 
-    $('ul li.active').removeClass('active')
-    e.preventDefault()
-    .tab('show');
-    $(this).addClass('active')
+    $(this).find('video').play();
 });
+
 </script>
+
 <!-- this script runs all the carousels -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- /.carousels -->
