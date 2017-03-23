@@ -481,7 +481,15 @@ body.container .footer .container:last-child{
 .padding-right-0 {
     padding-right: 0;
 }
-
+.padding-top-15 {
+    padding-top: 15px;
+}
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
 .padding-top-small {
      padding-top: 30px;
 }
@@ -2296,7 +2304,7 @@ a.a-menu {
 
 .sticky .navbar-toggle{
     line-height: 77px;
-    height: 77px;
+    /*height: 77px;*/
 }
 
 
@@ -7577,6 +7585,7 @@ ul.footer-list li p {
 .highlight .container.tab-content h2 {
     margin-bottom: 40px;
 }
+.panel-body img.user-img,
 .container.tab-content img.user-img {
     float: left;
     height: 60px;

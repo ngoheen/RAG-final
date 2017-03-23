@@ -90,8 +90,8 @@ ul.search.pagination li {
 ul.search.pagination li a {
     background: #e8e8e8;
     vertical-align: bottom;
- width: 43px;
-    height: 43px; 
+/*    width: 43px;
+    height: 43px; */
 }
 .content.registration [class*=col] ul.register {
     margin-left: 20px;
@@ -149,24 +149,6 @@ h4.team-name {
 .a-menu {
     font-size: 18px;
 }
-.search.pagination {
-    width: 100%;
-    float: none;
-    padding-left: 0;
-}
-input.sm-input {
-    margin-top:0px;
-    height: 43px;
-    width:43px;
-    margin-left:4px;
-    margin-right: 4px;
-    padding-left:5px;
-    padding-right:5px;
-    float: left;
-}
-@media only screen and (max-width: 479px){
-
-}
 @media (max-width:414px) {
     .content.registration .loginform .btn {
         width: 100%;
@@ -202,17 +184,10 @@ input.sm-input {
     padding-bottom: 0;
         margin-bottom: 30px;
     }
-   .col-md-6.col-sm-12.padding-right-0.pull-right.text-right {
-        float: none;
-        text-align: center;
-        padding-left: 0;
-    }
+   
 }
 .closed {
     background-color: #ccc !important;
-}
-.total-pages {
-padding-top:9px;margin-right:8px;margin-left: 8px;display: inline-block;
 }
 @media (max-width:413px) {
  .btn {
@@ -220,22 +195,22 @@ padding-top:9px;margin-right:8px;margin-left: 8px;display: inline-block;
         line-height: 20px;
         padding: 15px 0;
     }
-    ul.search.pagination li a {
-        background: #e8e8e8;
-        height: 30px; 
-        vertical-align: top;
-        width: 30px;
-}
-input.sm-input {
-    height: 30px;
-    width:30px;
-}
-.total-pages {
-    padding-top: 6px;
-}
 }
 
-
+.search.pagination {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+}
+.search.pagination li:first-child,
+.search.pagination li {
+    width: calc( ( 100% - 75px) / 5) !important;
+    margin-right: 5px;
+    background: #ccc;
+}
+.search.pagination li:last-child {
+    margin-right: 0;
+}
 </style>
 </head>
 <body>
@@ -458,16 +433,9 @@ input.sm-input {
                                             <input type="text" placeholder="Search">
                                         </div>
                                         <div class="col-md-6 col-sm-12 padding-right-0 pull-right text-right">
-                                            
-                                            <ul class="search pagination">
-                                                <li><a href=""><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                                <li class="text-center"><input type="text" placeholder="1" class="sm-input">
-                                                <div class="total-pages">l of 114</div></li>
-                                                <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                                            </ul>
-                                        
+                   
+
+                                                                                    
                                         </div> 
                                     </div>
                                 </form>
@@ -501,7 +469,7 @@ input.sm-input {
                                         </div>
                                 </div>
                             </div>
-                             <div class="row group">
+                            <div class="row group">
                                 <img src="images/generic-group-avatar.jpg" class="user-img">
                                 <div class="pull-left padding-left-0 left-wrap">
                                     <div class="group-desc">
