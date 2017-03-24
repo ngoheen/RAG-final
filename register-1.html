@@ -147,22 +147,39 @@ h4.team-name {
     padding-bottom: 0;
 }
 .a-menu {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 .search.pagination {
     width: 100%;
     float: none;
     padding-left: 0;
 }
+.border-btn,
 input.sm-input {
-    margin-top:0px;
+    background-color: #fff;
+    float: left;
     height: 43px;
-    width:43px;
     margin-left:4px;
     margin-right: 4px;
+    margin-top:0px;
     padding-left:5px;
     padding-right:5px;
-    float: left;
+    width:43px;
+}
+.border-btn {
+    border: 1px solid #eaeaea;
+    line-height: 20px;
+    padding: 0 15px;
+    width: auto;
+}
+.content.registration .loginform .btn.border-btn:hover {
+    background-color: #ddd;
+}
+.pushed {
+    background-color: #ccc;
+}
+.search.pagination li.blocky {
+    display: inline-block;
 }
 @media only screen and (max-width: 479px){
 
@@ -171,16 +188,21 @@ input.sm-input {
     .content.registration .loginform .btn {
         width: 100%;
     }
+    .content.registration .loginform .btn.border-btn {
+        line-height: 13px;
+        min-width: 60px;
+        width: auto;
+    }
     .loginform .pull-right {
         float: none !important;
         margin-top: 15px !important;
     }
     .content.registration .pagination {
-        text-align: center;
         margin: 15px 0;
+        text-align: center;
     }
     ul.search.pagination li i {
-        vertical-align: bottom;
+        vertical-align: middle;
     }
    
     .group {
@@ -199,20 +221,28 @@ input.sm-input {
         float: left;
     }
     .padding-bottom-30 {
-    padding-bottom: 0;
+        padding-bottom: 0;
         margin-bottom: 30px;
     }
    .col-md-6.col-sm-12.padding-right-0.pull-right.text-right {
-        float: none;
+        float: none !important;
         text-align: center;
         padding-left: 0;
+    }
+    .search.pagination li.blocky {
+        display: block;
+        padding-bottom: 5px;
     }
 }
 .closed {
     background-color: #ccc !important;
 }
+
 .total-pages {
-padding-top:9px;margin-right:8px;margin-left: 8px;display: inline-block;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 9px;
 }
 @media (max-width:413px) {
  .btn {
@@ -225,16 +255,19 @@ padding-top:9px;margin-right:8px;margin-left: 8px;display: inline-block;
         height: 30px; 
         vertical-align: top;
         width: 30px;
-}
+    }
 input.sm-input {
     height: 30px;
-    width:30px;
+    width: 30px;
 }
 .total-pages {
     padding-top: 6px;
 }
 }
-
+.chosen-container {
+    min-width: 130px;
+    width: 100% !important;
+}
 
 </style>
 </head>
@@ -382,7 +415,7 @@ input.sm-input {
     <div class="content registration">
 
         <!-- CONTAINTER -->
-        <div class="container" style="padding-top: 0;">
+        <div class="container" class="padding-top-0">
             
             <!-- row: registration -->
             <div class="container panel-group" id="faq"  data-filter="all">
@@ -395,7 +428,7 @@ input.sm-input {
                         </div>
                         <div class="panel-body collapse in" id="faq-1">
                             <div>
-                                <h4 class="normal">Login to your RAGBRAI.com user account</h4>
+                                <h4 class="normal black">Login to your RAGBRAI.com user account</h4>
                                 <p>Before you begin registering for the RAGBRAI ride, you must first log in to your RAGBRAI.com user account. The username and password you used to log into the old registration system is no longer valid.</p>
                                 <p>A RAGBRAI.com user account has several benefits.</p>
                                 <ul class="register">
@@ -474,6 +507,7 @@ input.sm-input {
                             </div>
                             
                             <!-- Groups -->
+                            
                             <div class="row group">
                                 
                                 <img src="images/generic-group-avatar.jpg" class="user-img">
@@ -501,7 +535,7 @@ input.sm-input {
                                         </div>
                                 </div>
                             </div>
-                             <div class="row group">
+                            <div class="row group">
                                 <img src="images/generic-group-avatar.jpg" class="user-img">
                                 <div class="pull-left padding-left-0 left-wrap">
                                     <div class="group-desc">
@@ -514,55 +548,82 @@ input.sm-input {
                                     </div>
                                 </div>
                             </div>
+                            <div class="row group">
+                                <img src="images/generic-group-avatar.jpg" class="user-img">
+                                <div class="pull-left padding-left-0 left-wrap">
+                                    <div class="group-desc">
+                                        <h4 class="team-name">- Team Scum Bag</h4>
+                                        <p>Uhuuu Up! Team Scum Bag coming through! If you're taking things too seriously, we can help out.</p>
+                                    </div>
+                                    <div class="join-group">
+                                        <button type="submit" class="btn btn-primary btn-sm btn-size closed">Group Closed</button>
+                                        <div>Public Group/4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <!-- ./groups -->
+                            <div class="separator"></div>
+                            <!-- bottom pagination -->
+                            <div class="col-md-6 col-sm-12 padding-right-0 pull-right text-right padding-top-30">                 
+                                <ul class="search pagination">
+                                    <li class="blocky"><div class="total-pages normal">2,814 Groups</div></li>
+                                    <li><a href=""><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li class="text-center">
+                                        <input type="text" placeholder="1" class="sm-input">
+                                        <div class="total-pages">l of 114</div>
+                                    </li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div> 
                         </div>
                     </div>
                     <!-- ./step 2 -->
                     
-                    <!-- step 3 -->
+                    <!-- step 3 - Ride Options -->
                     <div class="row">
                         <div class="accordeon-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-3" data-toggle="collapse">3. Ride Options</h3>
                         </div>
                         <div class="panel-body collapse" id="faq-3">
                             <div>
-                                <h4 class="normal">Login to your RAGBRAI.com user account</h4>
-                                <p>Before you begin registering for the RAGBRAI ride, you must first log in to your RAGBRAI.com user account. The username and password you used to log into the old registration system is no longer valid.</p>
-                                <p>A RAGBRAI.com user account has several benefits.</p>
-                                <ul>
-                                    <li><a href="">Register for the RAGBRAI ride.</a></li>
-                                    <li>You may participate in the <a href="">RAGBRAI.com forums.</a></li>
-                                    <li><a href="">Send private messages</a> to other RAGBRAI.com users.</li>
-                                    <li><a href="">Friend other RAGBRAI.com users</a> so that you can follow their activity streams.</li>
-                                    <li><a href="">Track you RAGBRAI.com shop purchases.</a></li>
-                                </ul>
-                                <p>If you don’t already have a RAGBRAI.com user account, <a href=” ”>Create a RAGBRAI.com user account here.</a></p>
-                                
                                 <form action="/" class="loginform">
-                                    <div class="col-md-4">
-                                        <div class="formwrap">
-                                            <div class="form-group margin-top-20">
-                                                <input type="text" class="form-control padding-bottom-10" placeholder="Username or Email">
-                                            </div>
-                                            <div class="form-group has-feedback">
-                                                <input type="password" class="form-control login-password" placeholder="Password" id="login-password">
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="">
-                                                Remember me
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-sm btn-size btn-validation">Login</button>
-                                        </div>
-                                        <div class="form-group padding-top-10">
-                                            <a href="" data-popup="forgot">Forgot password?</a>
-                                        </div>
+                                    <h4 class="normal black">Is this registration for a minor?</h4>
+                                    <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value=""> Yes, I am the parent/guardian of the minor in this registration.
+                                    </label>
+                                </div>
+                                
+                                    <h4 class="normal black">I am registering for a full week</h4>
+                                    <div class="radio">
+                                    <label>
+                                        <input type="radio" value=""> Weeklong Rider ($175)
+                                    </label>
+                                 </div>
+                                    <div class="radio">
+                                    <label>
+                                        <input type="radio" value=""> Weeklong Rider ($175)
+                                    </label>
+                                 </div>
+                                    
+                                    <h4 class="normal black">I am registering for a partial week</h4>
+                                    <p>Please select the days that you will be riding ($30 per day).</p>
+                                    <div class="ride-days margin-top-30">
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Sun</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Mon</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Tue</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Wed</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Thu</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Fri</button>
+                                        <button type="submit" class="btn border-btn btn-day btn-validation">Sat</button>
                                     </div>
-                                </form>
+                                    <div class="block clear">
+                                        <button type="submit" class="btn btn-primary btn-sm btn-size btn-validation">Continue</button>
+                                    </div>
+                               </form>
                             </div>
                         </div>
                     </div>
@@ -573,9 +634,54 @@ input.sm-input {
                         <div class="accordeon-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-4" data-toggle="collapse">4. Merchandise (optional)</h3>
                             <div class="panel-body collapse" id="faq-4">
-                                <div>
-                                    <p>The fee provides daily baggage transportation, SAG wagon service, emergency medical service, camping areas, route markings, daily maps, wristband discounts, camping facilities, a free edition of The Des Moines Register in each of the host communities, ten bicycle shops on the route and in the campgrounds to service your bike, access to long-term parking, bicycle shipping stations, free lost and found mailing service and great Iowa hospitality.</p>
+                                <div class="row border-bottom padding-bottom-15">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div style="border: 1px solid #ccc;padding:20px"><img src="pics/Reg-jersey.png" style="width:100%;"></div>
+                                    </div>
+                                     <div class="col-md-6 col-sm-12">
+                                        <h4 class="normal black" style="width:100%;">2017 Women's SLEEVE Jersey<span style="float:right;text-align:right;">$24</span></h4>
+                                        <p>This is the women’s SLEEVE version of our 2017 jersey.</p>
+                                        <p>All of our Primal Wear jerseys feature moisture wicking fabric, raglan style cut with a full length hidden zipper and three rear cargo pockets. Constructed of 100% SpeedPro advanced moisture transfer fabric.</p>
+                                        <h5 class="normal black">Available Women’s Sleeve Sizes:</h5> <div class="padding-bottom-30">XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                                        <div id="entry1" class="clear clonedInput form-group" style="margin-left: -15px;margin-right: -15px;">
+                                            <div class="col-md-4">
+                                                <select class="custom-select">
+                                                    <option value="1">Colour</option>
+                                                    <option value="2">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="custom-select">
+                                                    <option value="1">Size</option>
+                                                    <option value="2">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                   <div class="clear pull-right padding-top-15">
+                                        <button type="button" id="btnAdd" name="btnAdd" class="btn btn-primary">Add More</button>
+                                        <button type="button" id="btnDel" name="btnDel" class="btn btn-primary">Remove Above Row</button>
+                                    </div>
                                 </div>
+                                
+                                <div class="row border-bottom padding-bottom-30">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div  style="border: 1px solid #ccc;padding:20px"><img src="pics/reg-cap.jpg" style="width:100%;"></div>
+                                    </div>
+                                     <div class="col-md-6 col-sm-12">
+                                        <h4 class="normal black">2017 Baseball Cap</h4>
+                                        <p>Shade your eyes in style with our 2017 Baseball Cap! Embroidered with the riverboat-style RAGBRAI XLV logo on the front, and “IOWA” on the back. Velcro closure.</p>
+                                       
+                                        
+                                    </div>
+                                </div>
+                                <div class="block clear">
+                                        <button type="submit" class="btn btn-primary btn-sm btn-size btn-validation">Continue</button>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -917,12 +1023,16 @@ input.sm-input {
 $('.lg-video').on('click', function() {
     $(this).find('video').play();
 });
+
+$( ".btn-day" ).click(function() {
+  $( this ).toggleClass( "pushed" );
+});
 </script>
 
 <!-- this script runs all the carousels -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- /.carousels -->
-
+<script src="js/clone-form.js"></script>
 <!-- this script calls lightbox and owlcarousel where needed-->
 <script src="js/lightbox-script.js"></script>
 
