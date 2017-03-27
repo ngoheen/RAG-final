@@ -70,14 +70,14 @@ $(function () {
         newElem.find('.label_twt').attr('for', 'ID' + newNum + '_twitter_handle');
         newElem.find('.input_twt').attr('id', 'ID' + newNum + '_twitter_handle').attr('name', 'ID' + newNum + '_twitter_handle').val('');
 
-    // Insert the new element after the last "duplicatable" input field
+        // Insert the new element after the last "duplicatable" input field
         $('#entry' + num).after(newElem);
         $('#ID' + newNum + '_title').focus();
 
-    // Enable the "remove" button. This only shows once you have a duplicated section.
+        // Enable the "remove" button. This only shows once you have a duplicated section.
         $('#btnDel').attr('disabled', false);
 
-    // Right now you can only add 4 sections, for a total of 5. Change '5' below to the max number of sections you want to allow.
+        // Right now you can only add 4 sections, for a total of 5. Change '5' below to the max number of sections you want to allow.
         if (newNum == 5)
         $('#btnAdd').attr('disabled', true).prop('value', "You've reached the limit"); // value here updates the text in the 'add' button when the limit is reached 
     });

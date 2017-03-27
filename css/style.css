@@ -83,12 +83,8 @@ Last change:	10/24/14
 12. Catalog
 13. Cart
 14. Audio Player ('mejs')
-15. Tooltips ('tooltipster')
-16. Team
-    16.1. Team List
-    16.2. Team Item
-    16.3. Hover images
-    16.4. Team details
+
+16. Registration
 17. Vacancy
 18. Google Maps
 19. Blog
@@ -2546,6 +2542,29 @@ a.a-menu {
     position: absolute;
 }
 
+/* [ 5.4  Side Menu ] */
+
+.sidemenu {
+    background-color: #212121;
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+    height: 100%;
+    min-height: 100%;
+    padding: 70px 40px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    width: 300px;
+    z-index: 100;
+}
+.sidemenu h2 {
+    color: #fff;
+    font-weight: 300;
+}
+
+
 /* [ 5.5. Menu Table ] */
 
 .menutable {
@@ -3205,7 +3224,7 @@ input[type=search],
 textarea {
     font-size:16px;
     color:#000;
-    height:45px;
+    height:46px;
     width:100%;
     border:1px solid #B3B3B3;
     border-radius:4px;
@@ -3513,18 +3532,20 @@ label > h4 + input[type=radio] {
 /* [ 8.3. CHOSEN ] */
 
 .chosen-container {
-    position:relative;
-    display:inline-block;
-    vertical-align:middle;
-    box-sizing:border-box;
-    text-align:left;
-    font-size:17px;
-    font-weight:300;
-    min-width:130px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    min-width: 130px;
     width: 100% !important;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
-
+/*.panel-body .chosen-container {
+    margin-bottom: 0;
+}*/
 .sorting [class*=col-]:first-child .chosen-container{
     min-width: 220px;
 }
@@ -5377,7 +5398,7 @@ ul.nav-expand li a:hover {
     margin-top:8px;
 }
 
-.accordeon-toggle {
+.accordion-toggle {
     width:33px;
     height:33px;
     line-height:33px;
@@ -5390,12 +5411,12 @@ ul.nav-expand li a:hover {
     margin-right:28px;
 }
 
-.accordeon-toggle:hover {
+.accordion-toggle:hover {
     color:#fff !important;
     background-color:#E7543D;
 }
 
-.accordeon-content {
+.accordion-content {
     margin-left:60px;
 }
 
@@ -6773,6 +6794,10 @@ ul.footer-list li p {
 
     .leaveacomment label{
         left: 0;
+    }
+    .collapse-border {
+        border-bottom: 1px solid #E0E0E0 !important;
+        border-radius: 0 !important;
     }
 }
 

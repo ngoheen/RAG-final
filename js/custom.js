@@ -143,7 +143,7 @@
             this.dataToggle = $('[data-toggle]');
             this.expandLink = $('.expand-link');
             this.collapseLink = $('.collapse-link');
-            this.accToggle = $('.accordeon-toggle');
+            this.accToggle = $('.accordion-toggle');
             this.navCategory = $('.nav-category');
             this.filterLink = $('a.filter');
             this.mixList = $('.mix-list');
