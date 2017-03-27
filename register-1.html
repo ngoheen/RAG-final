@@ -38,25 +38,7 @@
 .accordion-content {
    margin-left: 0;
 }
-.sidemenu {
-    position: fixed;
-    right: 0;
-    top: 0;
-    overflow: auto;
-    width: 300px;
-    box-sizing: border-box;
-    min-height: 100%;
-    height: 100%;
-    background-color: #212121;
-    z-index: 100;
-    color: #fff;
-    display: none;
-    padding: 70px 40px 20px;
-}
-.sidemenu h2 {
-    color: #fff;
-    font-weight: 300;
-}
+
 .fa.fa-bars {
     background: green;
 }
@@ -444,7 +426,7 @@ h4 span {
             <div class="container panel-group" id="register" data-filter="all">
                 <!-- COL -->
                 <div class="col-md-12 col-sm-12">
-                    <!-- step 1 -->
+                    <!-- step 1: login -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand open" data-parent="#register"  data-target="#register-1" data-toggle="collapse">1. Login/Create Profile</h3>
@@ -492,7 +474,7 @@ h4 span {
                     </div>
                     <!-- ./step 1 -->
                     
-                    <!-- step 2 -->
+                    <!-- step 2: Group -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-2" data-toggle="collapse">2. Join a Group (optional)</h3>
@@ -650,7 +632,7 @@ h4 span {
                     </div>
                     <!-- ./step 3 -->
                     
-                    <!-- step 4 -->
+                    <!-- step 4: Merchandise -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand" data-parent="#faq" data-target="#faq-4" data-toggle="collapse">4. Merchandise (optional)</h3>
@@ -706,7 +688,7 @@ h4 span {
                     </div>
                     <!-- ./step 4 -->
                     
-                    <!-- step 5 -->
+                    <!-- step 5: Personal info -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-5" data-toggle="collapse">5. Personal Info</h3>
@@ -1085,7 +1067,7 @@ h4 span {
                     </div>
                     <!-- ./step 5 -->
                     
-                    <!-- step 6 -->
+                    <!-- step 6: Story -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-6" data-toggle="collapse">6. Your Story (optional)</h3>
@@ -1118,13 +1100,13 @@ h4 span {
                     </div>
                     <!-- ./step 6 -->
                     
-                    <!-- step 7 -->
+                    <!-- step 7: Waiver -->
                     <div class="row">
                         <div class="accordion-content bar">
                             <h3 class="hand" data-parent="#faq"  data-target="#faq-7" data-toggle="collapse">7. Waiver</h3>
                             <div class="panel-body collapse" id="faq-7">
                                 <div>
-                                <h4 class="black normal">Agreement, Waiver & Release of Liability<br>
+                                    <h4 class="black normal">Agreement, Waiver & Release of Liability<br>
 RAGBRAI® XLV JULY 23-29, 2017 — The Des Moines Register</h4>
                                     <p>I, the undersigned, know and understand that RAGBRAI and its related events involve potentially hazardous or dangerous activities and conditions. I attend and/or participate in RAGBRAI and all related events out of my own free will and choice. In choosing to attend and/or participate in RAGBRAI and any related events, I FULLY ACCEPT AND ASSUME ALL RISKS, whether before, during or after RAGBRAI and its related events, whether or not an event is listed herein. These include, without limitation, physical injury, mental injury, emotional distress, trauma, sickness, illness, death, contact with others, damage to personal property, acts by spectators, participants or third persons, equipment failure or defective equipment, inadequate safety equipment, the effects of weather including extreme temperature or conditions, traffic, contact with motor vehicles of all types and descriptions, collision with other persons or fixed objects, the conditions of and/or design and other defects in the road and facilities, including campgrounds, all risks along the route, risks of crime, violence, terrorism or acts of terror, the possibility that RAGBRAI and any related events may be postponed, ended early, or cancelled altogether by government officials and/or event organizers, and the negligence of others, including, without limitation, those persons organizing, sponsoring, volunteering or participating in RAGBRAI and/or events occurring in connection with it.  I am aware that the risk of injury or death is always present in biking and RAGBRAI and its attendant events and that this risk cannot be eliminated by RAGBRAI organizers, sponsors, volunteers and the government and private entities that plan, host or assist in the RAGBRAI events.  I know and accept that biking, road and other accidents may result from the failure for any reason (including negligence) of RAGBRAI organizers, sponsors, volunteers and the government and private entities that plan, host or assist in the RAGBRAI events to assess or correctly determine the conditions and safety of the road, surface, route or weather or to predict where or when an accident might occur. All risks are known, appreciated and assumed by me, and I waive any and all specific notice of the existence of them and further waive the obligation, if any, that any other person or entity has to advise or warn me of them. I assume liability for and agree to pay my own medical and emergency expenses in the event of injury, illness, or other incapacity regardless of whether I authorized such expenses. I authorize the use and release of personal and medical information in connection with any medical services provided to me.</p>
 
@@ -1203,12 +1185,10 @@ RAGBRAI® XLV JULY 23-29, 2017 — The Des Moines Register</h4>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            
-                                                <button type="submit" class="btn btn-primary btn-validation">Save Registration and Continue</button>
-                                          
+                                            <button type="submit" class="btn btn-primary">Save Registration and Continue</button>
                                         </div>
-                                   
-                               </div>
+                                   </form>
+                                </div>
                             </div>
                         </div>
                     </div>
