@@ -5812,6 +5812,7 @@ i.fa-check-square {
     z-index: 30;
     background: rgba(0,0,0,0.25);
     width: 100%;
+    height: 135px;
 }
 .loginform .checkbox {
     margin-bottom: 30px;
@@ -7785,6 +7786,7 @@ span.more-social:hover {
      .bg.bg-section {
         max-width: none;
     }
+    .forums .ad-widget,
     .blogs .ad-widget {
         padding-top: 0;
     }
@@ -8331,6 +8333,7 @@ a.expand-link {
     margin-right: auto;
     text-align: center;
 }
+.forums .col-fixed-300,
 .blogs .col-fixed-300,
 .post .col-fixed-300 {
     float: left;
@@ -8339,6 +8342,7 @@ a.expand-link {
     margin-right: 0;
     width: 300px;
 }
+.forums .col-fixed-300 .widget,
 .blogs .col-fixed-300 .widget,
 .post .col-fixed-300 .widget {
     clear: both;
@@ -8346,6 +8350,7 @@ a.expand-link {
     width: 100%;
     margin-bottom: 30px;
 }
+.forums .ad-widget,
 .blogs .ad-widget,
 .post .ad-widget {
     margin: auto auto 30px;
@@ -8356,6 +8361,7 @@ a.expand-link {
 .post .ad-widget {
     padding-top: 5px;
 }
+.forums img.ad,
 .blogs img.ad,
 .post img.ad {
     float: none;
@@ -8386,27 +8392,32 @@ video {
 
 /* tablet breakpoint for right column in post needs to be between these numbers */
 @media (max-width: 767px) and (min-width:660px) {
+    .forums .col-fixed-300 .col-sm-6,
     .blogs .col-fixed-300 .col-sm-6,
     .post .col-fixed-300 .col-sm-6 {
         width: 50%;
     }
+    .forums .ad-img,
     .blogs .ad-img,
     .post .ad-img {
         background: #fff;
     }
 }
 @media (max-width: 991px) {
+    .forums .col-fixed-300,
     .blogs .col-fixed-300,
     .post .col-fixed-300 {
         float: left;
         margin-left: 0;
         width: 100%;
     } 
+    .forums .col-fixed-300 .widget img,
     .blogs .col-fixed-300 .widget img,
     .post .col-fixed-300 .widget img {
         width: 100%;
         height: auto;
     } 
+    .forums .col-fixed-300 .ad-img img,
     .blogs .col-fixed-300 .ad-img img,
     .post .col-fixed-300 .ad-img img {
         max-width: 300px;
@@ -8420,7 +8431,8 @@ video {
     .col-fixed-300 .widget {
         text-align: left;
     }
-     .blogs .ad-widget {
+    .forums .ad-widget,
+    .blogs .ad-widget {
         padding-top: 25px;
     }
     .flexy {
@@ -8474,11 +8486,13 @@ h5+h5{
     text-align: right;
 }
 @media (max-width: 659px) {
+    .forums .col-fixed-300,
     .blogs .col-fixed-300,
     .post .col-fixed-300 {
         float: none;
         text-align: center;
     }
+    .forums .col-fixed-300 .col-md-12.col.sm-6,
     .blogs .col-fixed-300 .col-md-12.col-sm-6,
     .post .col-fixed-300 .col-md-12.col-sm-6 {
         float: none;
@@ -8499,6 +8513,7 @@ h5+h5{
     }
 }
 @media (min-width: 992px) {
+    .forums .col-fixed-300 .col-md-12,
     .blogs .col-fixed-300 .col-md-12,
     .post .col-fixed-300 .col-md-12 {
         padding-left: 0;
@@ -8758,9 +8773,9 @@ h4 span {
     }
    
     .group {
-        margin-left: -15px;
-        margin-right: -15px;
-        width: calc(100% + 30px);
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
     }
     .group-desc {
         width: 100%;
