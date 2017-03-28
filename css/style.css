@@ -3543,9 +3543,7 @@ label > h4 + input[type=radio] {
     width: 100% !important;
     /*margin-bottom: 10px;*/
 }
-/*.panel-body .chosen-container {
-    margin-bottom: 0;
-}*/
+
 .sorting [class*=col-]:first-child .chosen-container{
     min-width: 220px;
 }
