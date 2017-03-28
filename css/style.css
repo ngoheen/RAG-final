@@ -2884,6 +2884,10 @@ p.lead {
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
+.check-progress,
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
 input.submitButton,
 .btn {
     margin-bottom: 20px;

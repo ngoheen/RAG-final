@@ -95,7 +95,7 @@
             //this.tooltipstered = $('.tooltipstered');
             this.header = $('.header');
             this.search = this.header.find('.search');
-            this.aMenu = $('.a-menu');
+            this.aMenu = $('.check-progress');
             this.sidemenu = $('.sidemenu');
             this.menutable = $('.menutable');
             this.shoptable = $('.menushop');
@@ -270,7 +270,7 @@
                 e.preventDefault();
                 var $this = $(this);
 
-                $this.parents('.box-inline').fadeOut(instance.options.speedAnimation);
+                $this.parents('.box-inline').slideToggle(instance.options.speedAnimation);
             });
 
             instance.estimateshipping.find('[data-toggle]').on('click', function(e){
