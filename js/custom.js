@@ -95,7 +95,7 @@
             //this.tooltipstered = $('.tooltipstered');
             this.header = $('.header');
             this.search = this.header.find('.search');
-            this.aMenu = $('.a-menu');
+            this.aMenu = $('.check-progress');
             this.sidemenu = $('.sidemenu');
             this.menutable = $('.menutable');
             this.shoptable = $('.menushop');
@@ -143,7 +143,7 @@
             this.dataToggle = $('[data-toggle]');
             this.expandLink = $('.expand-link');
             this.collapseLink = $('.collapse-link');
-            this.accToggle = $('.accordeon-toggle');
+            this.accToggle = $('.accordion-toggle');
             this.navCategory = $('.nav-category');
             this.filterLink = $('a.filter');
             this.mixList = $('.mix-list');
@@ -270,7 +270,7 @@
                 e.preventDefault();
                 var $this = $(this);
 
-                $this.parents('.box-inline').fadeOut(instance.options.speedAnimation);
+                $this.parents('.box-inline').slideToggle(instance.options.speedAnimation);
             });
 
             instance.estimateshipping.find('[data-toggle]').on('click', function(e){
