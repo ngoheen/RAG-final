@@ -18,6 +18,7 @@
 |               |[blog post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/blog-post.html)                    |
 |__User__       |[create account](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-create-account.html)     |
 |__The Ride__   |[The Ride](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/the-ride.html)     |
+|__Register__   |[Registration](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/registration.html)|
 <br>
 
 ### Scripts used:
