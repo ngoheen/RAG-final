@@ -539,7 +539,7 @@ body.container .footer .container:last-child{
 .no-margin{
     margin: 0 !important;
 }
-.s {
+.margin-bottom-10 {
     margin-bottom: 10px !important;
 }
 .margin-bottom-20 {
@@ -973,7 +973,7 @@ blockquote.lead {
 }
 .reddish,
 .color {
-    color: #e7543d;
+    color: #e7543d !important;
 }
 
 .inherit{
@@ -1662,7 +1662,9 @@ a.grey:hover{
     border: 1px solid #B3B3B3 !important;
 }
 
-
+li.no-dot {
+    list-style-type: none !important;
+}
 /* [ 2.6. TABS ] */
 
 .tabs {
@@ -5812,6 +5814,7 @@ i.fa-check-square {
     z-index: 30;
     background: rgba(0,0,0,0.25);
     width: 100%;
+    height: 135px;
 }
 .loginform .checkbox {
     margin-bottom: 30px;
@@ -6546,7 +6549,10 @@ ul.footer-list li p {
     .mainmenu .navbar-nav > li > a{
         padding: 0 5px;
     }
-
+    .table-header-middle {
+        padding-left: 0;
+        text-align: right;
+    }
 }
 
 @media only screen and (max-width: 776px) {
@@ -7785,6 +7791,7 @@ span.more-social:hover {
      .bg.bg-section {
         max-width: none;
     }
+    .forums .ad-widget,
     .blogs .ad-widget {
         padding-top: 0;
     }
@@ -8331,6 +8338,7 @@ a.expand-link {
     margin-right: auto;
     text-align: center;
 }
+.forums .col-fixed-300,
 .blogs .col-fixed-300,
 .post .col-fixed-300 {
     float: left;
@@ -8339,6 +8347,7 @@ a.expand-link {
     margin-right: 0;
     width: 300px;
 }
+.forums .col-fixed-300 .widget,
 .blogs .col-fixed-300 .widget,
 .post .col-fixed-300 .widget {
     clear: both;
@@ -8346,6 +8355,7 @@ a.expand-link {
     width: 100%;
     margin-bottom: 30px;
 }
+.forums .ad-widget,
 .blogs .ad-widget,
 .post .ad-widget {
     margin: auto auto 30px;
@@ -8356,6 +8366,7 @@ a.expand-link {
 .post .ad-widget {
     padding-top: 5px;
 }
+.forums img.ad,
 .blogs img.ad,
 .post img.ad {
     float: none;
@@ -8386,27 +8397,36 @@ video {
 
 /* tablet breakpoint for right column in post needs to be between these numbers */
 @media (max-width: 767px) and (min-width:660px) {
+    .forums .col-fixed-300 .col-sm-6,
     .blogs .col-fixed-300 .col-sm-6,
     .post .col-fixed-300 .col-sm-6 {
         width: 50%;
     }
+    .forums .ad-img,
     .blogs .ad-img,
     .post .ad-img {
         background: #fff;
     }
 }
 @media (max-width: 991px) {
+    .forums .col-fixed-300,
     .blogs .col-fixed-300,
     .post .col-fixed-300 {
         float: left;
         margin-left: 0;
         width: 100%;
     } 
+
     .blogs .col-fixed-300 .widget img,
     .post .col-fixed-300 .widget img {
         width: 100%;
         height: auto;
     } 
+    .forums .col-fixed-300 .widget img.user-img {
+        width: 60px;
+        height: 60px;
+    }
+    .forums .col-fixed-300 .ad-img img,
     .blogs .col-fixed-300 .ad-img img,
     .post .col-fixed-300 .ad-img img {
         max-width: 300px;
@@ -8420,7 +8440,8 @@ video {
     .col-fixed-300 .widget {
         text-align: left;
     }
-     .blogs .ad-widget {
+    .forums .ad-widget,
+    .blogs .ad-widget {
         padding-top: 25px;
     }
     .flexy {
@@ -8474,11 +8495,13 @@ h5+h5{
     text-align: right;
 }
 @media (max-width: 659px) {
+    .forums .col-fixed-300,
     .blogs .col-fixed-300,
     .post .col-fixed-300 {
         float: none;
         text-align: center;
     }
+    .forums .col-fixed-300 .col-md-12.col.sm-6,
     .blogs .col-fixed-300 .col-md-12.col-sm-6,
     .post .col-fixed-300 .col-md-12.col-sm-6 {
         float: none;
@@ -8499,6 +8522,7 @@ h5+h5{
     }
 }
 @media (min-width: 992px) {
+    .forums .col-fixed-300 .col-md-12,
     .blogs .col-fixed-300 .col-md-12,
     .post .col-fixed-300 .col-md-12 {
         padding-left: 0;
@@ -8603,18 +8627,36 @@ ul.search.pagination li {
 }
 ul.search.pagination li a {
     background: #e8e8e8;
+    height: 43px;
     vertical-align: bottom;
- width: 43px;
-    height: 43px; 
+    width: 43px;
 }
+
 .content.registration [class*=col] ul.register {
     margin-left: 20px;
+}
+.content ul.plain li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.content ul.plain.inline li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #666;
+}
+.content ul.plain.inline li:last-child {
+    border-right: none;
+}
+.content ul.plain.inline li:first-child {
+    padding-left: 0;
 }
 .content.registration [class*=col] ul.register li {
     padding-left: 0;
     margin-left: 20px;
     list-style-type: disc;
 }
+.content ul.plain li:before,
 .content.registration [class*=col] ul.register li:before {
     top: 0;
     left: 0;
@@ -8623,6 +8665,7 @@ ul.search.pagination li a {
     content: none;
     display: none;
 }
+
 .left-wrap {
     width: calc(100% - 140px);
     float: left;
@@ -8736,6 +8779,66 @@ h4 span {
     float: right;
     text-align: right;
 }
+.smaller,
+.forums p {
+    font-size: 15px;
+    line-height: 20px;
+}
+.forums .row .row {
+    margin-top: 0;
+}
+.badge {
+    padding: 3px 7px 4px;
+    display: inline-block;
+}
+.forums h5 {
+    line-height: 24px;
+}
+div[class$="something"] {
+    background: blue;
+}
+.table-header {
+    padding-left:20px;
+}
+.table-header-last {
+    padding-left:10px
+}
+.displaying {
+    padding-right: 0;
+}
+.user-img {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+.widget ul.topics {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.widget ul.topics li {
+    list-style: disc;
+    font-size: 15px;
+    line-height: 20px;
+}
+.widget .lab-tabs {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.widget .lab-tabs > li {
+    display: inline-block;
+    padding: 15px 0 0;
+}
+.widget .lab-tabs > li > a > span {
+    padding: 0;
+}
+.widget .lab-tabs > li > a {
+    padding: 0 15px;
+    border-right: 1px solid #ddd;
+}
+.widget .lab-tabs > li.active a {
+    color:  #e96148;
+}
 @media (max-width:414px) {
     .content.registration .loginform .btn {
         width: 100%;
@@ -8758,9 +8861,9 @@ h4 span {
     }
    
     .group {
-        margin-left: -15px;
-        margin-right: -15px;
-        width: calc(100% + 30px);
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
     }
     .group-desc {
         width: 100%;
@@ -8803,5 +8906,26 @@ h4 span {
     }
     .total-pages {
         padding-top: 6px;
+    }
+
+    .forums .ad-widget {
+        width: calc( 100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+  .text-center{
+        text-align: left;
+        }
+ 
+    .table-header {
+        padding-left:0;
+    }
+     .table-header-last {
+        padding-left:15px
+    }
+     .forums .ad-widget {
+        width: calc( 100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }
