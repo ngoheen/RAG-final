@@ -95,7 +95,7 @@
             //this.tooltipstered = $('.tooltipstered');
             this.header = $('.header');
             this.search = this.header.find('.search');
-            this.aMenu = $('.a-menu');
+            this.aMenu = $('.check-progress');
             this.sidemenu = $('.sidemenu');
             this.menutable = $('.menutable');
             this.shoptable = $('.menushop');
@@ -195,6 +195,7 @@
                         wid = self.data('width');
 
                     self.width(wid).chosen({width: wid});
+                    console.log('changed width');
 
                 });
             }
