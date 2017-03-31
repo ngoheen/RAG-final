@@ -7127,7 +7127,10 @@ ul.footer-list li p {
     #splashpage header{
         padding: 60px 0 50px;
     }
-
+  /* .table-header-middle {
+        text-align: left !important;
+    }
+*/
 }
 
 
@@ -8799,6 +8802,9 @@ div[class$="something"] {
 }
 .table-header {
     padding-left:20px;
+}
+.table-header-middle {
+    text-align: center;
 }
 .table-header-last {
     padding-left:10px
