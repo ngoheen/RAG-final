@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tab-Accordion Combo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="col-md-3">
+        <div class="accordion-content bar">
+            <h3 class="hand" data-parent="#faq"  data-target="#faq-3" data-toggle="collapse">3. Ride Options</h3>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="panel-body collapse" id="faq-3">
+            Content
+        </div>
+    </div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/lg.min.js"></script>
+<script src="js/lg-share-3.js"></script>
+<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+<script>
+    $('.lg-video').on('click', function() {
+        $(this).find('video').play();
+    });
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/lightbox-script.js"></script>
+</body>
+</html>

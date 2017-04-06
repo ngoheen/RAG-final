@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tab-Accordion Combo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <style>
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+        background-color: transparent;
+        color: #fff;
+        font-weight: 400;
+}
+.nav-pills > li > a {
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+.nav-pills > li {
+    background: #9b9b9b;
+    width: 100%;
+}
+.nav-pills > li.active, 
+.nav-pills > li.active:hover, 
+.nav-pills > li.active:focus {
+    background: #333;
+}
+.nav-pills > li i {
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+<!-- Tabs -->
+<div class="col-md-3">
+    <!--<ul id="userprofile" class="nav nav-pills nav-stacked">
+  <li class="active">
+    <a id="1" href="#">Tab 1</a>
+  </li>
+  <li><a id="2" href="#">Tab 2</a></li>
+  <li><a id="3" href="#">Tab 3</a></li>
+</ul>-->
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">First</a>
+        </h4>
+    </div>
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Second</a>
+        </h4>
+    </div>
+</div>
+
+<div class="col-md-9">
+    <!-- Accordions -->
+    <div class="tabContent" id="tabContent1" style="background:green">
+        <div class="panel-group" id="accordion1">
+            <div class="panel panel-default">
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>First Section</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabContent" id="tabContent2" style="background:blue">
+        <div class="panel-group" id="accordion2">
+            <div class="panel panel-default">
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Second Section</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="w-100"></div>
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  
+<script>
+$('.nav a').click(function (e) {
+    $(this).tab('show');
+  
+  var tabContent = '#tabContent' + this.id; 
+  
+  $('#tabContent1').hide();
+  $('#tabContent2').hide();
+  $('#tabContent3').hide();
+  $(tabContent).show();
+})
+</script>
+</body>
+</html>

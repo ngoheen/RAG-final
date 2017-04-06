@@ -8935,3 +8935,8 @@ div[class$="something"] {
         margin-right: -20px;
     }
 }
+.logo.pull-left img.fallback-logo {
+    width: 163px;
+    height: auto;
+    margin-top: 0;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <style>
+    .nav-pills > li.active > a, 
+    .nav-pills > li.active > a:hover, 
+    .nav-pills > li.active > a:focus {
+        background-color: transparent;
+        color: #fff;
+        font-weight: 400;
+    }
+.nav-pills > li > a {
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+.nav-pills > li {
+    background: #9b9b9b;
+    width: 100%;
+}
+.nav-pills > li.active, 
+.nav-pills > li.active:hover, 
+.nav-pills > li.active:focus {
+    background: #333;
+}
+.nav-pills > li i {
+    margin-right: 10px;
+}
+i.walker {
+    background-image: url(images/ic_directions_walk_2x.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+.tab-content.highlight {
+    width: 100%;
+    padding: 30px;
+}
+.tabs {
+    margin-top: 0;
+}
+.nav-tabs > li > a {
+    border-radius: 2px 2px 0 0;
+    line-height: 45px;
+    font-size: 16px;
+    color: #000;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px 0 0;
+    padding: 0;
+}
+.nav-stacked > li + li {
+    margin-top: -6px;
+}
+.chosen-container {
+    background: white;
+}
+.tab-pane .col-md-1,
+.tab-pane .col-md-10 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.tab-pane .col-md-11 {
+    padding-right: 0;
+}
+p.message {
+    margin-bottom: 10px;
+}
+input + .btn {
+    margin-top: 10px;
+}
+.nav.nav-tabs li.active a {
+    font-weight: 400;
+}
+.chosen-container {
+    min-width: 0 !important;
+}
+#userprofile .chosen-container-single .chosen-single {
+    background: #9b9b9b;
+    border-left-color: #fff;
+    border-left-width: 1px;
+    border-radius: 0;
+    color: #fff;
+}
+#userprofile li.active .chosen-container-single .chosen-single {
+    background: #333;
+}
+#userprofile .nav li a {
+    display:inline-block;float: left;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="container">	
+            <div class="col-md-3">
+                <img src="pics/big-fake-user.jpg" style="width:100%;height:auto;">
+                <h3 class="normal margin-top-20">Cory Walker</h3>
+                <ul id="userprofile" class="nav nav-pills nav-stacked pull-left">
+			        <li class="active">
+                        <a href="#1b" data-toggle="tab" style="display:inline-block;float: left;"><i class="walker"></i> Activity</a>
+                        <div class="pull-right" style="display: inline-block;"><select><option value="first">Personal</option></select></div>
+			        </li>
+			        <li><a href="#2b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications</a><div class="pull-right" style="display: inline-block;"><select><option value="first">first</option></select></div></li>
+                    <li><a href="#3b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
+  		            <li><a href="#4b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
+  		            <li><a href="#5b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
+  		            <li><a href="#6b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
+  		            <li><a href="#7b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
+  		            <li><a href="#8b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
+  		            <li><a href="#9b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
+		        </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content main-one clearfix pull-left">
+			    <div class="tab-pane active" id="1b">
+			        <div class="tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#personal" data-toggle="tab"><span>Personal</span></a></li>
+                            <li><a href="#mentions" data-toggle="tab"><span>Mentions</span></a></li>
+                            <li><a href="#favorites" data-toggle="tab"><span>Favorites</span></a></li>
+                            <li><a href="#friends" data-toggle="tab"><span>Friends</span></a></li>
+                            <li><a href="#groups" data-toggle="tab"><span>Groups</span></a></li>
+                        </ul>
+        
+                        <div class="tab-content highlight">
+                            <div class="tab-pane fade in active" id="personal">
+                                <div class="row">
+                                    <div class="pull-right">
+                                        <select><option value="Everything">Everything</option></select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img src="pics/fake-user.jpg" class="pull-left padding-right-15">
+                                    </div>
+                                    <div class="col-md-11">
+                                        <p class="message">What's new, Cory?</p>
+                                        <input type="text" placeholder="Post a status update">
+                                        <a class="btn btn-sm btn-size btn-primary pull-right" href="">Post Update</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+				<div class="tab-pane" id="2b">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+				</div>
+                <div class="tab-pane" id="3b">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+                <div class="tab-pane" id="4b">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+				<div class="tab-pane" id="5b">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+			</div>
+		</div>
+	    </div>
+    </div>
+</div>
+<!-- //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css -->
+<!-- Bootstrap core JavaScript
+     ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/lg.min.js"></script>
+<script src="js/lg-share-3.js"></script>
+<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+<script>
+    $('.lg-video').on('click', function() {
+        $(this).find('video').play();
+    });
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/lightbox-script.js"></script>
+</body>
+</html>
