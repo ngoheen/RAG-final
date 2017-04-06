@@ -3629,7 +3629,7 @@ label > h4 + input[type=radio] {
 }
 
 .chosen-container-single .chosen-single div strong {
-    background:url(../images/iconic.png) -312px -61px no-repeat;
+    background:url(../images/iconic.fw.png) -312px -61px no-repeat;
     display:inline-block;
     vertical-align: middle;
     width:9px;

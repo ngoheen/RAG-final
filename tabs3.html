@@ -10,8 +10,9 @@
     .nav-pills > li.active > a, 
     .nav-pills > li.active > a:hover, 
     .nav-pills > li.active > a:focus {
-        color: #fff;
         background-color: transparent;
+        color: #fff;
+        font-weight: 400;
     }
 .nav-pills > li > a {
     border-radius: 0;
@@ -22,10 +23,10 @@
     background: #9b9b9b;
     width: 100%;
 }
- .nav-pills > li.active, 
-    .nav-pills > li.active:hover, 
-    .nav-pills > li.active:focus {
-        background: #333;
+.nav-pills > li.active, 
+.nav-pills > li.active:hover, 
+.nav-pills > li.active:focus {
+    background: #333;
 }
 .nav-pills > li i {
     margin-right: 10px;
@@ -54,7 +55,10 @@ i.walker {
     border-width: 2px 0 0;
     padding: 0;
 }
-
+/*.nav-stacked > li + li {
+    margin-top: -6px;
+}
+*/
 .chosen-container {
     background: white;
 }
@@ -75,32 +79,47 @@ input + .btn {
 .nav.nav-tabs li.active a {
     font-weight: 400;
 }
+.chosen-container {
+    min-width: 0 !important;
+}
+#userprofile .chosen-container-single .chosen-single {
+    background: #9b9b9b;
+    border-left-color: #fff;
+    border-left-width: 1px;
+    border-radius: 0;
+    color: #fff;
+}
+#userprofile li.active .chosen-container-single .chosen-single {
+    background: #333;
+}
+#userprofile .nav li a {
+    display:inline-block;float: left;
+}
 </style>
 </head>
 <body>
 <div class="wrapper">
     <div class="content">
-        <div class="container"><h2>Example 3</h2></div>
-        <div id="exTab3" class="container">	
+        <div class="container">	
             <div class="col-md-3">
-            <img src="pics/big-fake-user.jpg" style="width:100%;height:auto;">
-            <h3 class="normal margin-top-20">Cory Walker</h3>
-            <ul class="nav nav-pills nav-stacked pull-left">
-			    <li class="active">
-                    <a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a>
-			    </li>
-			    <li><a href="#2b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications</a></li>
-                <li><a href="#3b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
-  		        <li><a href="#4b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
-  		        <li><a href="#5b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
-  		        <li><a href="#6b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
-  		        <li><a href="#7b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
-  		        <li><a href="#8b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
-  		        <li><a href="#9b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
-		    </ul>
-        </div>
+                <img src="pics/big-fake-user.jpg" style="max-width:100%;height:auto;">
+                <h3 class="normal margin-top-20">Cory Walker</h3>
+                <ul id="userprofile" class="nav nav-pills nav-stacked pull-left">
+			        <li class="active">
+                        <a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a>
+			        </li>
+			        <li><a href="#2b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications</a></li>
+                    <li><a href="#3b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
+  		            <li><a href="#4b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
+  		            <li><a href="#5b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
+  		            <li><a href="#6b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
+  		            <li><a href="#7b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
+  		            <li><a href="#8b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
+  		            <li><a href="#9b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
+		        </ul>
+            </div>
             <div class="col-md-9">
-        <div class="tab-content main-one clearfix pull-left">
+                <div class="tab-content main-one clearfix pull-left">
 			    <div class="tab-pane active" id="1b">
 			        <div class="tabs">
                         <ul class="nav nav-tabs">
