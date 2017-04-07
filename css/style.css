@@ -1,3 +1,15 @@
+/*
+Theme Name: Ragbrai
+Theme URI: https://github.com/GannettDigital/ldsn-ragbrai
+Author: LDSN
+Author URI: https://confluence.gannett.com/display/LDSN/Local+Digital+Solutions+Network
+Description: Custom theme for RAGBRAI (The Register's Annual Great Bike Ride Across Iowa)
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ragbrai
+*/
+
 /*------------------------------------------------------------------
 [ Master Stylesheet ]
 
@@ -973,7 +985,7 @@ blockquote.lead {
 }
 .reddish,
 .color {
-    color: #e7543d !important;
+    color: #e7543d;
 }
 
 .inherit{
@@ -8416,7 +8428,6 @@ video {
         margin-left: 0;
         width: 100%;
     } 
-
     .blogs .col-fixed-300 .widget img,
     .post .col-fixed-300 .widget img {
         width: 100%;
@@ -8631,7 +8642,6 @@ ul.search.pagination li a {
     vertical-align: bottom;
     width: 43px;
 }
-
 .content.registration [class*=col] ul.register {
     margin-left: 20px;
 }
@@ -8665,7 +8675,6 @@ ul.search.pagination li a {
     content: none;
     display: none;
 }
-
 .left-wrap {
     width: calc(100% - 140px);
     float: left;
@@ -8929,3 +8938,5 @@ div[class$="something"] {
         margin-right: -20px;
     }
 }
+
+/*USER PROFILE ACCORDION */
