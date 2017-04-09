@@ -22,7 +22,7 @@
             margin: 0 auto;
         }
         ul.resp-tabs-list.hor_1 {
-            margin-right: 35px;
+            margin-right: 25px;
         }
         i.walker {
             background-image: url(images/ic_directions_walk_2x.png);
@@ -30,6 +30,35 @@
             float: left;
             height: 21px;
             width: 21px;
+    }
+    .resp-tab-content {
+        background: green;
+    }
+    .menu {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        table-layout: fixed;
+        background: red;
+        max-width: none;
+    }
+    table.menu tbody tr:last-child td {
+        padding-bottom: 0;
+    }
+     table.menu tbody tr:first-child td {
+        padding-top: 0;
+    }
+    .floop {
+        background: #ddd;
+        border-right: 1px solid #fff;
+        float: left;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;width:20%;
+    }
+    .floop:last-child {
+        border-right: none;
     }
         @media only screen and (max-width: 768px) {
             #container {
@@ -60,8 +89,17 @@
 		        </ul>
 
                 <div class="resp-tabs-container hor_1">
-                    <div>
-                        Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.
+                    <div style="background:blue;overflow:hidden;">
+                        <table class="menu">
+                            <tr>
+                                <td class="floop">Personal</td>
+                                <td class="floop">Mentions</td>
+                                <td class="floop">Favorites</td>
+                                <td class="floop">Friends</td>
+                                <td class="floop">Group</td>
+                            </tr>
+                        </table>
+                        <p>Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
                         <br>
                         <br>
                         <p>Tab 1 Container</p>
