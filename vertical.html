@@ -31,134 +31,489 @@
             height: 21px;
             width: 21px;
     }
-    .resp-tab-content {
-        background: green;
+ .resp-tab-content {
+        background: #f8f8f8;
     }
-    .menu {
+    .panel-menu {
         width: calc(100% + 30px);
         margin-left: -15px;
         margin-right: -15px;
         margin-top: -15px;
-        table-layout: fixed;
-        background: red;
+        margin-bottom: 0;
         max-width: none;
+        display: table;
+        table-layout: fixed;
     }
-    table.menu tbody tr:last-child td {
-        padding-bottom: 0;
-    }
-     table.menu tbody tr:first-child td {
-        padding-top: 0;
-    }
-    .floop {
-        background: #ddd;
-        border-right: 1px solid #fff;
-        float: left;
+  
+    .panel-menu li {
+        background: #fff;
+        display: table-cell;
+        float: none;
         font-size: 14px;
-        padding: 10px;
-        text-align: center;width:20%;
+        padding: 10px 0;
+        padding-left: 0 !important;
+        text-align: center;
+        width: calc(100% / 5);
     }
-    .floop:last-child {
-        border-right: none;
+    .panel-menu li.active {
+        background: #f8f8f8;
+        border-top: 2px solid #e7543d;
+
     }
+    .panel-menu li:first-child span {
+        border-left: none;
+    }
+   
+.panel-menu > li > a > span {
+    line-height: 28px;
+    border-left: 1px solid #D9D9D9;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    
+}
+.profile-content {
+width: calc(100% - 80px);margin-left:20px;float:left
+}
+.panel-menu > li.active + li > a > span {
+    border: none;
+}
+.panel-menu > li.active > a > span {
+    border-left-color: transparent;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    text-align: center;
+}
+    .resp-tab-content .chosen-container {
+        background: #fff;
+        height: auto;
+        min-width: 0;
+        width: auto !important;
+    }
+    .resp-vtabs .resp-tab-content {
+        overflow: hidden;
+    }
+    .resp-tab-content .chosen-container-single .chosen-single div strong {
+        background-image: url(images/iconic.png);
+        font-size: 14px;
+        min-width: 0;
+        }
+       .resp-tab-content  .chosen-container-single .chosen-single {
+            font-size: 14px;
+        }
         @media only screen and (max-width: 768px) {
             #container {
                 width: 90%;
                 margin: 0 auto;
             }
         }
+.resp-tabs-list a {
+       display:inline-block;float: left;
+        }
+        .bp-uploader-window {
+            border: 1px dashed #666;
+            padding: 30px;
+            text-align: center;
+        }
+        .badge {
+            background-color:#e7543d;
+            }
     </style>
 </head>
 <body>
-   <div class="wrapper">
-        <div class="content">
+<div class="wrapper">
+        
+    <!-- HEADER -->
+    <header class="header sides">
+        <div class="container htop">
+            <div class="col-md-8 col-sm-7">
+                <div class="logo pull-left">
+                    <a href="index.html"><img src="images/header-logo@1x.png"></a>
+                </div>
+                <div class="slogan visible-md">A Des Moines Register tradition since 1973</div>
+            </div>
+            <div class="col-md-4 col-sm-5 text-right">
+                <div class="hcart pull-left">
+                    <a href="cart.html"><i class="custom-icon custom-icon-ico-cart"></i> 3 items - $164,50</a>
+                </div>
+                <a href="" data-popup="login" class="a-login btn btn-default pull-right">Login</a>
+            </div>
+        </div>
+        <div class="hbottom left-pos border-top">
             <div class="container">
-                <!--Vertical Tab-->
-                <div id="userprofile">
-                    <ul class="resp-tabs-list hor_1">
-			        <li>
-                        <a href="#1b" data-toggle="tab" style="display:inline-block;float: left;"><i class="walker"></i> Activity</a>
-			        </li>
-			        <li><a href="#2b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications</a></li>
-                    <li><a href="#3b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
-  		            <li><a href="#4b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
-  		            <li><a href="#5b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
-  		            <li><a href="#6b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
-  		            <li><a href="#7b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
-  		            <li><a href="#8b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
-  		            <li><a href="#9b" data-toggle="tab" style="display:inline-block;float: left;"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
-		        </ul>
+                <div class="col-md-1 col-sm-1 iconmenu pull-right text-right padding-right-0">
+                    <a href="" class="a-search"><i class="custom-icon custom-icon-ico-search"></i></a>
+                </div>
+               
+                <div class="col-sm-11 mainmenu padding-left-0">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <nav>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Home</a></li>
+                               
+                                <li class="dropdown dropdown-menutable">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">The Ride</a>
+                                    <div class="menutable dropdown-menu">
+                                        <div class="divtable">
+                                            <div class="col-md-2">
+                                                <h4>General</h4>
+                                                <ul>
+                                                   <li><a href="about_1.html">General Information</a></li>
+                                                    <li><a href="about_2.html">FAQs</a></li>
+                                                    <li><a href="about_3.html">RAGBRAI History</a></li>
+                                                    <li><a href="about_4.html">RAGBRAI Expo</a></li>
+                                                    <li><a href="about_5.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h4>Route</h4>
+                                                <ul>
+                                                    <li><a href="">2016 Host Communities</a></li>
+                                                    <li><a href="">2016 Route Maps</a></li>
+                                                    <li><a href="">2016 Overnight Town Map</a></li>
+                                                    <li><a href="">2015 Host Communities</a></li>
+                                                    <li><a href="">2015 Route Maps</a></li>
+                                                    <li><a href="">2015 Overnight Town Map</a></li>
+                                                    <li><a href="">2015 Interactive Route Map</a></li>
+                                                    <li><a href="">Past Overnight Towns Grid</a></li>
+                                                    <li><a href="">GeoBike Profiles</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h4>Services</h4>
+                                                <ul>
+                                                     <li><a href="gallery_1.html">Charter Services</a></li>
+                                                    <li><a href="gallery_2.html">Bike and Luggage Shipping</a></li>
+                                                    <li><a href="gallery_3.html">Airport Shuttles</a></li>
+                                                    <li><a href="gallery_4.html">Bike Shops</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <h4>Training</h4>
+                                                <ul>
+                                                    <li><a href="services_1.html">Training Blog</a></li>
+                                                    <li><a href="services_2.html">Training</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <h4>Safety</h4>
+                                                <ul>
+                                                    <li><a href="team_1.html">RIDE RIGHT Brochures</a></li>
+                                                    <li><a href="team_2.html">Iowa State Patrol</a></li>
+                                                    <li><a href="team_2.html">Rider Safety</a></li>
+                                                    <li><a href="team_2.html">Driver Safety</a></li>
+                                                    <li><a href="team_2.html">Road Signs</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li><a href="">Register</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Photos</a></li>
+                                <li><a  href="#">Videos</a></li>
+                                <li><a href="#">Podcasts</a></li>
+                                <li><a href="#">Events/Expo</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="container">
+                    <form action="/">
+                        <div class="col-sm-6 col-sm-offset-3 col-xs-10">
+                            <input type="text" autofocus placeholder="Start typing...">
+                        </div>
+                        <div class="col-md-1 col-xs-2">
+                            <a href="" class="sclose"><i class="custom-icon custom-icon-lightclose"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
 
-                <div class="resp-tabs-container hor_1">
-                    <div style="background:blue;overflow:hidden;">
-                        <table class="menu">
-                            <tr>
-                                <td class="floop">Personal</td>
-                                <td class="floop">Mentions</td>
-                                <td class="floop">Favorites</td>
-                                <td class="floop">Friends</td>
-                                <td class="floop">Group</td>
-                            </tr>
-                        </table>
-                        <p>Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                        <br>
-                        <br>
-                        <p>Tab 1 Container</p>
-                    </div>
-                    <div>
-                        Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.
-                        <br>
-                        <br>
-                        <p>Tab 2 Container</p>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                        <br>
-                        <br>
-                        <p>Tab 3 Container</p>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                        <br>
-                        <br>
-                        <p>Tab 4 Container</p>
-                    </div>
-                    <div>
+    <div class="border-top"></div>
+    
+    <div class="overlay home small-size">
+        <div class="bg bg-section"></div>
+        <div class="container over">
+            <div class="row text-center">
+                <h1>My RAGBRAI</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+
+            <!--Vertical Tab-->
+            <div id="userprofile">
+                <ul class="resp-tabs-list hor_1">
+                    <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
+                    <li><a href="#2b" data-toggle="tab"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i> Profile</a></li>
+			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge">4</span></a></li>
+                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
+  		              <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
+  		              <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
+  		              <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
+  		              <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
+  		              <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
+  		              <li><a href="#10b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
+                    </ul>
+
+                    <div class="resp-tabs-container hor_1">
+                        <!-- Activity -->
+                        <div>
+                            <ul class="panel-menu">
+                                <li><a href="#p1" data-toggle="tab"><span>Personal</span></a></li>
+                                <li class="active"><a href="#p2" data-toggle="tab"><span>Mentions</span></a></li>
+                                <li><a href="#p3" data-toggle="tab"><span>Favorites</span></a></li>
+                                <li><a href="#p4" data-toggle="tab"><span>Friends</span></a></li>
+                                <li><a href="#p5" data-toggle="tab"><span>Groups</span></a></li>
+                            </ul>
+                        
+                            <div class="tab-content clear">
+                                <div class="tab-pane" id="p1">
+                                    <div class="content border-bottom padding-bottom-15" style="overflow:hidden;border-bottom:2px solid #eaeaea;">
+                                        <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
+                                            <span class="padding-right-10">Show:</span><select>
+                        <option value="Everything">Everything</option>
+                        <option value="Updates">Updates</option>
+                        <option value="new Groups">New Groups</option>
+                        <option value="Group Memberships">Group Memberships</option>
+                        <option value="Topics">Topics</option>
+                        <option value="Replies">Replies</option>
+                        </select>
+                                        </div>
+                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <div class="profile-content ">
+                                        <p style="font-size: 14px;">What's new Cory?</p>
+                                        <input type="text" placeholder="Post a status update">
+                                        <div class="pull-right margin-top-20">
+                                            <a class="btn btn-primary btn-size btn-sm" href="">Post Update</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <div class="profile-content ">
+                                            <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
+                                            <p class="padding-top-15">What a wimpy route! RAGBRAI has given in to the partygoers and drunks.</p>
+                                            <div class="pull-right margin-top-20">
+                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <div class="profile-content ">
+                                            <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
+                                            <p class="padding-top-15">Living in a wonderful, but polluted, city in China. I am grateful that there is finally a light at the end of my tunnel! While some will decry the length of the ride and its easiness, I am so looking forward to participating again and enjoying a week in the saddle with 15k friends new and old. 180 days to go! Ride on!</p>
+                                            <div class="pull-right margin-top-20">
+                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <div style="">
+                                            <p><a href="">Cory</a> became a registered member 2 days, 22hours ago.</p>
+                                            
+                                            <div class="pull-right margin-top-20">
+                                            <a class="btn btn-primary btn-size btn-sm" href="">Comment</a>
+                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane active" id="p2">
+                                    <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
+                                        <span class="padding-right-10">Show:</span> <select>
+                                    <option value="Everything">Everything</option>
+                        <option value="Updates">Updates</option>
+                        <option value="new Groups">New Groups</option>
+                        <option value="Group Memberships">Group Memberships</option>
+                        <option value="Topics">Topics</option>
+                        <option value="Replies">Replies</option>
+                        </select>
+                                        </div>
+                                    <div class="content clear padding-bottom-15" style="overflow:hidden;">
+                                        <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="p3">p3</div>
+                                <div class="tab-pane" id="p4">p4</div>
+                                <div class="tab-pane" id="p5">p5</div>
+                            </div>
+                        
+                        </div>
+                        
+                        <!-- Profile -->
+                        <div>
+                            <ul class="panel-menu">
+                                <li class="active"><a href="#r1" data-toggle="tab"><span>View</span></a></li>
+                                <li><a href="#r2" data-toggle="tab"><span>Edit</span></a></li>
+                                <li><a href="#r3" data-toggle="tab"><span>Change Profile Photo</span></a></li>
+                            </ul>
+                            <div class="tab-content clear">
+                                <div class="tab-pane active" id="r1">
+                                    <div class="content padding-bottom-15">
+                                        <table>
+                                    <tr>
+                                        <th colspan="2">Base</th>
+                                    </tr>
+                                    <tr>
+                                        <td>First Name</td>
+                                        <td>Nancy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Name</td>
+                                        <td>Goheen</td>
+                                    </tr>
+                                </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="r2">
+                                </div>
+                                <div class="tab-pane" id="r3">
+                                    
+                                    <div class="content padding-top-30 padding-bottom-30">
+                                        <h5>Upload</h5>
+                                        <div class="bp-uploader-window">
+                                        <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
+			                                <div id="drag-drop-area" style="position: relative;">
+				                                <div class="drag-drop-inside">
+					                                <p class="drag-drop-info">Drop your file here</p>
+					                                <p>or</p>
+					                                <p class="drag-drop-buttons">
+					                                    <input id="bp-browse-button" type="button" value="Select your File" class="btn btn-primary btn-size btn-sm" style="position: relative; z-index: 1;">
+					                                </p>
+				                                </div>
+			                                </div>
+		                                    <div id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 84px; left: 287px; width: 144px; height: 39px; overflow: hidden; z-index: 0;"><input id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept=""></div>
+		                                </div>
+	                                </div>
+	                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Notifications -->
+                        <div>
+                            <ul class="panel-menu">
+                                <li><a href="#q1" data-toggle="tab"><span>Read</span></a></li>
+                                <li class="active"><a href="#q2" data-toggle="tab"><span>Unread</span></a></li>
+                            </ul>
+                            <div class="tab-content clear">
+                                <div class="tab-pane active" id="q1">
+                                    <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
+                                        <span class="padding-right-10">Order By:</span>
+                                        <select>
+                                            <option value="Everything">Newest First</option>
+                                            <option value="Updates">Oldest First</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="q2">
+                                    <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
+                                        <span class="padding-right-10">Order By:</span>
+                                        <select>
+                                            <option value="Everything">Newest First</option>
+                                            <option value="Updates">Oldest First</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Messages -->
+                        <div>
+                            <ul class="panel-menu">
+                                <li class="active"><a href="#s1" data-toggle="tab"><span>Inbox</span></a></li>
+                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
+                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
+                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
+                            </ul>
+                            <div class="tab-content clear">
+                                <div class="tab-pane active" id="s1"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Friends -->
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 5 Container</p>
                     </div>
-                    <div>
+                        
+                        <!-- Groups -->
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 6 Container</p>
                     </div>
-                    <div>
+                        
+                        <!-- Forums -->
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 7 Container</p>
                     </div>
-                    <div>
+                        
+                        <!-- Send Invites -->
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 8 Container</p>
                     </div>
-                    <div>
+                        
+                         <!-- Settingss -->
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
+                        <br>
+                            <br>
+                            <p>Tab 8 Container</p>
+                        </div>
+                    
+                        <!-- Registration Status -->
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 9 Container</p>
                     </div>
+                    </div>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
 	<!--Plug-in Initialisation-->
 	<script type="text/javascript">
     $(document).ready(function() {
@@ -173,7 +528,7 @@
          
             tabidentify: 'hor_1', // The tab groups identifier
             activetab_bg: '#333', 
-             inactive_bg: '#9b9b9b'
+            inactive_bg: '#9b9b9b'
         });
     });
 </script>
