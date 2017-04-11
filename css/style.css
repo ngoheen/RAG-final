@@ -3564,8 +3564,8 @@ label > h4 + input[type=radio] {
     font-size: 17px;
     font-weight: 300;
     min-width: 130px;
-    width: 100% !important;
-    /*margin-bottom: 10px;*/
+   /* width: 100% !important;*/
+    /* margin-bottom: 10px;*/
 }
 
 .sorting [class*=col-]:first-child .chosen-container{
@@ -3744,7 +3744,7 @@ label > h4 + input[type=radio] {
     overflow:hidden;
     box-sizing:border-box;
     width:100%;
-    height:auto!important;
+    height:auto !important;
     background-color:#fff;
     cursor:text;
     margin:0 25px 0 0;
@@ -8765,10 +8765,11 @@ a.border-btn {
     margin-right: 8px;
     padding-top: 9px;
 }
-.chosen-container {
+/*.chosen-container {
     min-width: 130px;
     width: 100% !important;
 }
+*/
 h6.register {
     color: #333;
     line-height: 24px;

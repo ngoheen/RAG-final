@@ -8,19 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/lightgallery.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-  
+   <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
     <title>Easy Responsive Tabs to Accordion</title>
     <style type="text/css" rel="stylesheet">
-        body * {
-            box-sizing: border-box;
-        }
-        #container {
-            width: 1170px;
-            margin: 0 auto;
-        }
+       
         ul.resp-tabs-list.hor_1 {
             margin-right: 25px;
         }
@@ -73,8 +67,11 @@
     
 }
 .profile-content {
-width: calc(100% - 80px);margin-left:20px;float:left
+width: calc(100% - 80px);
+margin-left:20px;
+float:left;font-size: 14px;
 }
+
 .panel-menu > li.active + li > a > span {
     border: none;
 }
@@ -92,8 +89,16 @@ width: calc(100% - 80px);margin-left:20px;float:left
         min-width: 0;
         width: auto !important;
     }
-    .resp-vtabs .resp-tab-content {
+   /* .resp-vtabs .resp-tab-content {
         overflow: hidden;
+    }
+    */
+    select {
+        display: none;
+    }
+    .nice-select {
+        display: inline-block;
+        clear: none;
     }
     .resp-tab-content .chosen-container-single .chosen-single div strong {
         background-image: url(images/iconic.png);
@@ -120,6 +125,62 @@ width: calc(100% - 80px);margin-left:20px;float:left
         .badge {
             background-color:#e7543d;
             }
+            .resp-tabs-list.hor_1 i {
+                margin-right: 10px;
+            }
+           .clearer {clear: left; line-height: 0; height: 0;}
+.profile-post {
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.select-label {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.select-holder {
+    float: right;
+    margin: 20px 0;
+    padding-right: 0;
+    text-align:right;s
+}
+.profile-table th,
+.profile-table {
+    font-size: 15px;
+    background: #fff;
+}
+.profile-table th {
+    background: #ddd;
+}
+.profile-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table.profile-table tbody tr:first-child td {
+    padding-top: 10px;
+}
+table.profile-table tbody tr:last-child td {
+    padding-bottom: 10px;
+}
+table.profile-table th {
+    padding:10px 28px;
+}
+
+.table-responsive {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.profile-table.side-head tr td:first-child {
+    font-weight: 400;
+}
+.resp-tabs-list .badge {
+    float:right;
+}
     </style>
 </head>
 <body>
@@ -265,75 +326,82 @@ width: calc(100% - 80px);margin-left:20px;float:left
             <div id="userprofile">
                 <ul class="resp-tabs-list hor_1">
                     <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
-                    <li><a href="#2b" data-toggle="tab"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i> Profile</a></li>
-			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge">4</span></a></li>
-                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages</a></li>
-  		              <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends</a></li>
-  		              <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups</a></li>
-  		              <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
-  		              <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
-  		              <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
-  		              <li><a href="#10b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
-                    </ul>
+                    <li><a href="#2b" data-toggle="tab"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i>Profile</a></li>
+			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge">3</span></a></li>
+                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages <span class="badge">2</span></a></li>
+                    <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Friends <span class="badge">1</span></a></li>
+                    <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups<span class="badge">0</span></a></li>
+                    <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
+                    <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
+                    <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
+                    <li><a href="#10b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
+                </ul>
 
-                    <div class="resp-tabs-container hor_1">
-                        <!-- Activity -->
-                        <div>
-                            <ul class="panel-menu">
-                                <li><a href="#p1" data-toggle="tab"><span>Personal</span></a></li>
-                                <li class="active"><a href="#p2" data-toggle="tab"><span>Mentions</span></a></li>
-                                <li><a href="#p3" data-toggle="tab"><span>Favorites</span></a></li>
-                                <li><a href="#p4" data-toggle="tab"><span>Friends</span></a></li>
-                                <li><a href="#p5" data-toggle="tab"><span>Groups</span></a></li>
-                            </ul>
+                <div class="resp-tabs-container hor_1">
+                    <!-- Activity -->
+                    <div>
+                        <ul class="panel-menu">
+                            <li><a href="#p1" data-toggle="tab"><span>Personal</span></a></li>
+                            <li class="active"><a href="#p2" data-toggle="tab"><span>Mentions</span></a></li>
+                            <li><a href="#p3" data-toggle="tab"><span>Favorites</span></a></li>
+                            <li><a href="#p4" data-toggle="tab"><span>Friends</span></a></li>
+                            <li><a href="#p5" data-toggle="tab"><span>Groups</span></a></li>
+                        </ul>
                         
-                            <div class="tab-content clear">
-                                <div class="tab-pane" id="p1">
-                                    <div class="content border-bottom padding-bottom-15" style="overflow:hidden;border-bottom:2px solid #eaeaea;">
-                                        <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
-                                            <span class="padding-right-10">Show:</span><select>
-                        <option value="Everything">Everything</option>
-                        <option value="Updates">Updates</option>
-                        <option value="new Groups">New Groups</option>
-                        <option value="Group Memberships">Group Memberships</option>
-                        <option value="Topics">Topics</option>
-                        <option value="Replies">Replies</option>
-                        </select>
-                                        </div>
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
-                                        <div class="profile-content ">
-                                        <p style="font-size: 14px;">What's new Cory?</p>
-                                        <input type="text" placeholder="Post a status update">
-                                        <div class="pull-right margin-top-20">
-                                            <a class="btn btn-primary btn-size btn-sm" href="">Post Update</a>
-                                        </div>
+                        <div class="tab-content clear">
+                            <div class="tab-pane" id="p1">
+                                <div class="content border-bottom padding-bottom-15">
+                                    <div class="select-holder">
+                                        <span class="select-label">Show:</span>
+                                        <select class="right">
+                                                <option value="Everything">Everything</option>
+                                                <option value="Updates">Updates</option>
+                                                <option value="new Groups">New Groups</option>
+                                                <option value="Group Memberships">Group Memberships</option>
+                                                <option value="Topics">Topics</option>
+                                                <option value="Replies">Replies</option>
+                                            </select>
                                     </div>
-                                    </div>
-                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                      
+                                    <div class="profile-post">
                                         <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
-                                        <div class="profile-content ">
-                                            <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
-                                            <p class="padding-top-15">What a wimpy route! RAGBRAI has given in to the partygoers and drunks.</p>
+                                        <div class="profile-content">
+                                            <p style="font-size: 14px;">What's new Cory?</p>
+                                            <input type="text" placeholder="Post a status update">
                                             <div class="pull-right margin-top-20">
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                                <a class="btn btn-primary btn-size btn-sm" href="">Post Update</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                    <div class="clearer"></div>
+                                </div>
+                                <div class="content border-bottom padding-top-30 padding-bottom-15">
+                                    <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                    <div class="profile-content ">
+                                        <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
+                                        <p class="padding-top-15">What a wimpy route! RAGBRAI has given in to the partygoers and drunks.</p>
+                                        <div class="pull-right margin-top-20">
+                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            </div>
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div>
+                                <div class="content border-bottom padding-top-30 padding-bottom-15">
                                         <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
                                         <div class="profile-content ">
                                             <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
                                             <p class="padding-top-15">Living in a wonderful, but polluted, city in China. I am grateful that there is finally a light at the end of my tunnel! While some will decry the length of the ride and its easiness, I am so looking forward to participating again and enjoying a week in the saddle with 15k friends new and old. 180 days to go! Ride on!</p>
                                             <div class="pull-right margin-top-20">
                                                 <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                                <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
                                             </div>
                                         </div>
+                                        <div class="clearer"></div>
                                     </div>
-                                    <div class="content border-bottom padding-top-30 padding-bottom-15" style="overflow:hidden">
+                                <div class="content border-bottom padding-top-30 padding-bottom-15">
                                         <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
-                                        <div style="">
+                                        <div class="profile-content">
                                             <p><a href="">Cory</a> became a registered member 2 days, 22hours ago.</p>
                                             
                                             <div class="pull-right margin-top-20">
@@ -342,11 +410,15 @@ width: calc(100% - 80px);margin-left:20px;float:left
                                                  <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane active" id="p2">
-                                    <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
-                                        <span class="padding-right-10">Show:</span> <select>
+                                        
+                                    <div class="clearer"></div></div>
+                            </div>
+                            
+                            
+                            <div class="tab-pane active" id="p2">
+                                <div class="select-holder">
+                                    <span class="select-label">Show:</span> 
+                                    <select class="right">
                                     <option value="Everything">Everything</option>
                         <option value="Updates">Updates</option>
                         <option value="new Groups">New Groups</option>
@@ -354,29 +426,70 @@ width: calc(100% - 80px);margin-left:20px;float:left
                         <option value="Topics">Topics</option>
                         <option value="Replies">Replies</option>
                         </select>
-                                        </div>
-                                    <div class="content clear padding-bottom-15" style="overflow:hidden;">
-                                        <p>Sorry, there was no activity found. Please try a different filter.</p>
-                                    </div>
                                 </div>
-                                <div class="tab-pane" id="p3">p3</div>
-                                <div class="tab-pane" id="p4">p4</div>
-                                <div class="tab-pane" id="p5">p5</div>
+                                <div class="content clear padding-bottom-15">
+                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                </div>
                             </div>
-                        
+                            <div class="tab-pane" id="p3">
+                                <div class="select-holder">
+                                    <span class="select-label">Show:</span>
+                                    <select class="right">
+                                        <option value="Everything">Everything</option>
+                                        <option value="Updates">Updates</option>
+                                        <option value="new Groups">New Groups</option>
+                                        <option value="Group Memberships">Group Memberships</option>
+                                        <option value="Topics">Topics</option>
+                                        <option value="Replies">Replies</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="p4"> <div class="select-holder">
+                                    <span class="select-label">Show:</span>
+                                    <select class="right">
+                                        <option value="Everything">Everything</option>
+                                        <option value="Updates">Updates</option>
+                                        <option value="new Groups">New Groups</option>
+                                        <option value="Group Memberships">Group Memberships</option>
+                                        <option value="Topics">Topics</option>
+                                        <option value="Replies">Replies</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                </div></div>
+                            <div class="tab-pane" id="p5"> <div class="select-holder">
+                                    <span class="select-label">Show:</span>
+                                    <select class="right">
+                                        <option value="Everything">Everything</option>
+                                        <option value="Updates">Updates</option>
+                                        <option value="new Groups">New Groups</option>
+                                        <option value="Group Memberships">Group Memberships</option>
+                                        <option value="Topics">Topics</option>
+                                        <option value="Replies">Replies</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                </div></div>
                         </div>
                         
-                        <!-- Profile -->
-                        <div>
-                            <ul class="panel-menu">
-                                <li class="active"><a href="#r1" data-toggle="tab"><span>View</span></a></li>
-                                <li><a href="#r2" data-toggle="tab"><span>Edit</span></a></li>
-                                <li><a href="#r3" data-toggle="tab"><span>Change Profile Photo</span></a></li>
-                            </ul>
-                            <div class="tab-content clear">
-                                <div class="tab-pane active" id="r1">
-                                    <div class="content padding-bottom-15">
-                                        <table>
+                    </div>
+                        
+                    <!-- Profile -->
+                    <div>
+                        <ul class="panel-menu">
+                            <li class="active"><a href="#r1" data-toggle="tab"><span>View</span></a></li>
+                            <li><a href="#r2" data-toggle="tab"><span>Edit</span></a></li>
+                            <li><a href="#r3" data-toggle="tab"><span>Change Photo</span></a></li>
+                        </ul>
+                        <div class="tab-content clear">
+                            <div class="tab-pane active" id="r1">
+                            <div class="responsive padding-bottom-15 padding-top-30">
+                                <table class="profile-table side-head">
                                     <tr>
                                         <th colspan="2">Base</th>
                                     </tr>
@@ -388,42 +501,84 @@ width: calc(100% - 80px);margin-left:20px;float:left
                                         <td>Last Name</td>
                                         <td>Goheen</td>
                                     </tr>
+                                    <tr>
+                                        <td>Hometown</td>
+                                        <td>Oshawa</td>
+                                    </tr>
                                 </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="r2">
-                                </div>
-                                <div class="tab-pane" id="r3">
-                                    
-                                    <div class="content padding-top-30 padding-bottom-30">
-                                        <h5>Upload</h5>
-                                        <div class="bp-uploader-window">
-                                        <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
-			                                <div id="drag-drop-area" style="position: relative;">
-				                                <div class="drag-drop-inside">
-					                                <p class="drag-drop-info">Drop your file here</p>
-					                                <p>or</p>
-					                                <p class="drag-drop-buttons">
-					                                    <input id="bp-browse-button" type="button" value="Select your File" class="btn btn-primary btn-size btn-sm" style="position: relative; z-index: 1;">
-					                                </p>
-				                                </div>
-			                                </div>
-		                                    <div id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 84px; left: 287px; width: 144px; height: 39px; overflow: hidden; z-index: 0;"><input id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept=""></div>
+                            </div>
+                        </div>
+                            <div class="tab-pane" id="r2"></div>
+                            <div class="tab-pane" id="r3">
+                            <div class="content padding-top-30 padding-bottom-30">
+                                <h5>Upload</h5>
+                                <div class="bp-uploader-window">
+                                    <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
+			                            <div id="drag-drop-area" style="position: relative;">
+				                            <div class="drag-drop-inside">
+					                            <p class="drag-drop-info">Drop your file here</p>
+					                            <p>or</p>
+					                            <p class="drag-drop-buttons">
+					                                <input id="bp-browse-button" type="button" value="Select your File" class="btn btn-primary btn-size btn-sm" style="position: relative; z-index: 1;">
+					                            </p>
+				                            </div>
+			                            </div>
+		                                <div id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 84px; left: 287px; width: 144px; height: 39px; overflow: hidden; z-index: 0;">
+		                                    <input id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="">
 		                                </div>
-	                                </div>
-	                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
                         
-                        <!-- Notifications -->
-                        <div>
-                            <ul class="panel-menu">
-                                <li><a href="#q1" data-toggle="tab"><span>Read</span></a></li>
-                                <li class="active"><a href="#q2" data-toggle="tab"><span>Unread</span></a></li>
-                            </ul>
-                            <div class="tab-content clear">
-                                <div class="tab-pane active" id="q1">
+                    <!-- Notifications -->
+                    <div>
+                        <ul class="panel-menu">
+                            <li><a href="#q1" data-toggle="tab"><span>Read</span></a></li>
+                            <li class="active"><a href="#q2" data-toggle="tab"><span>Unread</span></a></li>
+                        </ul>
+                        <div class="tab-content clear">
+                            <div class="tab-pane active" id="q1">
+                                <div class="select-holder">
+                                    <span class="select-label">Order By:</span>
+                                    <select class="right">
+                                        <option value="Everything">Newest First</option>
+                                        <option value="Updates">Oldest First</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                    <p class="small">Viewing 1 to 2 (of 2 notifications)</p>
+                                    <div class="table-responsive">
+                                        <table class="profile-table">
+                                         <thead>
+                                            <tr>
+                                                <th>Notification</th>
+                                                <th>Date Received</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="q2">
                                     <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
                                         <span class="padding-right-10">Order By:</span>
                                         <select>
@@ -432,92 +587,104 @@ width: calc(100% - 80px);margin-left:20px;float:left
                                         </select>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="q2">
-                                    <div class="col-md-6 col-md-offset-6 text-right margin-top-20 padding-right-0">
-                                        <span class="padding-right-10">Order By:</span>
-                                        <select>
-                                            <option value="Everything">Newest First</option>
-                                            <option value="Updates">Oldest First</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    </div>
                         
-                        <!-- Messages -->
-                        <div>
-                            <ul class="panel-menu">
-                                <li class="active"><a href="#s1" data-toggle="tab"><span>Inbox</span></a></li>
-                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
-                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
-                                <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
-                            </ul>
-                            <div class="tab-content clear">
-                                <div class="tab-pane active" id="s1"></div>
+                    <!-- Messages -->
+                    <div>
+                        <ul class="panel-menu">
+                            <li class="active"><a href="#s1" data-toggle="tab"><span>Inbox</span></a></li>
+                            <li><a href="#s2" data-toggle="tab"><span>Starred</span></a></li>
+                            <li><a href="#s3" data-toggle="tab"><span>Sent</span></a></li>
+                            <li><a href="#s4" data-toggle="tab"><span>Compose</span></a></li>
+                            <li><a href="#s5" data-toggle="tab"><span>Notices</span></a></li>
+                        </ul>
+                        <div class="tab-content clear">
+                            <div class="tab-pane active" id="s1">
+                                 <div class="padding-bottom-15 padding-top-30">
+                                    <form action="" method="get" id="search-message-form">
+		                                <label for="messages_search">Search Messages</label>
+		                                <div class="row" style="margin-left:-15px;margin-right: -15px;">
+		                                    <div class="col-md-10">
+		                                    <input type="text" name="s" id="messages_search" placeholder="Search Messages..."></div>
+                                            <div class="col-md-2 text-right">
+		                                        <input type="submit" class="btn btn-primary btn-sm" id="messages_search_submit" name="messages_search_submit" value="Search" style="width:auto;padding-left:15px;padding-right:15px;">
+		                                    </div>
+		                                </div>
+	                                </form>
+	                            </div>
                             </div>
+                            <div class="tab-pane" id="s2">two</div>
+                            <div class="tab-pane" id="s3">three</div>
+                            <div class="tab-pane" id="s4">four</div>
+                            <div class="tab-pane" id="s5">five</div>
                         </div>
+                    </div>
                         
-                        <!-- Friends -->
-                        <div>
+                    <!-- Friends -->
+                    <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 5 Container</p>
                     </div>
                         
-                        <!-- Groups -->
-                        <div>
+                    <!-- Groups -->
+                    <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 6 Container</p>
                     </div>
                         
-                        <!-- Forums -->
-                        <div>
+                    <!-- Forums -->
+                    <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 7 Container</p>
                     </div>
                         
-                        <!-- Send Invites -->
-                        <div>
+                    <!-- Send Invites -->
+                    <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
                         <p>Tab 8 Container</p>
                     </div>
                         
-                         <!-- Settingss -->
-                        <div>
+                    <!-- Settingss -->
+                    <div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                             <br>
-                            <p>Tab 8 Container</p>
+                            <p>Tab 9 Container</p>
                         </div>
                     
-                        <!-- Registration Status -->
-                        <div>
+                    <!-- Registration Status -->
+                    <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
                         <br>
-                        <p>Tab 9 Container</p>
-                    </div>
+                        <p>Tab 10 Container</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.plugins.js"></script>
-<script src="js/custom.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>s
 	<!--Plug-in Initialisation-->
 	<script type="text/javascript">
     $(document).ready(function() {
-      
+
+  $('select').niceSelect();
+
        
 
         //Vertical Tab

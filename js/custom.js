@@ -189,7 +189,7 @@
             }
 
             // Custom Select
-            if (instance.select.length > 0){
+           /* if (instance.select.length > 0){
                 instance.select.each(function(){
                     var self = $(this),
                         wid = self.data('width');
@@ -199,7 +199,7 @@
 
                 });
             }
-
+*/
             // Custom input[type=range]
             if (instance.jslider.length > 0) {
                 instance.jslider.slider({

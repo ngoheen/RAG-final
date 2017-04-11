@@ -72,7 +72,7 @@ h2.resp-tab-active {
 /*-----------Vertical tabs-----------*/
 .resp-vtabs ul.resp-tabs-list {
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
 .resp-vtabs .resp-tabs-list li {
@@ -88,7 +88,7 @@ h2.resp-tab-active {
     float: none !important;
     font-size: 17px;
     font-weight: 300;
-    padding: 10px 10px 10px 15px;   
+    padding: 10px 15px;   
 }
 .resp-tabs-list li a i {
     margin-right: 10px;
@@ -158,7 +158,7 @@ h2.resp-tab-active {
 
 
 /*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     ul.resp-tabs-list {
         display: none;
     }
