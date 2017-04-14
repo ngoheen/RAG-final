@@ -27,6 +27,13 @@
     }
  .resp-tab-content {
         background: #f8f8f8;
+        overflow: auto;
+    }
+    .resp-tab-content .tab-content {
+        padding: 0 15px;
+    }
+    .resp-tabs-list li a {
+        font-size: 16px;
     }
     .panel-menu {
         width: calc(100% + 30px);
@@ -67,9 +74,10 @@
     
 }
 .profile-content {
-width: calc(100% - 80px);
-margin-left:20px;
-float:left;font-size: 14px;
+    width: calc(100% - 80px);
+    margin-left:20px;
+    float:left;
+    font-size: 16px;
 }
 
 .panel-menu > li.active + li > a > span {
@@ -78,50 +86,23 @@ float:left;font-size: 14px;
 .panel-menu > li.active > a > span {
     border-left-color: transparent;
 }
-.nav-tabs > li {
-    float: left;
-    margin-bottom: -1px;
-    text-align: center;
+select {
+    display: none;
 }
-    .resp-tab-content .chosen-container {
-        background: #fff;
-        height: auto;
-        min-width: 0;
-        width: auto !important;
-    }
-   /* .resp-vtabs .resp-tab-content {
-        overflow: hidden;
-    }
-    */
-    select {
-        display: none;
-    }
-    .nice-select {
-        display: inline-block;
-        clear: none;
-    }
-    .resp-tab-content .chosen-container-single .chosen-single div strong {
-        background-image: url(images/iconic.png);
-        font-size: 14px;
-        min-width: 0;
-        }
-       .resp-tab-content  .chosen-container-single .chosen-single {
-            font-size: 14px;
-        }
-        @media only screen and (max-width: 768px) {
-            #container {
-                width: 90%;
-                margin: 0 auto;
-            }
-        }
+.nice-select {
+    clear: none;
+    display: inline-block;
+}
 .resp-tabs-list a {
-       display:inline-block;float: left;
+       display:inline-block;
+       float: left;
         }
         .bp-uploader-window {
             border: 1px dashed #666;
             padding: 30px;
             text-align: center;
         }
+         .btn-default .badge,
         .badge {
             background-color:#e7543d;
             }
@@ -129,6 +110,7 @@ float:left;font-size: 14px;
                 margin-right: 10px;
             }
            .clearer {clear: left; line-height: 0; height: 0;}
+      
 .profile-post {
     overflow: hidden;
     clear: both;
@@ -165,7 +147,7 @@ table.profile-table tbody tr:last-child td {
     padding-bottom: 10px;
 }
 table.profile-table th {
-    padding:10px 28px;
+    padding: 10px 28px;
 }
 
 .table-responsive {
@@ -178,7 +160,11 @@ table.profile-table th {
 .profile-table.side-head tr td:first-child {
     font-weight: 400;
 }
-<<<<<<< Updated upstream
+.profile-avatar {
+    float: left;
+    height: 60px;
+    width: 60px;
+}
 .resp-tabs-list .badge {
     float:right;
 }
@@ -188,9 +174,45 @@ table.profile-table th {
 .plain li i {
     margin-right: 10px;
 }
-=======
+h2.moveable {
+    margin-left: calc(25% + 25px);
+    margin-top: 40px;
+}
+.profile-container-top {
+    overflow: hidden;
+        margin-bottom: 15px;
+}
+.profile-img {
+    float: left;
+    height: auto;
+    margin-right: 25px;
+    margin-top: -50px;
+    width: 25%;
+}
+.profile-stats {
+    float: left;
+    width: calc( 75% - 25px);
+}
 
->>>>>>> Stashed changes
+@media(max-width:767px) {
+    .profile-container-top {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .profile-img {
+        float: left;
+        width: 30%;
+        margin-right: 15px;
+        margin-top:10px;
+    }
+    .profile-stats {
+        width: calc(70% - 15px);
+    }
+    h2.moveable {
+    margin-left: 0;
+    margin-top: 0;
+    }
+}
     </style>
 </head>
 <body>
@@ -331,23 +353,23 @@ table.profile-table th {
     
     <div class="content">
         <div class="container">
-            <div class="row">
-                <h2>Cory Walker</h2>
-                <img src="pics/big-fake-user.jpg" style="width:25%;height:auto;float:left;margin-right: 25px;">
+            <div class="profile-container-top">
+                <h2 class="moveable">Cory Walker</h2>
+                <img src="pics/big-fake-user.jpg" class="profile-img">
                 
-                <div style="width: calc( 75% - 25px);float:left">
+                <div class="profile-stats">
                 
-                <ul class="plain">
-                    <li><a href="">corywalker@gmail.com</a></li>
-                    <li>Active right now</li>
-                    <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
-                    <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
-                    <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
-                    <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
-                </ul>
+                    <ul class="plain">
+                        <li><a href="">corywalker@gmail.com</a></li>
+                        <li>Active right now</li>
+                        <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
+                        <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
+                        <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
+                        <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
+                    </ul>
                 </div>
             </div>
-            <!--Vertical Tab-->
+            
             <div id="userprofile">
                 <ul class="resp-tabs-list hor_1">
                     <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
@@ -366,32 +388,31 @@ table.profile-table th {
                     <!-- Activity -->
                     <div>
                         <ul class="panel-menu">
-                            <li><a href="#p1" data-toggle="tab"><span>Personal</span></a></li>
-                            <li class="active"><a href="#p2" data-toggle="tab"><span>Mentions</span></a></li>
+                            <li class="active"><a href="#p1" data-toggle="tab"><span>Personal</span></a></li>
+                            <li><a href="#p2" data-toggle="tab"><span>Mentions</span></a></li>
                             <li><a href="#p3" data-toggle="tab"><span>Favorites</span></a></li>
                             <li><a href="#p4" data-toggle="tab"><span>Friends</span></a></li>
                             <li><a href="#p5" data-toggle="tab"><span>Groups</span></a></li>
                         </ul>
                         
                         <div class="tab-content clear">
-                            <div class="tab-pane" id="p1">
+                            <div class="tab-pane active" id="p1">
                                 <div class="content border-bottom padding-bottom-15">
                                     <div class="select-holder">
                                         <span class="select-label">Show:</span>
                                         <select class="right">
-                                                <option value="Everything">Everything</option>
-                                                <option value="Updates">Updates</option>
-                                                <option value="new Groups">New Groups</option>
-                                                <option value="Group Memberships">Group Memberships</option>
-                                                <option value="Topics">Topics</option>
-                                                <option value="Replies">Replies</option>
-                                            </select>
+                                            <option value="Everything">Everything</option>
+                                            <option value="Updates">Updates</option>
+                                            <option value="new Groups">New Groups</option>
+                                            <option value="Group Memberships">Group Memberships</option>
+                                            <option value="Topics">Topics</option>
+                                            <option value="Replies">Replies</option>
+                                        </select>
                                     </div>
-                                      
                                     <div class="profile-post">
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <img src="images/generic-user-avatar.jpg" class="profile-avatar">
                                         <div class="profile-content">
-                                            <p style="font-size: 14px;">What's new Cory?</p>
+                                            <p class="small">What's new Cory?</p>
                                             <input type="text" placeholder="Post a status update">
                                             <div class="pull-right margin-top-20">
                                                 <a class="btn btn-primary btn-size btn-sm" href="">Post Update</a>
@@ -401,37 +422,53 @@ table.profile-table th {
                                     <div class="clearer"></div>
                                 </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                    <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                    <img src="images/generic-user-avatar.jpg" class="profile-avatar">
                                     <div class="profile-content ">
                                         <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
                                         <p class="padding-top-15">What a wimpy route! RAGBRAI has given in to the partygoers and drunks.</p>
                                         <div class="pull-right margin-top-20">
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
-                                            </div>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                        </div>
                                     </div>
                                     <div class="clearer"></div>
                                 </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                    <img src="pics/andrea.jpg" class="profile-avatar">
+                                    <div class="profile-content">
+                                        <p>Andrea posted an update in the group RAGBRAI Crew 1 year, 5 months ago</p>
+
+                                        <p>Hi RAGBRAI Crew!</p>
+                                    
+                                        <div class="pull-right margin-top-20">
+                                            <a class="btn btn-default btn-size btn-sm" href="">Comment <span class="badge">2</span></a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Spam</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div>
+                                <div class="content border-bottom padding-top-30 padding-bottom-15">
+                                        <img src="images/generic-user-avatar.jpg" class="profile-avatar">
                                         <div class="profile-content ">
                                             <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
                                             <p class="padding-top-15">Living in a wonderful, but polluted, city in China. I am grateful that there is finally a light at the end of my tunnel! While some will decry the length of the ride and its easiness, I am so looking forward to participating again and enjoying a week in the saddle with 15k friends new and old. 180 days to go! Ride on!</p>
                                             <div class="pull-right margin-top-20">
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                                <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
                                                 <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
                                             </div>
                                         </div>
                                         <div class="clearer"></div>
                                     </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <img src="images/generic-user-avatar.jpg" class="profile-avatar">
                                         <div class="profile-content">
                                             <p><a href="">Cory</a> became a registered member 2 days, 22hours ago.</p>
                                             
                                             <div class="pull-right margin-top-20">
-                                            <a class="btn btn-primary btn-size btn-sm" href="">Comment</a>
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Comment</a>
+                                                <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
                                                  <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
                                             </div>
                                         </div>
@@ -439,25 +476,29 @@ table.profile-table th {
                                     <div class="clearer"></div></div>
                             </div>
                             
-                            
-                            <div class="tab-pane active" id="p2">
-                                <div class="select-holder">
+                            <div class="tab-pane" id="p2">
+                                <div class="content border-bottom padding-bottom-15">
+                                    <div class="select-holder">
                                     <span class="select-label">Show:</span> 
                                     <select class="right">
-                                    <option value="Everything">Everything</option>
-                        <option value="Updates">Updates</option>
-                        <option value="new Groups">New Groups</option>
-                        <option value="Group Memberships">Group Memberships</option>
-                        <option value="Topics">Topics</option>
-                        <option value="Replies">Replies</option>
-                        </select>
+                                        <option value="Everything">Everything</option>
+                                        <option value="Updates">Updates</option>
+                                        <option value="new Groups">New Groups</option>
+                                        <option value="Group Memberships">Group Memberships</option>
+                                        <option value="Topics">Topics</option>
+                                        <option value="Replies">Replies</option>
+                                    </select>
                                 </div>
-                                <div class="content clear padding-bottom-15">
-                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                    <div class="profile-post">
+                                        <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                    </div>
+                                    <div class="clearer"></div>
                                 </div>
                             </div>
+                            
                             <div class="tab-pane" id="p3">
-                                <div class="select-holder">
+                                <div class="content border-bottom padding-bottom-15">
+                                    <div class="select-holder">
                                     <span class="select-label">Show:</span>
                                     <select class="right">
                                         <option value="Everything">Everything</option>
@@ -468,13 +509,26 @@ table.profile-table th {
                                         <option value="Replies">Replies</option>
                                     </select>
                                 </div>
-                                <div class="content clear padding-bottom-15">
-                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                    <div class="profile-post">
+                                        <img src="images/generic-user-avatar.jpg" class="profile-avatar">
+                                        <div class="profile-content">
+                                            <p><a href="">Mariah</a> Mariah joined the group <a href="">RAGBRAI Crew ONLY</a> 1 year, 2 months ago</p>
+                                            <div class="pull-right margin-top-20">
+                                            <a class="btn btn-default btn-size btn-sm" href="">Comment <span class="badge">0</span></a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearer"></div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="p4"> <div class="select-holder">
-                                    <span class="select-label">Show:</span>
-                                    <select class="right">
+                            
+                            <div class="tab-pane" id="p4">
+                                <div class="content border-bottom padding-bottom-15">
+                                    <div class="select-holder">
+                                        <span class="select-label">Show:</span>
+                                        <select class="right">
                                         <option value="Everything">Everything</option>
                                         <option value="Updates">Updates</option>
                                         <option value="new Groups">New Groups</option>
@@ -482,24 +536,58 @@ table.profile-table th {
                                         <option value="Topics">Topics</option>
                                         <option value="Replies">Replies</option>
                                     </select>
+                                    </div>
+                                    <div class="profile-post">
+                                        <img src="images/generic-user-avatar.jpg" class="profile-avatar">
+                                        <div class="profile-content">
+                                        <p><a href="">mjepson</a> replied to the topic <a href="">How do you add a Jersey onto registration?</a> in the forum <a href="">RAGBRAI XLV – 2017</a> 3 weeks, 6 days ago
+                                         
+                                        <p class="padding-top-30">Hi Blake,</p>
+                                        <br>
+                                        <p>After a registration has been saved, you will not be able to add merchandise on your end. However, I can add a jersey to your registration on my end. Please email me at the <a href="">info@ragbrai</a> email address- let me know what size you need. Once I add your jersey, you can submit payment.</p>
+                                        <br>
+                                        <p>Thanks!</p>
+                                        <p>Mariah</p>
+                                        <div class="pull-right margin-top-20">
+                                            <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="clearer"></div>
                                 </div>
-                                <div class="content clear padding-bottom-15">
-                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
-                                </div></div>
-                            <div class="tab-pane" id="p5"> <div class="select-holder">
-                                    <span class="select-label">Show:</span>
-                                    <select class="right">
-                                        <option value="Everything">Everything</option>
-                                        <option value="Updates">Updates</option>
-                                        <option value="new Groups">New Groups</option>
-                                        <option value="Group Memberships">Group Memberships</option>
-                                        <option value="Topics">Topics</option>
-                                        <option value="Replies">Replies</option>
-                                    </select>
+                               <div class="content border-bottom padding-top-30 padding-bottom-15">
+                                    <img src="images/generic-user-avatar.jpg" class="profile-avatar">
+                                    <div class="profile-content">
+                                        <p><a href="">Mariah</a> Mariah joined the group <a href="">RAGBRAI Crew ONLY</a> 1 year, 2 months ago</p>
+                                        <div class="pull-right margin-top-20">
+                                            <a class="btn btn-default btn-size btn-sm" href="">Comment <span class="badge">0</span></a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearer"></div>
                                 </div>
-                                <div class="content clear padding-bottom-15">
-                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
-                                </div></div>
+                            </div>
+                            <div class="tab-pane" id="p5">
+                                <div class="content border-bottom padding-bottom-15">
+                                    <div class="select-holder">
+                                        <span class="select-label">Show:</span>
+                                        <select class="right">
+                                            <option value="Everything">Everything</option>
+                                            <option value="Updates">Updates</option>
+                                            <option value="new Groups">New Groups</option>
+                                            <option value="Group Memberships">Group Memberships</option>
+                                            <option value="Topics">Topics</option>
+                                            <option value="Replies">Replies</option>
+                                        </select>
+                                    </div>
+                                    <div class="profile-post">
+                                        <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div>
+                            </div>
                         </div>
                         
                     </div>
@@ -513,48 +601,84 @@ table.profile-table th {
                         </ul>
                         <div class="tab-content clear">
                             <div class="tab-pane active" id="r1">
-                            <div class="responsive padding-bottom-15 padding-top-30">
-                                <table class="profile-table side-head">
-                                    <tr>
-                                        <th colspan="2">Base</th>
-                                    </tr>
-                                    <tr>
-                                        <td>First Name</td>
-                                        <td>Nancy</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Last Name</td>
-                                        <td>Goheen</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hometown</td>
-                                        <td>Oshawa</td>
-                                    </tr>
-                                </table>
+                                <div class="responsive padding-bottom-15 padding-top-30">
+                                    <table class="profile-table side-head">
+                                        <tr>
+                                            <th colspan="2">Base</th>
+                                        </tr>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td>Andrea</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Middle Initial</td>
+                                            <td>E</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Name</td>
+                                            <td>Parrott</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Birthdate</td>
+                                            <td>1983-09-02</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gender</td>
+                                            <td><a href="">Female</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Address 1</td>
+                                            <td>4153 Timber Lane</td>
+                                        </tr>
+                                         <tr>
+                                            <td>City</td>
+                                            <td>Des Moines</td>
+                                        </tr>
+                                         <tr>
+                                            <td>State</td>
+                                            <td><a href="">Iowa</a></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Zip/Postal Code</td>
+                                            <td>50317</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Country</td>
+                                            <td><a href="">United States</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Primary Phone</td>
+                                            <td>3193218773</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Secondary Phone</td>
+                                            <td>5152848074</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
                             <div class="tab-pane" id="r2"></div>
                             <div class="tab-pane" id="r3">
-                            <div class="content padding-top-30 padding-bottom-30">
-                                <h5>Upload</h5>
-                                <div class="bp-uploader-window">
-                                    <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
-			                            <div id="drag-drop-area" style="position: relative;">
-				                            <div class="drag-drop-inside">
-					                            <p class="drag-drop-info">Drop your file here</p>
-					                            <p>or</p>
-					                            <p class="drag-drop-buttons">
-					                                <input id="bp-browse-button" type="button" value="Select your File" class="btn btn-primary btn-size btn-sm" style="position: relative; z-index: 1;">
-					                            </p>
-				                            </div>
-			                            </div>
-		                                <div id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 84px; left: 287px; width: 144px; height: 39px; overflow: hidden; z-index: 0;">
-		                                    <input id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="">
-		                                </div>
+                                <div class="content padding-top-30 padding-bottom-30">
+                                    <h5>Upload</h5>
+                                    <div class="bp-uploader-window">
+                                        <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
+			                                <div id="drag-drop-area" style="position: relative;">
+				                                <div class="drag-drop-inside">
+					                                <p class="drag-drop-info">Drop your file here</p>
+					                                <p>or</p>
+					                                <p class="drag-drop-buttons">
+					                                    <input id="bp-browse-button" type="button" value="Select your File" class="btn btn-primary btn-size btn-sm" style="position: relative; z-index: 1;">
+					                                </p>
+				                                </div>
+			                                </div>
+		                                    <div id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 84px; left: 287px; width: 144px; height: 39px; overflow: hidden; z-index: 0;">
+		                                        <input id="html5_1bdcf6cnp1kmh1b4oqak1pkn11fa5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="">
+		                                    </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                         
@@ -638,6 +762,39 @@ table.profile-table th {
 		                                </div>
 	                                </form>
 	                            </div>
+	                            <div class="content clear padding-bottom-15">
+                                    <p class="small">Viewing 1 to 3 (of 3 messages)</p>
+                                    <div class="table-responsive">
+                                        <table class="profile-table">
+                                         <thead>
+                                            <tr>
+                                                <th>Notification</th>
+                                                <th>Date Received</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">You have 1 new message from Steve</a></td>
+                                            <td>1 day, 6 hours ago</td>
+                                            <td><a href="">Unread</a> | <a href="">Delete</a></td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </div>
+	                            
+	                            
+	                            
+	                            
                             </div>
                             <div class="tab-pane" id="s2">two</div>
                             <div class="tab-pane" id="s3">three</div>
@@ -697,20 +854,20 @@ table.profile-table th {
             </div>
         </div>
     </div>
-</div>
+    
+</div><!-- /.wrapper -->
+
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>s
+    <script src="js/jquery.nice-select.min.js"></script>
 	<!--Plug-in Initialisation-->
 	<script type="text/javascript">
     $(document).ready(function() {
 
-  $('select').niceSelect();
-
-       
+        $('select').niceSelect();
 
         //Vertical Tab
         $('#userprofile').easyResponsiveTabs({
@@ -722,6 +879,7 @@ table.profile-table th {
             activetab_bg: '#333', 
             inactive_bg: '#9b9b9b'
         });
+        $('')
     });
 </script>
 </body>

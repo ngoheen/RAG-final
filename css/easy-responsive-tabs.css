@@ -97,7 +97,7 @@ h2.resp-tab-active {
     padding: 0px;
     background-color: #fff;
     float: left;
-    width: calc( 70% - 25px );
+    width: calc( 75% - 25px );
     min-height: 250px;
     clear: none;
 }
