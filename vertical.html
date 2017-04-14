@@ -172,7 +172,7 @@ table.profile-table th {
     width: 100%;
     max-width: 100%;
     margin-bottom: 15px;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
 }
 .profile-table.side-head tr td:first-child {
@@ -180,6 +180,12 @@ table.profile-table th {
 }
 .resp-tabs-list .badge {
     float:right;
+}
+.plain li {
+    font-size: 14px;
+}
+.plain li i {
+    margin-right: 10px;
 }
     </style>
 </head>
@@ -321,16 +327,31 @@ table.profile-table th {
     
     <div class="content">
         <div class="container">
-
+            <div class="row">
+                <h2>Cory Walker</h2>
+                <img src="pics/big-fake-user.jpg" style="width:25%;height:auto;float:left;margin-right: 25px;">
+                
+                <div style="width: calc( 75% - 25px);float:left">
+                
+                <ul class="plain">
+                    <li><a href="">corywalker@gmail.com</a></li>
+                    <li>Active right now</li>
+                    <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
+                    <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
+                    <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
+                    <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
+                </ul>
+                </div>
+            </div>
             <!--Vertical Tab-->
             <div id="userprofile">
                 <ul class="resp-tabs-list hor_1">
                     <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
                     <li><a href="#2b" data-toggle="tab"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i>Profile</a></li>
-			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge">3</span></a></li>
-                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages <span class="badge">2</span></a></li>
-                    <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Friends <span class="badge">1</span></a></li>
-                    <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups<span class="badge">0</span></a></li>
+			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge pull-right">3</span></a></li>
+                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages <span class="badge pull-right">2</span></a></li>
+                    <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Friends <span class="badge pull-right">1</span></a></li>
+                    <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups<span class="badge pull-right">0</span></a></li>
                     <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
                     <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
                     <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
