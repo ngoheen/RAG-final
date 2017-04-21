@@ -2,15 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Tab-user-profile Combo</title>
+    <title>RAGBRAI: Member Profile Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new-style.css" rel="stylesheet">
     <link href="css/lightgallery.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css">
+
     <title>Easy Responsive Tabs to Accordion</title>
     <style type="text/css" rel="stylesheet">
        
@@ -27,50 +25,44 @@
  .resp-tab-content {
         background: #f8f8f8;
     }
-    .panel-menu {
-        width: calc(100% + 30px);
-        margin-left: -15px;
-        margin-right: -15px;
-        margin-top: -15px;
-        margin-bottom: 0;
-        max-width: none;
-        display: table;
-        table-layout: fixed;
-    }
-  
-    .panel-menu li {
-        background: #fff;
-        display: table-cell;
-        float: none;
-        font-size: 14px;
-        padding: 10px 0;
-        padding-left: 0 !important;
-        text-align: center;
-        width: calc(100% / 5);
-    }
-    .panel-menu li.active {
-        background: #f8f8f8;
-        border-top: 2px solid #e7543d;
-
-    }
-    .panel-menu li:first-child span {
-        border-left: none;
-    }
-   
-.panel-menu > li > a > span {
-    line-height: 28px;
+.panel-menu {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    max-width: none;
+    display: table;
+}
+.panel-menu li {
+    background: #fff;
+    display: table-cell;
+    float: none;
+    font-size: 14px;
+    padding: 10px 0;
+    padding-left: 0 !important;
+    text-align: center;
+}
+.panel-menu li.active {
+    background: #f8f8f8;
+    border-top: 2px solid #e7543d;
+}
+.panel-menu li:first-child span {
+    border-left: none;
+}
+.panel-menu > li > a > span {   
     border-left: 1px solid #D9D9D9;
     display: inline-block;
+    line-height: 20px;
     padding: 0;
     width: 100%;
-    
 }
 .profile-content {
-width: calc(100% - 80px);
-margin-left:20px;
-float:left;font-size: 14px;
+    float: left;
+    font-size: 14px;
+    margin-left: 20px;
+    width: calc(100% - 80px);
 }
-
 .panel-menu > li.active + li > a > span {
     border: none;
 }
@@ -82,12 +74,12 @@ float:left;font-size: 14px;
     margin-bottom: -1px;
     text-align: center;
 }
-    .resp-tab-content .chosen-container {
-        background: #fff;
-        height: auto;
-        min-width: 0;
-        width: auto !important;
-    }
+.resp-tab-content .chosen-container {
+    background: #fff;
+    height: auto;
+    min-width: 0;
+    width: auto !important;
+}
    /* .resp-vtabs .resp-tab-content {
         overflow: hidden;
     }
@@ -99,35 +91,35 @@ float:left;font-size: 14px;
         display: inline-block;
         clear: none;
     }
-    .resp-tab-content .chosen-container-single .chosen-single div strong {
-        background-image: url(images/iconic.png);
-        font-size: 14px;
-        min-width: 0;
-        }
-       .resp-tab-content  .chosen-container-single .chosen-single {
-            font-size: 14px;
-        }
-        @media only screen and (max-width: 768px) {
-            #container {
-                width: 90%;
-                margin: 0 auto;
-            }
-        }
+.resp-tab-content .chosen-container-single .chosen-single div strong {
+    background-image: url(images/iconic.png);
+    font-size: 14px;
+    min-width: 0;
+}
+.resp-tab-content  .chosen-container-single .chosen-single {
+    font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+    #container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
 .resp-tabs-list a {
-       display:inline-block;float: left;
-        }
-        .bp-uploader-window {
-            border: 1px dashed #666;
-            padding: 30px;
-            text-align: center;
-        }
-        .badge {
-            background-color:#e7543d;
-            }
-            .resp-tabs-list.hor_1 i {
-                margin-right: 10px;
-            }
-           .clearer {clear: left; line-height: 0; height: 0;}
+    display:inline-block;float: left;
+}
+.bp-uploader-window {
+    border: 1px dashed #666;
+    padding: 30px;
+    text-align: center;
+}
+.badge {
+    background-color:#e7543d;
+}
+.resp-tabs-list.hor_1 i {
+    margin-right: 10px;
+}
+.clearer {clear: left; line-height: 0; height: 0;}
 .profile-post {
     overflow: hidden;
     clear: both;
@@ -151,6 +143,7 @@ float:left;font-size: 14px;
     font-size: 15px;
     background: #fff;
 }
+.message-table th,
 .profile-table th {
     background: #ddd;
 }
@@ -174,7 +167,12 @@ table.profile-table th {
     padding:10px;
 }
 
-
+.panel-menu li a {
+    color: #000;
+}
+.panel-menu li.active a {
+    font-weight: 400;
+}
 .profile-table.side-head tr td:first-child {
     font-weight: 400;
 }
@@ -182,7 +180,7 @@ table.profile-table th {
     float:right;
 }
 .plain li {
-    font-size: 14px;
+   line-height: 30px;
 }
 .plain li i {
     margin-right: 10px;
@@ -224,18 +222,85 @@ ul.pagination li.disabled {
     display: table-cell;
      white-space: normal;
 }
+.table-responsive table.message-table {
+    margin-bottom: 0;
+}
+.profile-pic {
+    width: 25%;
+    height: auto;
+    float:left;
+    margin-right: 25px;
+}
+.profile-pic img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.profile-info {
+    float: left;
+    width: calc( 75% - 25px);
+}
+.profile-h2 {
+    margin-top: 0;
+}
 @media screen and (max-width: 640px) {
 	.profile-table td {
 	    white-space: nowrap;
-		
 	}
-	
+	.message-table p,
 	.message-table td {
 	    display: block;
-	   
+	    width: 100%; 
 	}
+	.messages-options-nav .select-label {
+	    display: none;
+	}
+	.messages-options-nav li {
+	    line-height: 16px;
+	}
+	.profile-pic {
+	    margin-right: 15px;
+	    padding-left: 15px;
+	}
+	.profile-h2 {
+	    padding-left: calc(25% + 15px);
+	}
+	.plain li {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
-
+.forums .row + .row {
+    margin-top: 0;
+}
+.forums a {
+    color: #000;
+}
+.xs {
+    font-size: 12px !important;
+}
+.tab-pane#h1 > div.content > div.row:first-child {
+    padding-top:15px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.profile-image {
+    width: 100px;
+    float: left;
+}
+.profile-image p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.profile-image img {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+.forums .profile-content {
+    width: calc(100% - 120px);
+}
     </style>
 </head>
 <body>
@@ -377,19 +442,21 @@ ul.pagination li.disabled {
     <div class="content">
         <div class="container">
             <div class="row">
-                <h2>Cory Walker</h2>
-                <img src="pics/big-fake-user.jpg" style="width:25%;height:auto;float:left;margin-right: 25px;">
+               <h2 class="profile-h2">Cory Walker</h2>
+                <div class="profile-pic">
+                     
+                    <img src="pics/big-fake-user.jpg">
+                </div>
+                <div class="profile-info">
                 
-                <div style="width: calc( 75% - 25px);float:left">
-                
-                <ul class="plain">
-                    <li><a href="">corywalker@gmail.com</a></li>
-                    <li>Active right now</li>
-                    <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
-                    <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
-                    <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
-                    <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
-                </ul>
+                    <ul class="plain">
+                        <li><a href="">corywalker@gmail.com</a></li>
+                        <li>Active right now</li>
+                        <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
+                        <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
+                        <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
+                        <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
+                    </ul>
                 </div>
             </div>
             <!--Vertical Tab-->
@@ -397,14 +464,14 @@ ul.pagination li.disabled {
                 <ul class="resp-tabs-list hor_1">
                     <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
                     <li><a href="#2b" data-toggle="tab"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i>Profile</a></li>
-			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i> Notifications <span class="badge pull-right">3</span></a></li>
-                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> Messages <span class="badge pull-right">2</span></a></li>
-                    <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Friends <span class="badge pull-right">1</span></a></li>
-                    <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Groups<span class="badge pull-right">0</span></a></li>
-                    <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i> Forums</a></li>
-                    <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> Send Invites</a></li>
-                    <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Settings</a></li>
-                    <li><a href="#10b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i> Registration Status</a></li>
+			        <li><a href="#3b" data-toggle="tab"><i class="fa fa-bell fa-fw" aria-hidden="true"></i>Notifications <span class="badge pull-right">3</span></a></li>
+                    <li><a href="#4b" data-toggle="tab"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>Messages <span class="badge pull-right">2</span></a></li>
+                    <li><a href="#5b" data-toggle="tab"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>Friends <span class="badge pull-right">1</span></a></li>
+                    <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Groups<span class="badge pull-right">0</span></a></li>
+                    <li><a href="#7b" data-toggle="tab"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>Forums</a></li>
+                    <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>Send Invites</a></li>
+                    <li><a href="#9b" data-toggle="tab"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Settings</a></li>
+                    <li><a href="#10b" data-toggle="tab"><i class="fa fa-bicycle fa-fw" aria-hidden="true"></i>Registration Status</a></li>
                 </ul>
 
                 <div class="resp-tabs-container hor_1">
@@ -434,9 +501,9 @@ ul.pagination li.disabled {
                                     </div>
                                       
                                     <div class="profile-post">
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                        <img src="images/generic-user-avatar.jpg" class="user-img">
                                         <div class="profile-content">
-                                            <p style="font-size: 14px;">What's new Cory?</p>
+                                            <p>What's new Cory?</p>
                                             <input type="text" placeholder="Post a status update">
                                             <div class="pull-right margin-top-20">
                                                 <a class="btn btn-primary btn-size btn-sm" href="">Post Update</a>
@@ -446,42 +513,43 @@ ul.pagination li.disabled {
                                     <div class="clearer"></div>
                                 </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                    <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                    <img src="images/generic-user-avatar.jpg" class="user-img">
                                     <div class="profile-content ">
                                         <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
                                         <p class="padding-top-15">What a wimpy route! RAGBRAI has given in to the partygoers and drunks.</p>
                                         <div class="pull-right margin-top-20">
-                                            <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            <a class="btn btn-default btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-sm" href="">Delete</a>
                                         </div>
                                     </div>
                                     <div class="clearer"></div>
                                 </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                    <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
+                                    <img src="images/generic-user-avatar.jpg" class="user-img">
                                     <div class="profile-content ">
                                         <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
                                         <p class="padding-top-15">Living in a wonderful, but polluted, city in China. I am grateful that there is finally a light at the end of my tunnel! While some will decry the length of the ride and its easiness, I am so looking forward to participating again and enjoying a week in the saddle with 15k friends new and old. 180 days to go! Ride on!</p>
                                         <div class="pull-right margin-top-20">
-                                            <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                            <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
+                                            <a class="btn btn-default btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-sm" href="">Delete</a>
                                         </div>
                                     </div>
                                     <div class="clearer"></div>
                                 </div>
                                 <div class="content border-bottom padding-top-30 padding-bottom-15">
-                                        <img src="images/generic-user-avatar.jpg" style="width: 60px;height:60px;float: left;">
-                                        <div class="profile-content">
-                                            <p><a href="">Cory</a> became a registered member 2 days, 22hours ago.</p>
+                                    <img src="images/generic-user-avatar.jpg" class="user-img">
+                                    <div class="profile-content">
+                                        <p><a href="">Cory</a> became a registered member 2 days, 22hours ago.</p>
                                             
-                                            <div class="pull-right margin-top-20">
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Comment</a>
-                                                <a class="btn btn-primary btn-size btn-sm" href="">Favorite</a>
-                                                <a class="btn btn-default btn-size btn-sm" href="">Delete</a>
-                                            </div>
+                                        <div class="pull-right margin-top-20">
+                                            <a class="btn btn-default btn-sm" href="">Comment</a>
+                                            <a class="btn btn-default btn-sm" href="">Favorite</a>
+                                            <a class="btn btn-default btn-sm" href="">Delete</a>
                                         </div>
+                                    </div>
                                         
-                                    <div class="clearer"></div></div>
+                                    <div class="clearer"></div>
+                                </div>
                             </div>
                             
                             
@@ -517,7 +585,8 @@ ul.pagination li.disabled {
                                     <p>Sorry, there was no activity found. Please try a different filter.</p>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="p4"> <div class="select-holder">
+                            <div class="tab-pane" id="p4"> 
+                                <div class="select-holder">
                                     <span class="select-label">Show:</span>
                                     <select class="right">
                                         <option value="Everything">Everything</option>
@@ -530,8 +599,10 @@ ul.pagination li.disabled {
                                 </div>
                                 <div class="content clear padding-bottom-15">
                                     <p>Sorry, there was no activity found. Please try a different filter.</p>
-                                </div></div>
-                            <div class="tab-pane" id="p5"> <div class="select-holder">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="p5">
+                            <div class="select-holder">
                                     <span class="select-label">Show:</span>
                                     <select class="right">
                                         <option value="Everything">Everything</option>
@@ -674,28 +745,16 @@ ul.pagination li.disabled {
                                  <div class="padding-bottom-15 padding-top-30">
                                     <form action="" method="get" id="search-message-form">
 		                                <label for="messages_search">Search Messages</label>
-		                                <div class="row" style="margin-left:-15px;margin-right: -15px;">
+		                                <div class="row tight-margin">
 		                                    <div class="col-md-10 col-xs-9">
 		                                    <input type="text" name="s" id="messages_search" placeholder="Search Messages..."></div>
                                             <div class="col-md-2 col-xs-3 text-right">
-		                                        <input type="submit" class="btn btn-primary btn-sm" id="messages_search_submit" name="messages_search_submit" value="Search" style="width:auto;padding-left:15px;padding-right:15px;">
+		                                        <input type="submit" class="btn btn-primary" id="messages_search_submit" name="messages_search_submit" value="Search">
 		                                    </div>
 		                                </div>
 	                                </form>
 	                            </div>
 	                            
-	                               <!-- <p class="small pull-left">Viewing 1 to 10 (of 25 messages)</p>
-	                                <div class="inline small pull-right">
-	                                <ul class="pagination">
-                                        <li class="disabled"><a href="#"><i class="custom-icon custom-icon-page-prev"></i></a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">…</a></li>
-                                        <li><a href="#">10</a></li>
-                                        <li><a href="#"><i class="custom-icon custom-icon-page-next"></i></a></li>
-                                    </ul>
-                                </div>
-                                </div>-->
                                 <div class="row margin-bottom-10">
                                     <div class="col-sm-7 col-xs-12 bottom-pagination padding-left-0">
                                         <p class="light-grey">Displaying 1 to 10 (of 60 messages)</p>  
@@ -715,7 +774,7 @@ ul.pagination li.disabled {
                                 </div>
                                 <div class="table-responsive">
 	                                <table id="message-threads" class="message-table">
-	                                   
+	                                  
 			                            <tbody>
 			                                <tr id="m-3345" class="read">
 				                                <td class="thread-count">
@@ -841,19 +900,17 @@ ul.pagination li.disabled {
 				                                <td class="thread-count">
 				                                    <span class="unread-count"></span>
 				                                </td>
-				                                <td class="thread-avatar"><img src="http://dev.desmoinesregister.com/rag/wp-content/uploads/avatars/392/ef08bb38f87cb977da4d00ed55431058-bpthumb.jpg" class="avatar user-392-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of jim"></td>
-
+				                                <td class="thread-avatar">
+				                                    <img src="http://dev.desmoinesregister.com/rag/wp-content/uploads/avatars/392/ef08bb38f87cb977da4d00ed55431058-bpthumb.jpg" class="avatar user-392-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of jim">
+				                                </td>
 				                                <td class="thread-from">
 				                                    From: <a href="http://dev.desmoinesregister.com/rag/members/jwsknk/">jim</a><br>
 				                                    <span class="activity">February 18, 2013 at 3:47 pm</span>
 				                                </td>
-				
 				                                <td class="thread-info">
 				                                    <p><a href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/view/1107/" title="View Message">buy/sell tags</a></p>
 				                                    <p class="thread-excerpt">Think I was supposed to remind you at the meeting, Can the ”I […]</p>
 				                                </td>
-
-				
 				                                <td class="thread-options">
 				                                    <input type="checkbox" name="message_ids[]" value="1107">
 				                                    <a class="reddish confirm" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/inbox/delete/1107/?_wpnonce=9e93e9d9cb" title="Delete Message">Delete</a> &nbsp;
@@ -863,43 +920,38 @@ ul.pagination li.disabled {
 				                                <td class="thread-count">
 				                                    <span class="unread-count"></span>
 				                                </td>
-				                                <td class="thread-avatar"><img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James"></td>
-
+				                                <td class="thread-avatar">
+				                                    <img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James">
+				                                </td>
 				                                <td class="thread-from">
 				                                    From: <a href="http://dev.desmoinesregister.com/rag/members/sfc-jkl2/">James</a><br>
 				                                    <span class="activity">December 16, 2012 at 9:25 pm</span>
 				                                </td>
-				
 				                                <td class="thread-info">
 				                                    <p><a href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/view/1002/" title="View Message">Re: You both need to knowck it off</a></p>
 				                                    <p class="thread-excerpt">TJ,  Have I spent enough time in the dog house?  I promise not […]</p>
 				                                </td>
-
-				
 				                                <td class="thread-options">
 				                                    <input type="checkbox" name="message_ids[]" value="1002">
 				                                    <a class="reddish confirm" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/inbox/delete/1002/?_wpnonce=9e93e9d9cb" title="Delete Message">Delete</a> &nbsp;
 				                                </td>
 				                            </tr>
-
 		
 				                            <tr id="m-1001" class=" read">
 				                                <td class="thread-count">
 				                                    <span class="unread-count"></span>
 				                                </td>
-				                                <td class="thread-avatar"><img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James"></td>
-
+				                                <td class="thread-avatar">
+				                                    <img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James">
+				                                </td>
 				                                <td class="thread-from">
 				                                    From: <a href="http://dev.desmoinesregister.com/rag/members/sfc-jkl2/">James</a><br>
 				                                    <span class="activity">August 29, 2012 at 10:09 pm</span>
 				                                </td>
-				
 				                                <td class="thread-info">
 				                                    <p><a href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/view/1001/" title="View Message">can greg go away?</a></p>
 				                                    <p class="thread-excerpt">”See, now I am justified in saying you are one stupid mother […]</p>
 				                                </td>
-
-				
 				                                <td class="thread-options">
 				                                    <input type="checkbox" name="message_ids[]" value="1001">
 				                                    <a class="reddish confirm" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/inbox/delete/1001/?_wpnonce=9e93e9d9cb" title="Delete Message">Delete</a> &nbsp;
@@ -910,19 +962,17 @@ ul.pagination li.disabled {
 				                                <td class="thread-count">
 				                                    <span class="unread-count"></span>
 				                                </td>
-				                                <td class="thread-avatar"><img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James"></td>
-
+				                                <td class="thread-avatar">
+				                                    <img src="images/generic-user-avatar.jpg" class="avatar user-2380-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of James">
+				                                </td>
 				                                <td class="thread-from">
 				                                    From: <a href="http://dev.desmoinesregister.com/rag/members/sfc-jkl2/">James</a><br>
 				                                    <span class="activity">August 27, 2012 at 6:41 pm</span>
 				                                </td>
-				
 				                                <td class="thread-info">
 				                                    <p><a href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/view/998/" title="View Message">greg on forum 6:14 pm  8/27/12  Lance quits the fight</a></p>
 				                                    <p class="thread-excerpt">Do I really have to take this? "It's the rule of law that c […]</p>
 				                                </td>
-
-				
 				                                <td class="thread-options">
 				                                    <input type="checkbox" name="message_ids[]" value="998">
 				                                    <a class="reddish confirm" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/messages/inbox/delete/998/?_wpnonce=9e93e9d9cb" title="Delete Message">Delete</a> &nbsp;
@@ -931,7 +981,31 @@ ul.pagination li.disabled {
                                         </tbody>
                                     </table>
                                 </div>
-                            
+                                <div class="messages-options-nav">
+                                    <ul>
+                                        <li>
+		                                    <span class="select-label">Select:</span>
+                                            <select class="small" name="message-type-select" id="message-type-select">
+                                                <option value="">Select</option>
+                                                <option value="read">Read</option>
+                                                <option value="unread">Unread</option>
+                                                <option value="all">All</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="mark_as_read">Mark as Read</a> &nbsp;
+                                        </li>
+                                        <li>
+                                            <a href="#" id="mark_as_unread">Mark as Unread</a> &nbsp;
+                                        </li>
+                                        <li>
+                                            <a href="#" id="delete_inbox_messages">Delete Selected</a> &nbsp;
+                                        </li>
+                                    </ul>
+                                    <input type="hidden" id="mark-messages-read-nonce" name="mark-messages-read-nonce" value="ba390fa55d">
+                                    <input type="hidden" id="mark-messages-unread-nonce" name="mark-messages-unread-nonce" value="4023492c81">
+                                    <input type="hidden" id="delete-selected-nonce" name="delete-selected-nonce" value="fdcc2e8d71">
+                                </div>
                             </div>
                             <div class="tab-pane" id="s2">two</div>
                             <div class="tab-pane" id="s3">three</div>
@@ -942,26 +1016,228 @@ ul.pagination li.disabled {
                         
                     <!-- Friends -->
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                        <br>
-                        <br>
-                        <p>Tab 5 Container</p>
+                       <ul class="panel-menu">
+                            <li class="active"><a href="#f1" data-toggle="tab"><span>Friendships</span></a></li>
+                            <li><a href="#f2" data-toggle="tab"><span>Requests</span></a></li>
+                        </ul>
+                        <div class="tab-content clear">
+                            <div class="tab-pane active" id="f1">
+                                <div class="select-holder">
+                                    <span class="select-label">Order By:</span>
+                                    <select class="right">
+                                        <option value="Last Active">Last Active</option>
+                                        <option value="Newest Registered">Newest Registered</option>
+                                        <option value="Alphabetical">Alphabetical</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                    <p>Sorry, there was no activity found. Please try a different filter.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="f2">
+                                <div class="content clear padding-bottom-15">
+                                    <p class="small">Viewing 1 member</p>
+                                   
+                                    <table class="profile-table">
+                                        <tr>
+                                            <td>
+                                                <a href=""><img src="http://dev.desmoinesregister.com/rag/wp-content/uploads/avatars/10633/76a75a0caa53dab74043670241201304-bpthumb.jpg" class="user-img"></a>
+                                            </td>
+                                            <td>
+                                                <p>active 5 days, 18 hours ago</p>
+                                                <div class="pull-right margin-top-20">
+                                                    <a class="btn btn-default btn-sm" href="">Accept</a>
+                                                    <a class="btn btn-default btn-sm" href="">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                         
                     <!-- Groups -->
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                        <br>
-                        <br>
-                        <p>Tab 6 Container</p>
+                       <ul class="panel-menu">
+                            <li class="active"><a href="#g1" data-toggle="tab"><span>Memberships</span></a></li>
+                            <li><a href="#g2" data-toggle="tab"><span>Invitations</span></a></li>
+                        </ul>
+                        <div class="tab-content clear">
+                            <div class="tab-pane active" id="g1">
+                                <div class="select-holder">
+                                    <span class="select-label">Order By:</span>
+                                    <select class="right">
+                                        <option value="Last Active">Last Active</option>
+                                        <option value="Most Members">Most Members</option>
+                                        <option value="Newly Created">Newly Created</option>
+                                        <option value="Alphabetical">Alphabetical</option>
+                                    </select>
+                                </div>
+                                <div class="content clear padding-bottom-15">
+                                     <table class="profile-table">
+                                        <tr>
+                                            <td>
+                                                <a href=""><img src="images/generic-group-avatar.jpg" class="user-img"></a>
+                                            </td>
+                                            <td><h5><a href="">RAGBRAI Crew ONLY</a></h5>
+                                                <p>active 3 weeks, 2 days ago</p>
+                                                <p>This group is for people working the week of RAGBRAI on the RAGBRAI Crew</p>
+                                                <div class="pull-right margin-top-20">
+                                                    Public Group / 4 members
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="g2">
+                                <div class="content clear padding-bottom-15">
+                                   
+                                   <p>You have no outstanding group invites.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                         
                     <!-- Forums -->
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                        <br>
-                        <br>
-                        <p>Tab 7 Container</p>
+                       <ul class="panel-menu">
+                            <li class="active"><a href="#h1" data-toggle="tab"><span>Topics Started</span></a></li>
+                            <li><a href="#h2" data-toggle="tab"><span>Replies Created</span></a></li>
+                            <li><a href="#h3" data-toggle="tab"><span>Favorites</span></a></li>
+                            <li><a href="#h4" data-toggle="tab"><span>Subscriptions</span></a></li>
+                        </ul>
+                        <div class="tab-content clear forums">
+                            <div class="tab-pane active" id="h1">
+                                <h5 class="padding-top-15">Forum Topics Started</h5>
+                                <p class="small margin-top-20">Viewing 3 topics (of 3 total)</p>
+                                <div class="content clear margin-top-20 white">
+                                
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6 normal black smaller table-header">Discussion</div>
+                                        <div class="col-md-2 col-xs-2 normal black smaller table-header-middle">Replies</div>
+                                        <div class="col-md-4 col-xs-4 normal black smaller table-header-last">Freshness</div>
+                                    </div>
+                                    <div class="border-bottom padding-top-15"></div>
+                                    <div class="row group">
+                                        <div class="padding-left-0 col-md-7 col-xs-6 padding-right-0">
+                                            <h5 class="normal"><a href="">Forum Decorum</a></h5>
+                                            <p>Started by <a href="">TJ Juskiewicz</a> in: <a href="">RAGBRAI XLV – 2017</a></p>
+                                        </div>
+                                        <div class="col-md-1 col-xs-2 smaller">1</div>
+                                        <div class="col-md-4 col-xs-4 smaller padding-right-0">
+                                            4 weeks ago
+                                            <br><a href="">Toeknee</a>
+                                        </div>
+                                    </div>
+                                    <div class="row group">
+                                        <div class="padding-left-0 col-md-7 col-xs-6 padding-right-0">
+                                            <h5 class="normal">first time rider</h5>
+                                            <p>Started by bphawkeye in: RAGBRAI XLV – 2017</p>
+                                        </div>
+                                        <div class="col-md-1 col-xs-2 smaller">1</div>
+                                        <div class="col-md-4 col-xs-4 smaller">
+                                            <p>1 hour, 6 minutes ago
+                                                <br><a href="">gringonick</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row group">
+                                        <div class="padding-left-0 col-md-7 col-xs-5 padding-right-0">
+                                            <h5 class="normal"><a href="">first time rider</a></h5>
+                                            <p>Started by <a href="">bphawkeye</a> in: <a href="">RAGBRAI XLV – 2017</a></p>
+                                        </div>
+                                        <div class="col-md-1 col-xs-3 smaller">1</div>
+                                        <div class="col-md-4 col-xs-4 smaller">
+                                            <p>1 hour, 6 minutes ago
+                                            <br><a href="">gringonick</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearer"></div>
+                            </div>
+                            
+                            <div class="tab-pane" id="h2">
+                                <h5 class="margin-top-20">Forum Replies Created</h5>
+                                <p class="small margin-top-20 border-bottom padding-bottom-10">Viewing 3 posts (of 3 total)</p>
+
+                                <div class="content clear padding-top-15 border-bottom">
+                                    <div class="profile-image">
+                                        <img src="images/generic-user-avatar.jpg">
+                                        <p class="smaller">TJ Juskiewicz<br>
+                                        (167.8.69.4)</p>
+                                    </div>
+                                    <div class="profile-content">
+                                      
+                                        <p>unless they come by boat to pick up people that want to quit, there is only one road that takes them to Harpers, the other one is the bike route which is narrow and winds through the forest.</p>
+
+                                        <p class="padding-top-15">it’s not too hard to control one road and make it for local vehicles only…</p>
+
+                                        <p class="padding-top-15">we suggest people just follow the route and enjoy the day. What people decide to do, we cant control that..</p>
+                                        <div class="margin-top-20 border-top padding-top-15">
+                                            <h6 class="font-14 margin-bottom-0">Quote</h6>
+                                            <p class="xs">POSTED 1 MONTH, 1 WEEK AGO AGO <a href="">#1231124</a></p>
+                                            <ul class="inline">
+                                                <li><a href="">Edit</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Move</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Split</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Trash</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Spam</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div>
+                                
+                                <div class="content clear padding-top-15 border-bottom">
+                                    <div class="profile-image">
+                                        <img src="images/generic-user-avatar.jpg">
+                                        <p class="smaller">TJ Juskiewicz<br>
+                                        (167.8.69.4)</p>
+                                    </div>
+                                    <div class="profile-content">
+                                      
+                                        <p>unless they come by boat to pick up people that want to quit, there is only one road that takes them to Harpers, the other one is the bike route which is narrow and winds through the forest.</p>
+
+                                        <p class="padding-top-15">it’s not too hard to control one road and make it for local vehicles only…</p>
+
+                                        <p class="padding-top-15">we suggest people just follow the route and enjoy the day. What people decide to do, we cant control that..</p>
+                                        <div class="margin-top-20 border-top padding-top-15">
+                                            <h6 class="font-14 margin-bottom-0">Quote</h6>
+                                            <p class="xs">POSTED 1 MONTH, 1 WEEK AGO AGO <a href="">#1231124</a></p>
+                                            <ul class="inline">
+                                                <li><a href="">Edit</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Move</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Split</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Trash</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Spam</a></li>
+                                                <li> | </li>
+                                                <li><a href="">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div>
+                                    
+                           
+                                
+                                <div class="clearer"></div>
+                            </div>
+                            <div class="tab-pane" id="h3"></div>
+                            <div class="tab-pane" id="h4"></div>
+                        </div>
                     </div>
                         
                     <!-- Send Invites -->
@@ -974,11 +1250,11 @@ ul.pagination li.disabled {
                         
                     <!-- Settingss -->
                     <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
                         <br>
-                            <br>
-                            <p>Tab 9 Container</p>
-                        </div>
+                        <br>
+                        <p>Tab 9 Container</p>
+                    </div>
                     
                     <!-- Registration Status -->
                     <div>
@@ -997,26 +1273,5 @@ ul.pagination li.disabled {
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-	<!--Plug-in Initialisation-->
-	<script type="text/javascript">
-    $(document).ready(function() {
-
-       
-
-       
-
-        //Vertical Tab
-        $('#userprofile').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-         
-            tabidentify: 'hor_1', // The tab groups identifier
-            activetab_bg: '#333', 
-            inactive_bg: '#9b9b9b'
-        });
-    });
-</script>
 </body>
 </html>

@@ -6273,6 +6273,7 @@ ul.footer-list li p {
 }
 .table-header-middle {
     text-align: center;
+    white-space: normal;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -6348,6 +6349,7 @@ ul.footer-list li p {
     .table-header-middle {
         padding-left: 0;
         text-align: right;
+        white-space: nowrap;
     }
 }
 
@@ -8471,6 +8473,9 @@ ul.search.pagination li a {
     width: 100%;
 }
 .group:nth-child(odd) {
+    background: #fff;
+}
+.forums .group {
     background: #fff;
 }
 .group-desc {
