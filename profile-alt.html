@@ -2,15 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Tab-user-profile Combo</title>
+    <title>RAGBRAI: Member Profile Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new-style.css" rel="stylesheet">
     <link href="css/lightgallery.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css">
+
     <title>Easy Responsive Tabs to Accordion</title>
     <style type="text/css" rel="stylesheet">
        
@@ -151,6 +149,7 @@ float:left;font-size: 14px;
     font-size: 15px;
     background: #fff;
 }
+.message-table th,
 .profile-table th {
     background: #ddd;
 }
@@ -224,15 +223,45 @@ ul.pagination li.disabled {
     display: table-cell;
      white-space: normal;
 }
+.table-responsive table.message-table {
+    margin-bottom: 0;
+}
+.profile-pic {
+    width: 25%;
+    height: auto;
+    float:left;
+    margin-right: 25px;
+}
+.profile-pic img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.profile-info {
+    float: left;
+    width: calc( 75% - 25px);
+}
 @media screen and (max-width: 640px) {
 	.profile-table td {
 	    white-space: nowrap;
 		
 	}
-	
 	.message-table td {
-	    display: block;
-	   
+	    white-space: nowrap;  
+	}
+	.messages-options-nav .select-label {
+	    display: none;
+	}
+	.messages-options-nav li {
+	    line-height: 16px;
+	}
+	.profile-pic {
+	margin-right: 15px;
+	    padding-left: 15px;
+	}
+	.profile-h2 {
+	    padding-left: calc(25% + 15px);
+	    
 	}
 }
 
@@ -377,19 +406,21 @@ ul.pagination li.disabled {
     <div class="content">
         <div class="container">
             <div class="row">
-                <h2>Cory Walker</h2>
-                <img src="pics/big-fake-user.jpg" style="width:25%;height:auto;float:left;margin-right: 25px;">
+               <h2 class="profile-h2">Cory Walker</h2>
+                <div class="profile-pic">
+                     
+                    <img src="pics/big-fake-user.jpg">
+                </div>
+                <div class="profile-info">
                 
-                <div style="width: calc( 75% - 25px);float:left">
-                
-                <ul class="plain">
-                    <li><a href="">corywalker@gmail.com</a></li>
-                    <li>Active right now</li>
-                    <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
-                    <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
-                    <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
-                    <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
-                </ul>
+                    <ul class="plain">
+                        <li><a href="">corywalker@gmail.com</a></li>
+                        <li>Active right now</li>
+                        <li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> February 26, 1977</li>
+                        <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> North Orionland, Connecticut</li>
+                        <li><i class="fa fa-user fa-fw" aria-hidden="true"></i> Male</li>
+                        <li><a href=""><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Edit Profile</a></li>
+                    </ul>
                 </div>
             </div>
             <!--Vertical Tab-->
@@ -715,7 +746,13 @@ ul.pagination li.disabled {
                                 </div>
                                 <div class="table-responsive">
 	                                <table id="message-threads" class="message-table">
-	                                   
+	                                   <thead>
+	                                        <tr>
+	                                            <th colspan="3">From</th>
+	                                            <th>Message</th>
+	                                            <th>Actions</th>
+	                                        </tr>
+                                        </thead>
 			                            <tbody>
 			                                <tr id="m-3345" class="read">
 				                                <td class="thread-count">
@@ -931,7 +968,31 @@ ul.pagination li.disabled {
                                         </tbody>
                                     </table>
                                 </div>
-                            
+                                <div class="messages-options-nav">
+                                    <ul>
+                                        <li>
+		                                    <span class="select-label">Select:</span>
+                                            <select class="small" name="message-type-select" id="message-type-select">
+                                <option value="">Select</option>
+		                                            <option value="read">Read</option>
+		                                            <option value="unread">Unread</option>
+		                                            <option value="all">All</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="mark_as_read">Mark as Read</a> &nbsp;
+                                            </li>
+                                            <li>
+		                                        <a href="#" id="mark_as_unread">Mark as Unread</a> &nbsp;
+                                            </li>
+                                            <li>
+                                                <a href="#" id="delete_inbox_messages">Delete Selected</a> &nbsp;
+                                            </li>
+                                        </ul>
+                                        <input type="hidden" id="mark-messages-read-nonce" name="mark-messages-read-nonce" value="ba390fa55d">
+		                                <input type="hidden" id="mark-messages-unread-nonce" name="mark-messages-unread-nonce" value="4023492c81">
+	                                    <input type="hidden" id="delete-selected-nonce" name="delete-selected-nonce" value="fdcc2e8d71">
+	                                </div>
                             </div>
                             <div class="tab-pane" id="s2">two</div>
                             <div class="tab-pane" id="s3">three</div>
@@ -997,7 +1058,6 @@ ul.pagination li.disabled {
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
 	<!--Plug-in Initialisation-->
 	<script type="text/javascript">
     $(document).ready(function() {

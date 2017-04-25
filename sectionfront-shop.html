@@ -21,6 +21,13 @@
         background-position: 85% center;
         background-size: 50%
     }
+    select {
+        display: none;
+    }
+    .nice-select {
+        display: inline-block;
+        clear: none;
+    }
     @media (max-width: 991px) {
         .shop-1,
         .shop-2 {
@@ -161,7 +168,7 @@
     <!-- HOME -->
     <div class="home highlight darker" id="maincarousel">
         <!-- MAINCAROUSEL -->
-         <div class="owl-carousel">
+        <div class="owl-carousel">
             <div class="large-size overlay">
                 <div class="bg shop-1"></div>
                 <div class="container">
@@ -207,9 +214,9 @@
                         <li><a href="#high-price" data-toggle="tab">High Price</a></li>
                     </ul>
                 </div>
-                <div class="row text-center" style="margin-top:0;margin-bottom: 30px;">
+                <div class="row text-center shop-tabs">
                     <div class="padding-top-0 col-lg-12 text-center">
-                        <div class="inline-block hidden-xxs hidden-xs" style="transform: translateY(4px);font-weight: 600;margin-right: 20px;">
+                        <div class="inline-block hidden-xxs hidden-xs shop-tabs-label">
                             OR SORT BY CATEGORY:
                         </div>
                         <div class="inline-block select">
@@ -221,7 +228,7 @@
                                 <option value="5">RAGBRAI XLI</option>
                                 <option value="6">COLLECTIBLES</option>
                                 <option value="7">CASUAL APPAREL</option>
-                                <option value="8">CLEARANCR</option>
+                                <option value="8">CLEARANCE</option>
                                 <option value="9">CYCLING APPAREL</option>
                                 <option value="10">ACCESSORIES</option>
                             </select>
@@ -321,9 +328,7 @@
                                     <p class="grey">$6.00</p>
                                 </div>
                              </div>
-                             
-                             
-                        <div class="row">
+                            <div class="row">
                             <div class="col-md-3 col-sm-6 text-center">
                                 <div class="cimg">
                                     <a href="" class="aimg">
@@ -365,9 +370,9 @@
                                 <p class="grey">$6.00</p>
                             </div>
                         </div>
-                    </div>
+                        </div>
                     
-                    <div class="tab-pane fade" id="popular">
+                        <div class="tab-pane fade" id="popular">
                         <div class="row">
                             <div class="col-sm-4">
                                 <h2>Our methodology</h2>
@@ -383,7 +388,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="low-price">
+                        <div class="tab-pane fade" id="low-price">
                         <div class="row">
                             <div class="col-sm-4">
                                 <h2>Our strategy</h2>
@@ -399,8 +404,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="high-price">content</div>
-                </div>
+                        <div class="tab-pane fade" id="high-price">content</div>
+                    </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
@@ -430,9 +435,9 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     <!-- /.content -->
-</div>
+    </div>
 <!-- /.wrapper -->
 </div>
 <!-- FOOTER -->
@@ -632,11 +637,7 @@
 <script src="js/lg.min.js"></script>
 <script src="js/lg-share-3.js"></script>
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
-<script>
-$('.lg-video').on('click', function() {
-        $(this).find('video').play();
-    });
-</script>
+
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/lightbox-script.js"></script>
 </body>

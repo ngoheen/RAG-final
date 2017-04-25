@@ -34,7 +34,8 @@
         pinterestDropdownText: 'Pinterest',
         buy: true,
         tumbler: true,
-        tumblerDropdownText: 'Tumbler'
+        tumblerDropdownText: 'Tumbler',
+        base_url: ''
     };
 
     var Share = function(element) {
