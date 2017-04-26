@@ -21,6 +21,7 @@
 |__Register__   |[Registration](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/registration.html)|
 |__Forums__     |[forums index](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-forums.html)|
 |               |[forums post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/forums-post.html)|
+|               |[forums index with create topic](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/index-forum.html)|
 <br>
 
 ### Scripts used:
