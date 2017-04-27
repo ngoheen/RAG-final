@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Blog Section Front</title>
+    <title>RAGBRAI: Registration</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
@@ -384,19 +384,19 @@
                                         <div class="padding-bottom-30">XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
                                         <div id="entry1" class="clear clonedInput form-group">
                                             <div class="col-md-4">
-                                                <select class="custom-select">
+                                                <select class="wide">
                                                     <option value="1">Colour</option>
                                                     <option value="2">2</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <select class="custom-select">
+                                                <select class="wide">
                                                     <option value="1">Size</option>
                                                     <option value="2">2</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <input type="text" placeholder="Quantity">
+                                                <input class="shorter" type="text" placeholder="Quantity">
                                             </div>
                                         </div>
                                     </div>
@@ -430,10 +430,9 @@
                             <div class="panel-body collapse" id="faq-5">
                                 <div class="col-md-6">
                                    <form class="loginform" action="/">
-                                        <div class="formwrap">
+                                        <div class="formwrap personal">
                                             <div class="form-group">
-                                                <select class="w100">
-                                                    
+                                                <select class="wide">
                                                     <option value="United States">United States</option>
                                                     <option value="United Kingdom">United Kingdom</option>
                                                     <option value="Afghanistan">Afghanistan</option>
@@ -689,10 +688,10 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 border-top">
                                                         <input type="text" placeholder="First Name">
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 border-top">
                                                         <input type="text" placeholder="Last Name">
                                                     </div>
                                                 </div>
@@ -712,11 +711,8 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        
-                                                          
-                                                            <div class="form-group">
-                                                                <select data-placeholder="State" class="w100">
-                                                                   <option value=""></option>
+                                                        <select class="wide">
+                                                                   <option value="">State</option>
                                                                     <option value="Alabama">Alabama</option>
                                                                     <option value="Alaska">Alaska</option>
                                                                     <option value="Arizona">Arizona</option>
@@ -772,22 +768,20 @@
                                                                     <option value="Wisconsin">Wisconsin</option>
                                                                     <option value="Wyoming">Wyoming</option>
                                                                 </select>
-                                                            </div>
-                                                        
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input type="text" placeholder="Postcode" data-inputmask="'mask': '999999'">
+                                                        <input type="text" placeholder="Postal/Zip Code" class="border-bottom-0">
                                                     </div>
                                                 </div>
                                             </div>
                             
                                             <div class="form-group">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 border-top">
                                                         <input class="collapse-border" type="email" placeholder="Email">
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input type="text" placeholder="Phone" data-inputmask="'mask': '+375(99)999-99-99'">
+                                                    <div class="col-md-6 border-top">
+                                                        <input type="text" placeholder="Phone">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1233,36 +1227,16 @@ RAGBRAI® XLV JULY 23-29, 2017 — The Des Moines Register</h4>
 <!-- /.template -->
 
 <script src="js/lg.min.js"></script>
-<!-- above is the minified version of all the scripts below, in one script -->
-
-<!-- these scripts all came with lightgallery which is used for popups -->
-<!--
-<script src="lightGallery-master/demo/js/lightgallery.js"></script>
-<script src="lightGallery-master/demo/js/lg-fullscreen.js"></script>
-<script src="lightGallery-master/demo/js/lg-video.js"></script>
-<script src="lightGallery-master/demo/js/lg-zoom.js"></script>
-<script src="lightGallery-master/demo/js/lg-hash.js"></script>
--->
 <script src="js/lg-share-3.js"></script><!-- this needs to properly add the social media links -->
 <!-- /.lightgallery -->
 
 <!-- this js is just to make the video play onclick and is way more than needed -->
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
-<script>
-$('.lg-video').on('click', function() {
-    $(this).find('video').play();
-});
-
-$( ".btn-day" ).click(function() {
-  $( this ).toggleClass( "pushed" );
-});
-
-</script>
 
 <!-- this script runs all the carousels -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- /.carousels -->
-<script src="js/clone-form.js"></script>
+
 <!-- this script calls lightbox and owlcarousel where needed-->
 <script src="js/lightbox-script.js"></script>
 

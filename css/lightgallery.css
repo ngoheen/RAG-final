@@ -155,7 +155,7 @@
   position: relative;
 }
 
-.lg-toolbar {
+.lg-toolbar.group {
   z-index: 1082;
   left: 0;
   position: absolute;

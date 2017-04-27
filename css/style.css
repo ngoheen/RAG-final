@@ -1675,11 +1675,13 @@ a.grey:hover{
 }
 
 .border-top {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid #E0E0E0;
 }
-
+.border-bottom-0 {
+    border-bottom: none !important;
+}
 .border-bottom {
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #E0E0E0;
 }
 
 .border {
@@ -1753,7 +1755,7 @@ li.no-dot {
     border-left-color:transparent;
 }
 
-.nav li {
+.tabs.plain .nav li {
     float:none;
     display:inline-block;
     padding-left: 0 !important;
@@ -8358,10 +8360,11 @@ h5+h5{
 .checkout-step {
     background:#4d4d4d;
     border-radius:4px;
-    color:#fff;width:100%;
+    color:#fff;
     height:65px;
     margin-bottom: 30px;
     padding: 16px 15px 26px;
+    width:100%;
 }
 .checkout-step h3 {
     color:#fff;
@@ -8369,6 +8372,85 @@ h5+h5{
     letter-spacing: 0;
     margin-bottom:0;
 }
+.checkout-1 .formwrap {
+    border-radius: 4px;
+    border: none;
+    overflow: visible;
+}
+.checkout-1 .form-group {
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.personal .nice-select,
+#checkout1 .nice-select {
+    border: none;
+}
+.personal.formwrap .form-group,
+#checkout1 .formwrap .form-group {
+    overflow: visible;
+}
+
+#checkout1 .formwrap .form-group {
+    min-height: 42px;
+}
+.form-top {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 1px solid #e0e0e0;
+        height: 46px;
+    }
+    .form-end {
+        border-bottom: 1px solid #e0e0e0;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .checkout-confirm .nice-select,
+    .checkout-1 .nice-select {
+        display: inline-block;
+        clear: none;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 46px;
+        font-weight: 300;
+        color: #999;
+        font-size: 16px;
+        line-height: 46px;
+       
+    }
+    .checkout-confirm .nice-select {
+        border: 1px solid #e0e0e0;
+    }
+    .checkout-confirm .formwrap {
+        border:0px solid #e0e0e0;
+    }
+   .checkout-confirm input[type=number], 
+   .checkout-confirm input[type=text], 
+   .checkout-confirm input[type=email], 
+   .checkout-confirm input[type=password], 
+   .checkout-confirm input[type=search], 
+   .checkout-confirm textarea {
+    border: 1px solid #e0e0e0;
+   }
+   .border-bot-0 {
+        border-bottom: none !important;
+    }
+    .collapse label {
+        font-weight: 300;
+    }
+    @media (max-width: 991px) {
+        .squeeze {
+            overflow: hidden;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top:4px;
+            margin-bottom: 4px;
+        }
+    }
 @media (max-width: 767px) {
     .text-right.displaying,
     .bottom-pagination {
@@ -8591,8 +8673,7 @@ h6.register {
     margin-right: -15px;
 }
 .clonedInput {
-    overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 h4 span {
     float: right;
@@ -8612,7 +8693,7 @@ h4 span {
     padding: 3px 7px 4px;
 }
 .content.registration .loginform .btn.border-btn {
-    line-height: 13px;
+    line-height: 40px;
     min-width: 60px;
     width: auto;
 }
@@ -9098,8 +9179,6 @@ table.invite-anyone-sent-invites th a,
 .resp-tabs-list .badge {
     float:right;
 }
-
-
 .profile-table td {
     white-space: normal
 }
@@ -9190,6 +9269,16 @@ textarea.wp-editor-area {
 .bbp-form label {
     margin-bottom: 5px;
     margin-top: 15px;
+}
+.registration input.shorter {
+    height: 42px;
+}
+div[id*="entry"] {
+}
+div[id*="entry"]:before {
+    content:'\A';
+    margin-bottom: 10px;
+    white-space: pre;
 }
 @media screen and (max-width: 640px) {
 	.forums .profile-image,

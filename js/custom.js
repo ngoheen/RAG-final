@@ -2,14 +2,14 @@
     'use strict';
     var pluginName = "Camaro",
         defaults = {
-            sliderFx: 'crossfade',		// Slider effect. Can be 'slide', 'fade', 'crossfade'
-            sliderInterval: 8000,		// Interval
+            //sliderFx: 'crossfade',		// Slider effect. Can be 'slide', 'fade', 'crossfade'
+            //sliderInterval: 8000,		// Interval
             speedAnimation: 600,        // Default speed of the animation
             countdownTo: '2017/07/23',          // Change this in the format: 'YYYY/MM/DD'
             successText: 'You have successfully subscribed', // text after successful subscribing
             errorText: 'Please, enter a valid email', // text, if email is invalid
-            teamHeight : 450, // Team expand height
-            tooltipPosition: 'bottom',            // Tooltip position
+            //teamHeight : 450, // Team expand height
+            //tooltipPosition: 'bottom',            // Tooltip position
             scrollTopButtonOffset: 100 // when scrollTop Button will show
         },
         $win = $(window),
@@ -124,10 +124,10 @@
             this.magnificVideo = $('.magnific-video');
             this.citem = $('.catalog-square .citem');
             this.addCart = $('.add-cart');
-            this.jslider = $('.jslider');
+            //this.jslider = $('.jslider');
             this.rating = $('.raty');
-            this.thumbsSlider = $('.thumbs-slider');
-            this.mediumSlider = $('.medium-slider');
+            //this.thumbsSlider = $('.thumbs-slider');
+            //this.mediumSlider = $('.medium-slider');
             this.counting = $('.counting');
             this.aLess = $('.a-less');
             this.aMore = $('.a-more');
@@ -143,7 +143,7 @@
             this.dataToggle = $('[data-toggle]');
             this.expandLink = $('.expand-link');
             this.collapseLink = $('.collapse-link');
-            this.accToggle = $('.accordion-toggle');
+            this.accToggle = $('.accordeon-toggle');
             this.navCategory = $('.nav-category');
             this.filterLink = $('a.filter');
             this.mixList = $('.mix-list');
@@ -189,18 +189,19 @@
             }
 
             // Custom Select
-          /*  if (instance.select.length > 0){
+           /* if (instance.select.length > 0){
                 instance.select.each(function(){
                     var self = $(this),
                         wid = self.data('width');
 
                     self.width(wid).chosen({width: wid});
+                    console.log('changed width');
 
                 });
             }
 */
             // Custom input[type=range]
-            if (instance.jslider.length > 0) {
+            /*if (instance.jslider.length > 0) {
                 instance.jslider.slider({
                     from: 0,
                     to: 1000,
@@ -210,7 +211,7 @@
                     dimension: "$&nbsp;"
                 });
             }
-
+*/
             //instance.inputMask.inputmask();
 
             // RATING
@@ -270,7 +271,7 @@
                 e.preventDefault();
                 var $this = $(this);
 
-                $this.parents('.box-inline').slideToggle(instance.options.speedAnimation);
+                $this.parents('.box-inline').fadeOut(instance.options.speedAnimation);
             });
 
             instance.estimateshipping.find('[data-toggle]').on('click', function(e){
@@ -632,51 +633,7 @@
                 }
             });
 
-            // Product Thumbs
-            if (instance.thumbsSlider.length > 0) {
-
-                instance.thumbsSlider.find('a').each(function(i) {
-                    $(this).addClass( 'itm'+i );
-                    $(this).click(function() {
-                        instance.mediumSlider.trigger( 'slideTo', [i, 0, true] );
-                    });
-                });
-                instance.thumbsSlider.find('.itm0').addClass( 'selected' );
-
-                instance.mediumSlider.carouFredSel({
-                    responsive: true,
-                    circular: false,
-                    infinite: false,
-                    items : {
-                        visible     : 1,
-                        height       : 'auto',
-                        width      : 870
-                    },
-                    auto: false,
-                    scroll: {
-                        fx: 'crossfade',
-                        onBefore: function() {
-                            var pos = $(this).triggerHandler( 'currentPosition' );
-                            instance.thumbsSlider.find('a').removeClass( 'selected' );
-                            instance.thumbsSlider.find('a.itm'+pos).addClass('selected');
-                        }
-                    }
-                });
-
-                instance.thumbsSlider.carouFredSel({
-                    auto: false,
-                    width: '100%',
-                    scroll:{
-                        items: 1
-                    },
-                    prev: ".th-prev",
-                    next: ".th-next"
-                });
-            }
-
-            instance.thumbsSlider.find('a').on('click', function(e){
-                e.preventDefault();
-            });
+            
 
             // Product counting more
             instance.aMore.on('click',function(e){
@@ -879,6 +836,7 @@
 })(jQuery);
 
 $(document).ready(function(){
+    //social menu in post
     var expandsocial = $('.byline .more-social').on('click',function(event){
         event.stopPropagation();
         event.preventDefault();
@@ -888,8 +846,29 @@ $(document).ready(function(){
     $(".byline-social").bind( "clickoutside", function(event){
         $(this).hide();
     });
-  
+        
+    //special select
+    $('select').niceSelect();
+        
+    //video play on clicking button
+    $('.lg-video').on('click', function() {
+        $(this).find('video').play();
+    });
+        
+    //Vertical Tab
+    $('#userprofile').easyResponsiveTabs({
+        type: 'vertical', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activetab_bg: '#333', 
+        inactive_bg: '#9b9b9b'
+    });
     
+    //multiple selected buttons
+    $( ".btn-day" ).click(function() {
+        $( this ).toggleClass( "pushed" );
+    });
 });
 
 /*------------------------------------------------------------------

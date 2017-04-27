@@ -146,7 +146,6 @@
         <!-- CONTAINER -->
         <div class="container account">
             <div class="row">
-                <!-- COL -->
                 <div class="col-md-8">
                     <h2>Create a RAGBRAI.com User Account</h2>
                     <p>A RAGBRAI.com user account has several benefits.</p>
@@ -162,17 +161,17 @@
             </div>
             <div class="row">
                 <div class="col-md-7">
-                    <form action="/">
+                    <form class="checkout-confirm" action="/">
                         <h3 class="normal">Account Details</h3>
                         <div class="formwrap">
                             <div class="form-group">
-                                <input type="text" name="username" placeholder="Username - no spaces">
+                                <input class="border-bot-0" type="text" name="username" placeholder="Username - no spaces">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="email" placeholder="Email Address">
+                                <input class="border-bot-0" type="text" name="email" placeholder="Email Address">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="password" placeholder="Choose a Password">
+                                <input class="border-bot-0" type="text" name="password" placeholder="Choose a Password">
                             </div>
                             <div class="form-group">
                                 <input type="text" name="password" placeholder="Confirm Password">
@@ -276,20 +275,20 @@
                         
                         <p class="form-sub-title">Birth Date</p>
                         <div class="form-group">
-                            <div class="col-md-4">
-                                <select class="custom-select">
+                            <div class="col-md-4 squeeze padding-left-0">
+                                <select class="wide">
                                     <option value="1">Month</option>
                                     <option value="2">2</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <select class="custom-select">
+                            <div class="col-md-4 squeeze">
+                                <select class="wide">
                                     <option value="1">Day</option>
                                     <option value="2">2</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <select class="custom-select">
+                            <div class="col-md-4 padding-right-0 squeeze">
+                                <select class="wide">
                                     <option value="1">Year</option>
                                     <option value="2">2</option>
                                 </select>
@@ -325,7 +324,7 @@
 					        </ul>
                         </div>
                         
-                        <select class="custom-select">
+                        <select class="wide">
                             <option value="0">Gender</option>
                             <option value="1">Female</option>
                             <option value="2">Male</option>
@@ -454,7 +453,7 @@
 					        </ul>
                         </div>
                         
-                         <select class="custom-select">
+                         <select class="wide">
                             <option value="State">State</option>
                             <option value="Alabama">Alabama</option>
                             <option value="Arkansas">Arkansas</option>
@@ -520,7 +519,7 @@
 					        </ul>
                         </div>
                         
-                        <select class="custom-select">
+                        <select class="wide">
                             <option value="Country">Country</option>
                             <option value="Alabama">United States</option>
                             <option value="Arkansas">Albania</option>
@@ -839,11 +838,6 @@
 <script src="js/lg.min.js"></script>
 <script src="js/lg-share-3.js"></script>
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
-<script>
-$('.lg-video').on('click', function() {
-        $(this).find('video').play();
-    });
-</script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/lightbox-script.js"></script>
 </body>
