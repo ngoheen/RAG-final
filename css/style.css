@@ -564,6 +564,9 @@ body.container .footer .container:last-child{
 .margin-top-20 {
     margin-top: 20px;
 }
+.margin-top-40 {
+    margin-top: 40px !important;
+}
 .margin-top {
     margin-top: 90px !important;
 }
@@ -651,13 +654,16 @@ button.block {
     -webkit-transform: translateZ(0);
     display: inline-block;
 }
-
+.inline-10 > *,
 .inline > * {
     margin-left:30px;
     display:inline-block;
     vertical-align:middle;
 }
-
+.inline-10 > * {
+    margin-left: 10px;
+}
+.inline-10 > :first-child,
 .inline > :first-child {
     margin-left:0;
 }
@@ -914,6 +920,9 @@ p.form-sub-title + .row {
     margin-right: -15px;
     margin-top: 0;
 }
+.account .select-wrapper + p {
+    margin-top: -2px;
+}
 .first-letter {
     color: #000;
     float: left;
@@ -988,7 +997,7 @@ blockquote.lead {
 }
 .reddish,
 .color {
-    color: #e7543d;
+    color: #e7543d !important;
 }
 
 .inherit{
@@ -2907,7 +2916,7 @@ p.lead {
     position: relative;
 }
 .white {
-    background: #fff;
+    background: #fff !important;
 }
 .margin-bottom-20 {
     margin-bottom: 20px;
@@ -6273,6 +6282,7 @@ ul.footer-list li p {
 }
 .table-header-middle {
     text-align: center;
+    white-space: normal;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -6348,6 +6358,7 @@ ul.footer-list li p {
     .table-header-middle {
         padding-left: 0;
         text-align: right;
+        white-space: nowrap;
     }
 }
 
@@ -8297,6 +8308,10 @@ h5+h5{
         float: none;
         text-align: center;
     }
+    .plain li {
+        font-size: 14px;
+        line-height: 26px;
+    }
     .forums .col-fixed-300 .col-md-12.col.sm-6,
     .blogs .col-fixed-300 .col-md-12.col-sm-6,
     .post .col-fixed-300 .col-md-12.col-sm-6 {
@@ -8435,6 +8450,12 @@ ul.search.pagination li a {
     padding-left: 0;
     list-style-type: none;
 }
+.plain li {
+   line-height: 30px;
+}
+.plain li i {
+    margin-right: 10px;
+}
 .content ul.plain.inline li {
     display: inline-block;
     padding: 0 10px;
@@ -8470,7 +8491,15 @@ ul.search.pagination li a {
     float: left;
     width: 100%;
 }
+.striped-table {
+    background: #f8f8f8;
+    padding: 20px;
+}
+.striped-table:nth-child(odd),
 .group:nth-child(odd) {
+    background: #fff;
+}
+.forums .group {
     background: #fff;
 }
 .group-desc {
@@ -8544,11 +8573,6 @@ a.border-btn {
     margin-right: 8px;
     padding-top: 9px;
 }
-/*.chosen-container {
-    min-width: 130px;
-    width: 100% !important;
-}
-*/
 h6.register {
     color: #333;
     line-height: 24px;
@@ -8583,8 +8607,19 @@ h4 span {
     margin-top: 0;
 }
 .badge {
-    padding: 3px 7px 4px;
+    background-color:#e7543d;
     display: inline-block;
+    padding: 3px 7px 4px;
+}
+.content.registration .loginform .btn.border-btn {
+    line-height: 13px;
+    min-width: 60px;
+    width: auto;
+}
+.clearer {
+    clear: left; 
+    height: 0;
+    line-height: 0; 
 }
 .forums h5 {
     line-height: 24px;
@@ -8638,6 +8673,9 @@ div[class$="something"] {
 @media (max-width:414px) {
     .content.registration .loginform .btn {
         width: 100%;
+    }
+    table.member-info td {
+        font-size: 85%;
     }
     .content.registration .loginform .btn.border-btn {
         line-height: 13px;
@@ -8758,6 +8796,10 @@ select {
           user-select: none;
   white-space: nowrap;
   width: auto; }
+.nice-select {
+    display: inline-block;
+    clear: none;
+}
  /* .nice-select:hover {
     border-color: #dbdbdb; }
   .nice-select:active, .nice-select.open, .nice-select:focus {
@@ -8879,3 +8921,510 @@ select {
   display: block; }
 
 /*USER PROFILE ACCORDION */
+
+i.walker {
+    background-image: url(../images/ic_directions_walk_2x.png);
+    background-size: cover;
+    float: left;
+    height: 21px;
+    width: 21px;
+    }
+.resp-tab-content {
+    background: #f8f8f8;
+}
+.panel-menu {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    max-width: none;
+    display: table;
+}
+.panel-menu li {
+    background: #fff;
+    display: table-cell;
+    float: none;
+    font-size: 14px;
+    padding: 10px 0;
+    padding-left: 0 !important;
+    text-align: center;
+}
+.panel-menu li.active {
+    background: #f8f8f8;
+    border-top: 2px solid #e7543d;
+}
+.panel-menu li:first-child span {
+    border-left: none;
+}
+.panel-menu > li > a > span {   
+    border-left: 1px solid #d9d9d9;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0;
+    width: 100%;
+}
+.profile-content {
+    float: left;
+    font-size: 14px;
+    margin-left: 20px;
+    width: calc(100% - 80px);
+}
+.panel-menu > li.active + li > a > span {
+    border: none;
+}
+.panel-menu > li.active > a > span {
+    border-left-color: transparent;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    text-align: center;
+}
+.forums .row + .row {
+    margin-top: 0;
+}
+.forums a {
+    color: #000;
+}
+.xs {
+    font-size: 12px !important;
+}
+.tab-pane#h1 > div.content > div.row:first-child {
+    padding-top:15px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.nota-bene {
+    background: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px 0;
+    padding:10px;
+}
+.invites li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#groupride-list {
+    width: 100%;
+}
+.option-bar {
+    border-bottom: 1px dashed #e0e0e0;
+r    padding: 10px 0;
+    width: 100%;
+}
+ul.resp-tabs-list.hor_1 {
+    margin-right: 25px;
+}
+ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+}
+.item.pull-left.small {
+    width: calc(100% - 80px);
+}
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #333;
+}
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+h2.resp-accordion {
+    font-size: 17px;
+    border:0px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+h2.resp-tab-active {
+    background-color: #333 !important;
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+.resp-tabs-list a {
+    display: inline-block;
+    float: left;
+}
+.resp-tabs-list.hor_1 i {
+    margin-right: 10px;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+}
+.resp-vtabs .resp-tabs-list li {
+    cursor: pointer;
+    display: block;
+    float: none;
+    margin: 0 0 2px;
+    padding: 0;
+}
+.resp-tabs-list li a {
+    color: #fff;
+    display: block !important;
+    float: none !important;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px 15px;   
+}
+.resp-tabs-list li a i {
+    margin-right: 10px;
+}
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    float: left;
+    width: calc( 75% - 25px );
+    min-height: 250px;
+    clear: none;
+}
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+.resp-vtabs li.resp-tab-active { 
+    position: relative;
+    z-index: 1;
+}
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+.resp-tab-content-active {
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .panel-menu {
+        width: calc(100%);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .resp-arrow {
+        display: none !important;
+    }
+    h2.resp-accordion {
+        clear: both;
+        display: block;
+        margin-bottom: 2px;
+        overflow: hidden;
+    }
+    h2.resp-accordion a {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display: none !important;
+    }
+}
+.member-address,
+table.member-info {
+    width: 100%;
+}
+table.member-info td {
+    font-size: 90%;
+    overflow-wrap: break-word;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: top;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+table.member-info td.mech-cost {
+    overflow-wrap: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
+table.member-info tbody tr:last-child td {
+    padding-bottom: 0;
+}
+table.member-info tbody tr:first-child td {
+    padding-top: 0;
+}
+.status_buttons .btn.btn-default {
+    margin-bottom: 20px;
+}
+.bp-uploader-window {
+    border: 1px dashed #666;
+    padding: 30px;
+    text-align: center;
+}
+.profile-post {
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.select-label {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.select-holder {
+    float: right;
+    margin: 20px 0;
+    padding-right: 0;
+    text-align:right;
+}
+table.invite-anyone-sent-invites,
+.profile-table th,
+.message-table,
+.profile-table {
+    font-size: 15px;
+    background: #fff;
+}
+table.invite-anyone-sent-invites th,
+.message-table th,
+.profile-table th {
+    background: #ddd;
+}
+.message-table tr,
+.profile-table tr {
+    border-bottom: 1px solid #ddd;
+}
+.profile-table td {
+    color: #000;
+    padding: 0 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+.profile-table .label label {
+    display: block;
+}
+table.message-table tbody tr:first-child td,
+table.profile-table tbody tr:first-child td {
+    padding-top: 10px;
+}
+table.message-table tbody tr:last-child td, 
+table.profile-table tbody tr:last-child td {
+    padding-bottom: 10px;
+}
+table.invite-anyone-sent-invites td,
+table.invite-anyone-sent-invites th,
+table.message-table td,
+table.message-table th,
+table.profile-table td,
+table.profile-table th {
+    font-size: 15px;
+    padding:10px;
+}
+table.invite-anyone-sent-invites th a,
+.panel-menu li a {
+    color: #000;
+}
+.panel-menu li.active a {
+    font-weight: 400;
+}
+.profile-table.side-head tr td:first-child {
+    font-weight: 400;
+}
+.resp-tabs-list .badge {
+    float:right;
+}
+.profile-table td {
+    white-space: normal
+}
+ul.pagination li.disabled {
+    display: none;
+}
+.messages-options-nav {
+   background: #ddd;
+   height: 100px;
+   padding-top: 10px;
+   width: 100%;
+}
+.messages-options-nav ul {
+    float: right;
+    margin-top: 2px;
+}
+.messages-options-nav li {
+    display: table-cell;
+    font-size: 14px;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.messages-options-nav  li a {
+    color: #000;
+}
+.messages-options-nav .select-label {
+    padding-top: 5px;
+}
+.profile-table td input[type=radio],
+.message-table td input[type=checkbox],
+.profile-table td input[type=checkbox] {
+    margin: 0 5px 0 0 !important;
+}
+.member-info td,
+.message-table td {
+    display: table-cell;
+    white-space: normal;
+}
+.table-responsive table.message-table {
+    margin-bottom: 0;
+}
+.profile-pic {
+    width: 25%;
+    height: auto;
+    float:left;
+    margin-right: 25px;
+}
+.profile-pic img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.profile-info {
+    float: left;
+    width: calc( 75% - 25px);
+}
+.profile-h2 {
+    margin-top: 0;
+}
+.profile-image {
+    width: 100px;
+    float: left;
+}
+.profile-image p {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.profile-image img {
+    display: inline-block;
+    width: 60px;
+    height: auto;
+}
+.forums .profile-content {
+    width: calc(100% - 120px);
+}
+.new-topic {
+    padding: 20px;
+}
+.quicktags-toolbar .button {
+    padding: 0 10px;
+}
+textarea.wp-editor-area {
+    border: 1px solid #B3B3B3;
+}
+.legend {
+    border-bottom: none;
+}
+.bbp-form label {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.group-nav-table {
+    margin-bottom:0 !important;
+}
+.group-nav-table td {
+    padding-top: 0 !important;
+}
+.title-cell {
+    padding-left: 0 !important;
+}
+table.group-nav-table tbody tr:first-child td {
+    padding-top: 0;
+}
+table.group-nav-table tbody tr:last-child td {
+    padding-right: 15px;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+	.forums .profile-image,
+	.forums .profile-content {
+	    width: 100%;
+	    float: none;
+	    margin-left: 0;
+	}
+	.profile-image p {
+	    display: inline-block;
+	    margin-left:10px;
+	}
+	.profile-table td {
+	    white-space: nowrap;
+	}
+	.message-table p,
+	.message-table td {
+	    display: block;
+	    width: 100%; 
+	}
+	.select-label {
+	    display: none;
+	}
+	.messages-options-nav li {
+	    line-height: 16px;
+	}
+	.profile-pic {
+	    margin-right: 15px;
+	    padding-left: 15px;
+	}
+	.profile-h2 {
+	    padding-left: calc(25% + 15px);
+	}	
+	table.group-nav-table tbody tr:last-child td {
+    padding-right: 0;
+    }
+}
+@media screen and (max-width: 414px) {
+    .inline-10 {
+        display: block;
+    }
+    
+    .item-title span.pull-right.text-right {
+        float: left !important;
+        text-align: left !important;
+    }
+}
