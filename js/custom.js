@@ -633,8 +633,6 @@
                 }
             });
 
-            
-
             // Product counting more
             instance.aMore.on('click',function(e){
                 e.preventDefault();
@@ -846,7 +844,7 @@ $(document).ready(function(){
     $(".byline-social").bind( "clickoutside", function(event){
         $(this).hide();
     });
-        
+
     //special select
     $('select').niceSelect();
         
