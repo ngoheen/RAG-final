@@ -1687,7 +1687,10 @@ a.grey:hover{
 .border {
     border: 1px solid #B3B3B3 !important;
 }
-
+ul.dot li {
+    list-style-type: disc;
+    margin-left: 45px;
+}
 li.no-dot {
     list-style-type: none !important;
 }
@@ -7161,6 +7164,7 @@ ul.footer-list li p {
 .highlight.darker .container {
     padding: 55px 0 35px;
 }
+.item-desc li a,
 .color-ccc {
     color: #666;
 }
@@ -9450,6 +9454,9 @@ textarea.wp-editor-area {
 }
 .registration input.shorter {
     height: 42px;
+}
+table.group-nav-table {
+    margin-bottom: 0;
 }
 .group-nav-table td {
     padding-top: 0 !important;
