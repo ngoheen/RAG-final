@@ -8755,6 +8755,9 @@ div[class$="something"] {
     .content.registration .loginform .btn {
         width: 100%;
     }
+    table.member-info td {
+        font-size: 85%;
+    }
     .content.registration .loginform .btn.border-btn {
         line-height: 13px;
         min-width: 60px;
@@ -9000,16 +9003,16 @@ select {
 
 /*USER PROFILE ACCORDION */
 
-        i.walker {
-            background-image: url(images/ic_directions_walk_2x.png);
-            background-size: cover;
-            float: left;
-            height: 21px;
-            width: 21px;
-    }
- .resp-tab-content {
-        background: #f8f8f8;
-    }
+i.walker {
+    background-image: url(../images/ic_directions_walk_2x.png);
+    background-size: cover;
+    float: left;
+    height: 21px;
+    width: 21px;
+}
+.resp-tab-content {
+    background: #f8f8f8;
+}
 .panel-menu {
     width: calc(100% + 30px);
     margin-left: -15px;
@@ -9036,7 +9039,7 @@ select {
     border-left: none;
 }
 .panel-menu > li > a > span {   
-    border-left: 1px solid #D9D9D9;
+    border-left: 1px solid #d9d9d9;
     display: inline-block;
     line-height: 20px;
     padding: 0;
@@ -9090,23 +9093,195 @@ select {
 }
 .option-bar {
     border-bottom: 1px dashed #e0e0e0;
+    padding: 10px 0;
+    width: 100%;
 }
 ul.resp-tabs-list.hor_1 {
     margin-right: 25px;
 }
+ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+}
+.item.pull-left.small {
+    width: calc(100% - 80px);
+}
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+}
 
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #333;
+}
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+h2.resp-accordion {
+    font-size: 17px;
+    border:0px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+h2.resp-tab-active {
+    background-color: #333 !important;
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
 .resp-tabs-list a {
-    display:inline-block;float: left;
+    display: inline-block;
+    float: left;
 }
 .resp-tabs-list.hor_1 i {
     margin-right: 10px;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+}
+.resp-vtabs .resp-tabs-list li {
+    cursor: pointer;
+    display: block;
+    float: none;
+    margin: 0 0 2px;
+    padding: 0;
+}
+.resp-tabs-list li a {
+    color: #fff;
+    display: block !important;
+    float: none !important;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px 15px;   
+}
+.resp-tabs-list li a i {
+    margin-right: 10px;
+}
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    float: left;
+    width: calc( 75% - 25px );
+    min-height: 250px;
+    clear: none;
+}
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+.resp-vtabs li.resp-tab-active { 
+    position: relative;
+    z-index: 1;
+}
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+.resp-tab-content-active {
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .panel-menu {
+        width: calc(100%);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .resp-arrow {
+        display: none !important;
+    }
+    h2.resp-accordion {
+        clear: both;
+        display: block;
+        margin-bottom: 2px;
+        overflow: hidden;
+    }
+    h2.resp-accordion a {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display: none !important;
+    }
+}
+.member-address,
+table.member-info {
+    width: 100%;
+}
+table.member-info td {
+    font-size: 90%;
+    overflow-wrap: break-word;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: top;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+table.member-info td.mech-cost {
+    overflow-wrap: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
+table.member-info tbody tr:last-child td {
+    padding-bottom: 0;
+}
+table.member-info tbody tr:first-child td {
+    padding-top: 0;
+}
+.status_buttons .btn.btn-default {
+    margin-bottom: 20px;
 }
 .bp-uploader-window {
     border: 1px dashed #666;
     padding: 30px;
     text-align: center;
 }
-
 .profile-post {
     overflow: hidden;
     clear: both;
@@ -9212,6 +9387,7 @@ ul.pagination li.disabled {
 .profile-table td input[type=checkbox] {
 	    margin: 0 5px 0 0 !important;
 }
+.member-info td,
 .message-table td {
     display: table-cell;
      white-space: normal;
@@ -9273,12 +9449,25 @@ textarea.wp-editor-area {
 .registration input.shorter {
     height: 42px;
 }
+.group-nav-table td {
+    padding-top: 0 !important;
+}
+.title-cell {
+    padding-left: 0 !important;
+}
 div[id*="entry"] {
 }
 div[id*="entry"]:before {
     content:'\A';
     margin-bottom: 10px;
     white-space: pre;
+}
+table.group-nav-table tbody tr:first-child td {
+    padding-top: 0;
+}
+table.group-nav-table tbody tr:last-child td {
+    padding-right: 15px;
+    padding-bottom: 0;
 }
 @media screen and (max-width: 640px) {
 	.forums .profile-image,
@@ -9299,7 +9488,7 @@ div[id*="entry"]:before {
 	    display: block;
 	    width: 100%; 
 	}
-	.messages-options-nav .select-label {
+	.select-label {
 	    display: none;
 	}
 	.messages-options-nav li {
@@ -9312,4 +9501,17 @@ div[id*="entry"]:before {
 	.profile-h2 {
 	    padding-left: calc(25% + 15px);
 	}	
+	table.group-nav-table tbody tr:last-child td {
+    padding-right: 0;
+    }
+}
+@media screen and (max-width: 414px) {
+    .inline-10 {
+        display: block;
+    }
+    
+    .item-title span.pull-right.text-right {
+        float: left !important;
+        text-align: left !important;
+    }
 }
