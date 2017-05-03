@@ -492,6 +492,9 @@ body.container .footer .container:last-child{
 .padding-right-10 {
     padding-right: 10px;
 }
+.padding-right-15 {
+    padding-right: 15px;
+}
 .padding-top-15 {
     padding-top: 15px;
 }
@@ -560,7 +563,12 @@ body.container .footer .container:last-child{
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
-
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.margin-top-15 {
+    margin-top: 15px !important;
+}
 .margin-top-20 {
     margin-top: 20px;
 }
@@ -578,6 +586,9 @@ body.container .footer .container:last-child{
 }
 .margin-left-10 {
     margin-left: 10px;
+}
+.margin-left-20 {
+    margin-left: 20px;
 }
 .margin-top-0 {
     margin-top: 0 !important;
@@ -623,7 +634,9 @@ body.container .footer .container:last-child{
 button.block {
     width:100%;
 }
-
+.danger {
+    color: #db524c;
+}
 .equal {
     display:table;
     width:100%;
@@ -791,7 +804,7 @@ h6,
 }
 
 .strong {
-    font-weight: 500 !important;
+    font-weight: 700 !important;
 }
 
 h3 strong,
@@ -1716,6 +1729,14 @@ li.no-dot {
     border-width:2px 0 0;
     padding:0;
 }
+.inline-btn {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.inline-cost {
+    display: inline-block;
+}
 @media screen and (max-width: 600px) {
     .nav-tabs > li > a {
         line-height: 20px;
@@ -1723,6 +1744,22 @@ li.no-dot {
     .padding-top {
         padding-top: 20px !important;
     }
+    .inline-cost,
+    .inline-btn {
+        clear: both;
+        display: block;
+        float: left !important;
+        text-align: left !important;
+    }
+    .inline-btn {
+        position: relative !important;
+        display: block;
+        margin-top: 15px;
+        width: auto;
+    }
+    .btn-leave {
+        float: left;
+    }   
 }
 .nav-tabs > li > a:hover {
     color:#e7543d;
@@ -3579,7 +3616,9 @@ label > h4 + input[type=radio] {
     left: 33px !important;
     font-size: 17px !important;
 }
-
+#messages_search_submit {
+    line-height: 44px;
+}
 
 
 /* [ 8.4. NEWSLETTERS ] */
@@ -8180,6 +8219,7 @@ a.expand-link {
 .post .ad-widget {
     padding-top: 5px;
 }
+
 .forums img.ad,
 .blogs img.ad,
 .post img.ad {
@@ -8338,6 +8378,11 @@ h5+h5{
         width: 100%;
     }
 }
+@media (max-width:992px) {
+     .vehicles .col-xs-8 {
+        margin-bottom: 5px;
+    }
+}
 @media (min-width: 992px) {
     .forums .col-fixed-300 .col-md-12,
     .blogs .col-fixed-300 .col-md-12,
@@ -8466,6 +8511,10 @@ h5+h5{
     .checkout-step {
         margin: 0 15px 30px;
         width: calc( 100% - 30px);
+    }
+    .group-members p,
+    .group-members h2 {
+        margin-left: 20px;
     }
 }
 @media (max-width: 420px) {
@@ -8694,6 +8743,7 @@ h4 span {
 .badge {
     background-color:#e7543d;
     display: inline-block;
+    margin-top: 4px;
     padding: 3px 7px 4px;
 }
 .content.registration .loginform .btn.border-btn {
@@ -8779,11 +8829,12 @@ div[class$="something"] {
         vertical-align: middle;
     }
    
-    .group {
+   /* .group {
         margin-left: -20px;
         margin-right: -20px;
         width: calc(100% + 40px);
     }
+    */
     .group-desc {
         width: 100%;
     }
@@ -8836,9 +8887,10 @@ div[class$="something"] {
         text-align: left;
         }
  
-    .table-header {
+ /*   .table-header {
         padding-left:0;
     }
+    */
      .table-header-last {
         padding-left:15px
     }
@@ -9020,10 +9072,10 @@ i.walker {
     background: #f8f8f8;
 }
 .panel-menu {
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-top: -15px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     margin-bottom: 0;
     max-width: none;
     display: table;
@@ -9033,7 +9085,7 @@ i.walker {
     display: table-cell;
     float: none;
     font-size: 14px;
-    padding: 10px 0;
+    padding: 10px 15px;
     padding-left: 0 !important;
     text-align: center;
 }
@@ -9048,8 +9100,18 @@ i.walker {
     border-left: 1px solid #d9d9d9;
     display: inline-block;
     line-height: 20px;
-    padding: 0;
+    padding: 0 0 0 15px;
     width: 100%;
+}
+ .tight.panel-menu li {
+    padding-left:5px;
+    padding-right: 5px;
+ }
+.tight.panel-menu > li > a > span {
+    padding-left: 5px;
+}
+.tab-pane {
+    padding: 15px;
 }
 .profile-content {
     float: left;
@@ -9070,6 +9132,9 @@ i.walker {
 }
 .forums .row + .row {
     margin-top: 0;
+}
+.forums .widget .tab-content .tab-pane .row + .row {
+    margin-top:10px;
 }
 .forums a {
     color: #000;
@@ -9110,7 +9175,7 @@ ul.resp-tabs-list, p {
     padding: 0px;
 }
 .item.pull-left.small {
-    width: calc(100% - 80px);
+    width: calc(100% - 95px);
 }
 .resp-tabs-list li {
     font-weight: 600;
@@ -9199,6 +9264,7 @@ h2.resp-tab-active {
 .resp-vtabs .resp-tab-content {
     border: none;
     word-wrap: break-word;
+    padding: 0;
 }
 .resp-vtabs li.resp-tab-active { 
     position: relative;
@@ -9457,6 +9523,7 @@ textarea.wp-editor-area {
 }
 table.group-nav-table {
     margin-bottom: 0;
+    margin-top: -15px;
 }
 .group-nav-table td {
     padding-top: 0 !important;
@@ -9471,14 +9538,53 @@ div[id*="entry"]:before {
     margin-bottom: 10px;
     white-space: pre;
 }
+ .select-cell {
+        padding-right: 15px;
+    }
 table.group-nav-table tbody tr:first-child td {
     padding-top: 0;
 }
 table.group-nav-table tbody tr:last-child td {
-    padding-right: 15px;
+    padding-right: 0;
     padding-bottom: 0;
 }
-@media screen and (max-width: 640px) {
+.btn-wrap {
+        position: relative;
+        width: auto;
+    }
+
+ul.item-desc {
+        margin-bottom: 0;
+    }
+.vehicles p {
+    margin-top: 8px;
+}  
+.btn-leave {
+    position: absolute;
+    margin-right: 15px;
+    top: 60px;
+    right: 15px;
+}
+.group-members .group:nth-child(even) {
+    background: #fff;
+}
+.group-members .group:nth-child(odd) {
+    background: #f8f8f8;
+}
+.vehicles .row + .row {
+    margin-top:10px;
+}
+.group-members .row + .row {
+    margin-top: 0;
+}
+.invites .group-members {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.profile-info {
+    position: relative;
+}
+@media screen and (max-width: 767px) {
 	.forums .profile-image,
 	.forums .profile-content {
 	    width: 100%;
@@ -9492,6 +9598,15 @@ table.group-nav-table tbody tr:last-child td {
 	.profile-table td {
 	    white-space: nowrap;
 	}
+	table.group-nav-table {
+	    margin-top: 0;
+	}
+	.title-cell {
+        padding-left: 20px !important;
+    }
+    .select-cell {
+        padding-right: 20px !important;
+    }
 	.message-table p,
 	.message-table td {
 	    display: block;
@@ -9511,7 +9626,7 @@ table.group-nav-table tbody tr:last-child td {
 	    padding-left: calc(25% + 15px);
 	}	
 	table.group-nav-table tbody tr:last-child td {
-    padding-right: 0;
+        padding-right: 0;
     }
 }
 @media screen and (max-width: 414px) {

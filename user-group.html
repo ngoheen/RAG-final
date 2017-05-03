@@ -7,37 +7,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/lightgallery.css" rel="stylesheet">
-    <style>
-    .inline-btn {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    .btn-wrap {
-        position: relative;
-        width: auto;
-    }
-    .inline-cost {
-        display: inline-block;
-    }
-    ul.item-desc {
-        margin-bottom: 0;
-    }
-@media (max-width:767px) {
-        .inline-cost,
-        .inline-btn {
-            display: block;
-            float: none !important;
-            text-align: left !important;
-        }
-         .inline-btn {
-            position: relative;
-            display: block;
-            margin-top: 15px;
-            width: auto;
-        }
-}
-    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -177,12 +146,13 @@
     
     <div class="content">
         <div class="container">
-            <div class="row">
+            <div class="group-info">
+                
                 <div class="profile-pic">
                     <img src="pics/rag-munson2.jpg">
                 </div>
                 <div class="profile-info">
-                 <h2 class="profile-h2">RAGBRAI Crew ONLY</h2>
+                 <h2 class="margin-top-0">RAGBRAI Crew ONLY</h2>
                     <ul class="plain pull-left">
                         <li><a href="">#10000</a></li>
                         <li>Public group</li>
@@ -192,19 +162,22 @@
                         <li><i class="fa fa-users fa-fw" aria-hidden="true"></i> Jamie, Cory, John</li>
                         <li>
                             <br>
-                            <a class="btn btn-default btn-xs">Close Group</a>
-                            <a class="btn btn-default btn-xs">Group Summary</a>
-                            <a class="btn btn-default btn-xs">Email Group</a>
+                            <a class="btn btn-primary btn-xs margin-bottom-10">Close Group</a>
+                            <a class="btn btn-primary btn-xs margin-bottom-10">Group Summary</a>
+                            <a class="btn btn-primary btn-xs margin-bottom-10">Email Group</a>
                         </li>
                     </ul>
-                    <a class="pull-right btn btn-primary">Leave Group</a>
+                    <a class="btn-leave btn btn-default btn-sm">Leave Group</a>
                     <div class="clearer margin-bottom-20"></div>
                 </div>
+              
             </div>
+            
             <!--Vertical Tab-->
             <div id="userprofile">
                 <ul class="resp-tabs-list hor_1">
                     <li><a href="#1b" data-toggle="tab"><i class="walker"></i> Activity</a></li>
+                    <li><a href="15x" data-toggle="tab"><i class="fa fa-comments fa-fw"></i> Forums</a></li>
                     <li><a href="#6b" data-toggle="tab"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Members<span class="badge pull-right">4</span></a></li>
                     <li><a href="#8b" data-toggle="tab"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>Send Invites</a></li>
                     <li><a href="#2b" data-toggle="tab"><i class="fa fa-car fa-fw" aria-hidden="true"></i>Vehicles</a></li>
@@ -214,13 +187,13 @@
                 <div class="resp-tabs-container hor_1">
                 
                     <!-- Activity -->
-                    <div class="white">
+                    <div class="white group-activity">
                         <table class="group-nav-table">
                             <tr>
                                 <td class="title-cell"><h2 class="normal margin-bottom-0 margin-top-0">Activity</h2></td>
                                 <td><h5 class="pull-right"><a class="reddish" href="">RSS</a></h5></td>
                                 <td class="select-cell">
-                                    <div class="select-holder">
+                                    <div class="select-holder margin-bottom-10 margin-top-10">
                                         <span class="select-label">Show:</span>
                                         <select class="right">
                                             <option value="Everything">Everything</option>
@@ -233,7 +206,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <div class="content border-bottom padding-bottom-15 striped-table">                                      
+                        <div class="content padding-bottom-15 striped-table">                                      
                             <div class="profile-post">
                                 <img src="images/generic-user-avatar.jpg" class="user-img">
                                 <div class="profile-content">
@@ -246,7 +219,7 @@
                             </div>
                             <div class="clearer"></div>
                         </div>
-                        <div class="content border-bottom padding-top-30 padding-bottom-15 striped-table">
+                        <div class="content padding-top-30 padding-bottom-15 striped-table">
                             <img src="images/generic-user-avatar.jpg" class="user-img">
                             <div class="profile-content ">
                                 <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
@@ -258,7 +231,7 @@
                             </div>
                             <div class="clearer"></div>
                         </div>
-                        <div class="content border-bottom padding-top-30 padding-bottom-15 striped-table">
+                        <div class="content padding-top-30 padding-bottom-15 striped-table">
                                     <img src="images/generic-user-avatar.jpg" class="user-img">
                                     <div class="profile-content ">
                                         <p>Cory replied to the topic <a href="">New Route?</a> in the forum <a href="">RAGBRAI XLV - 2017</a> 3 hours and 15 minutes ago.</p>
@@ -284,21 +257,74 @@
                                     <div class="clearer"></div>
                         </div>    
                     </div>
-                        
+                    
+                    <!-- Forums -->
+                    <div class="white group-forums">
+                        <h2 class="normal margin-bottom-0 margin-top-20 margin-left-20">RAGBRAI XLV – 2017</h2>
+                        <p class="margin-bottom-20 margin-left-20">Latest Discussions</p>
+                        <div class="content padding-bottom-30 forums highlight">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 normal black smaller table-header">Discussion</div>
+                                <div class="col-md-2 col-xs-2 normal black smaller table-header-middle">Replies</div>
+                                <div class="col-md-4 col-xs-4 normal black smaller table-header-last">Freshness</div>
+                            </div>
+                           
+                                <div class="row group">
+                                    <div class="padding-left-0 col-md-7 col-xs-6 padding-right-0">
+                                        <h5 class="normal"><a href="">Forum Decorum</a></h5>
+                                        <p>Started by <a href="">TJ Juskiewicz</a> in: <a href="">RAGBRAI XLV – 2017</a></p>
+                                    </div>
+                                    <div class="col-md-1 col-xs-2 smaller">1</div>
+                                    <div class="col-md-4 col-xs-4 smaller padding-right-0">
+                                         4 weeks ago
+                                        <br><a href="">Toeknee</a>
+                                    </div>
+                                </div>
+                                <div class="row group">
+                                    <div class="padding-left-0 col-md-7 col-xs-6 padding-right-0">
+                                        <h5 class="normal">first time rider</h5>
+                                        <p>Started by bphawkeye in: RAGBRAI XLV – 2017</p>
+                                    </div>
+                                    <div class="col-md-1 col-xs-2 smaller">1</div>
+                                    <div class="col-md-4 col-xs-4 smaller">
+                                        <p>1 hour, 6 minutes ago
+                                            <br><a href="">gringonick</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row group">
+                                    <div class="padding-left-0 col-md-7 col-xs-6 padding-right-0">
+                                        <h5 class="normal"><a href="">first time rider</a></h5>
+                                        <p>Started by <a href="">bphawkeye</a> in: <a href="">RAGBRAI XLV – 2017</a></p>
+                                    </div>
+                                    <div class="col-md-1 col-xs-2 smaller">1</div>
+                                    <div class="col-md-4 col-xs-4 smaller">
+                                        <p>1 hour, 6 minutes ago
+                                        <br><a href="">gringonick</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clearer"></div>
+                           
+                        </div>
+                    
+                        <div class="clearer"></div>
+                        </div>
+                  
+                    
                     <!-- Members -->
-                    <div class="white">
-                        <h2 class="normal margin-bottom-0 margin-top-0">Members</h2>
-                        <p>Viewing 1-4 of 4 members</p>
-                        
+                    <div class="white group-members">
+                        <h2 class="normal margin-bottom-0 margin-top-20">Members</h2>
+                        <p class="margin-bottom-20">Viewing 1-4 of 4 members</p>
                         <div class="row group">
                             <div class="item-avatar pull-left margin-right-30">
-                                <img src="http://ragbrai.com/wp-content/uploads/2016/11/RAGBRAI_XLV_shortbanner500.png" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+                                <img src="pics/tj-sm.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
 			                </div>
                             <div class="item pull-left small">
 			                    <div class="item-title">
 								    <a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">TJ Juskiewicz</a>
 									<span class="pull-left"> – Weeklong Non-Rider</span>
-								    <div class="pull-right text-right inline-cost"><a href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
 			                    </div>
 			                    <ul class="item-desc clear">
                                     <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
@@ -308,42 +334,48 @@
 					                </li>
 			                    </ul>
 			                    <div class="btn-wrap">
-			                        <a class="pull-right text-right btn btn-default btn-xs inline-btn">Add Friend</a>
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
 			                    </div>  
                             </div>
                         </div>
                         <div class="row group">
                             <div class="item-avatar pull-left margin-right-30">
-                                <img src="http://ragbrai.com/wp-content/uploads/2016/11/RAGBRAI_XLV_shortbanner500.png" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+                                <img src="pics/aparrott.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
 			                </div>
                             <div class="item pull-left small">
 			                    <div class="item-title">
 								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Andrea Parrott</a>
 									<span class="pull-left"> – Weeklong Rider</span>
-								    <span class="pull-right text-right"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
 			                    </div>
 			                    <ul class="item-desc clear">
                                     <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
 			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>  
                             </div>
                         </div>
                         <div class="row group">
                             <div class="item-avatar pull-left margin-right-30">
-                                <img src="http://ragbrai.com/wp-content/uploads/2016/11/RAGBRAI_XLV_shortbanner500.png" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+                                <img src="pics/mariah.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
 			                </div>
                             <div class="item pull-left small">
 			                    <div class="item-title">
-								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Bill Wise</a>
+								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Mariah Jepson</a>
 									<span class="pull-left"> – Weeklong Rider</span>
-								    <span class="pull-right text-right"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
 			                    </div>
 			                    <ul class="item-desc clear">
                                     <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
 			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>
                             </div>
                         </div>
                         <div class="row group">
@@ -354,26 +386,116 @@
 			                    <div class="item-title">
 								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Carole Smith</a>
 									<span class="pull-left"> – Weeklong Rider</span>
-								    <span class="pull-right text-right"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
 			                    </div>
 			                    <ul class="item-desc clear">
                                     <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
 					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
 			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>
                             </div>
                         </div>
                     </div>
                         
                     <!-- Send Invites -->
-                     <div>
+                     <div class="white group-invites">
+                       <h2 class="normal margin-bottom-20 margin-top-20 padding-left-15">Invites</h2>
                         <div class="tab-content clear invites">
-                            <div class="tab-pane active">
+                            <div class="tab-pane active highlight">
                                 <h5 class="margin-top-20">Invite New Members</h5>
                                  <p>Want to invite someone to the group who is not yet a member of the site? <a href="">Send invitations by email.</a></p>
                                  <h5 class="margin-top-20">Search for Members to Invite</h5>
                                  <input type="text" placeholder="Search for a Member">
                                  <a href="" class="btn btn-primary margin-top-20">Send invites</a>
+                                 <p class="margin-top-20">Search for people to invite from your friends list.</a></p>
+                                 <div class="group-members">
+<div class="row group" style="height:0"></div>
+                        <div class="row group">
+                            <div class="item-avatar pull-left margin-right-30">
+                                <img src="pics/tj-sm.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+			                </div>
+                            <div class="item pull-left small">
+			                    <div class="item-title">
+								    <a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">TJ Juskiewicz</a>
+									<span class="pull-left"> – Weeklong Non-Rider</span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
+			                    </div>
+			                    <ul class="item-desc clear">
+                                    <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-check-square"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver submitted&nbsp;</a></li>
+					                <li class="inline-10">
+					                    <i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a>
+					                </li>
+			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>  
+                            </div>
+                        </div>
+                        <div class="row group">
+                            <div class="item-avatar pull-left margin-right-30">
+                                <img src="pics/aparrott.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+			                </div>
+                            <div class="item pull-left small">
+			                    <div class="item-title">
+								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Andrea Parrott</a>
+									<span class="pull-left"> – Weeklong Rider</span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
+			                    </div>
+			                    <ul class="item-desc clear">
+                                    <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
+			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>  
+                            </div>
+                        </div>
+                        <div class="row group">
+                            <div class="item-avatar pull-left margin-right-30">
+                                <img src="pics/mariah.jpg" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+			                </div>
+                            <div class="item pull-left small">
+			                    <div class="item-title">
+								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Mariah Jepson</a>
+									<span class="pull-left"> – Weeklong Rider</span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
+			                    </div>
+			                    <ul class="item-desc clear">
+                                    <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
+			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>
+                            </div>
+                        </div>
+                        <div class="row group">
+                            <div class="item-avatar pull-left margin-right-30">
+                                <img src="http://ragbrai.com/wp-content/uploads/2016/11/RAGBRAI_XLV_shortbanner500.png" class="user-image avatar group-9-avatar avatar-50 photo" width="50" height="50" alt="Season Logo" title="RAGBRAI Logo">
+			                </div>
+                            <div class="item pull-left small">
+			                    <div class="item-title">
+								<a class="pull-left" href="http://dev.desmoinesregister.com/rag/members/tjuskiewicz/">Carole Smith</a>
+									<span class="pull-left"> – Weeklong Rider</span>
+								    <div class="pull-right text-right inline-cost"><a class="color-ccc" href="https://dev.desmoinesregister.com/rag/registration-payment/">$35.00 due</a></div>
+			                    </div>
+			                    <ul class="item-desc clear">
+                                    <li class="inline-10"><i class="fa fa-check-square"></i><a href="https://dev.desmoinesregister.com/rag/ride-registration/">Entry submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="http://dev.desmoinesregister.com/rag/1106811-2/?id=17954">Waiver not submitted&nbsp;</a></li>
+					                <li class="inline-10"><i class="inline fa fa-square-o"></i><a href="https://dev.desmoinesregister.com/rag/registration-payment/">Payment not submitted&nbsp;</a></li>
+			                    </ul>
+			                    <div class="btn-wrap">
+			                        <a class="pull-right text-right btn btn-primary btn-sm inline-btn">Add Friend</a>
+			                    </div>
+                            </div>
+                        </div>
+                    </div>
                             </div>
                             <div class="tab-pane" id="i2">
                                 <h5 class="margin-top-20">Sent Invites</h5>
@@ -420,19 +542,150 @@
                     </div>
                         
                     <!-- Vehicles -->
-                    <div>
+                    <div class="white group-vehicles">
+                        <h2 class="normal margin-bottom-20 margin-top-20 padding-left-15">Vehicles</h2>
                         <div class="tab-content clear">
-                            <div class="padding-bottom-15 padding-top-30">
-                                <h5 class="normal margin-bottom-0">Vehicle Registration</h2>
-                                <p>Vehicle registration is available to groups with three or more members that have registered for the ride.</p>
-                                <p class="margin-top-20">Invite more members or have your current members register for the ride, then return here to register for vehicle passes.</p>
+                            <div class="padding-bottom-15 padding-top-30 highlight padding-left-15 padding-right-15">
+                                <h5 class="normal margin-bottom-0">Vehicle Registration</h5>
+                                <p>Your group is eligible to bring up to 3 motor vehicles on the ride. There are 4 different vehicle types. The cost for each type is shown below. Please choose from the options below and assign a driver for each vehicle.</p>
+                                
+                                <p class="margin-top-20 margin-bottom-20">You can register vehicle passes for any of the following types of vehicles:</p>
+                                <div class="table-responsive white"><table class="profile-table">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+						<th>Cost</th>
+					</tr>
+				</thead>
+										<tbody><tr>
+							<td>Other Vehicle</td>
+							<td>Car, SUV, Pickup, Van</td>
+							<td>$40</td>
+						</tr>
+												<tr>
+							<td>Truck</td>
+							<td>Straight Truck - Penske, U-Haul, Ryder</td>
+							<td>$40</td>
+						</tr>
+												<tr>
+							<td>RV</td>
+							<td>You can sleep in it</td>
+							<td>$50</td>
+						</tr>
+												<tr>
+							<td>Bus</td>
+							<td>You can haul people and equipment in it</td>
+							<td>$50</td>
+						</tr>
+									</tbody></table></div>
+									
+                                <p class="margin-top-40">Please choose from the options below and assign a driver for each motor vehicle.</p>
+                                <div class="vehicles padding-bottom-30">
+                                    <div class="row margin-top-20">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Vehicle 1:</p>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <select class="wide">
+                                                    <option value="">Select Vehicle</option>
+                                                    <option value="Other Vehicle">Other Vehicle</option>
+                                                    <option value="Truck">Truck</option>
+                                                    <option value="RV">RV</option>
+                                                    <option value="Bus">Bus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Driver:</p>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <select class="wide">
+                                                    <option value="">Select Driver</option>
+                                                    <option value="tjuskiewicz">T Juskiewicz</option>
+                                                    <option value="Andrea Parrott">Andrea Parrott</option>
+                                                    <option value="Mariah Jepson">Maria Jepson</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Vehicle 2:</p>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <select class="wide">
+                                                    <option value="">Select Vehicle</option>
+                                                    <option value="Other Vehicle">Other Vehicle</option>
+                                                    <option value="Truck">Truck</option>
+                                                    <option value="RV">RV</option>
+                                                    <option value="Bus">Bus</option>
+                                                </select>   
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Driver:</p>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <select class="wide">
+                                                    <option value="">Select Driver</option>
+                                                    <option value="tjuskiewicz">T Juskiewicz</option>
+                                                    <option value="Andrea Parrott">Andrea Parrott</option>
+                                                    <option value="Mariah Jepson">Maria Jepson</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                       
+                                     <div class="row">
+                                         <div class="col-md-6">  
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Vehicle 3:</p>
+                                            </div>
+                                            <div class="col-xs-8 ">
+                                                <select class="wide">
+                                                    <option value="">Select Vehicle</option>
+                                                    <option value="Other Vehicle">Other Vehicle</option>
+                                                    <option value="Truck">Truck</option>
+                                                    <option value="RV">RV</option>
+                                                    <option value="Bus">Bus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">  
+                                            <div class="col-xs-4 padding-left-0">
+                                                <p class="normal">Driver:</p>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <select class="wide">
+                                                    <option value="">Select Driver</option>
+                                                    <option value="tjuskiewicz">T Juskiewicz</option>
+                                                    <option value="Andrea Parrott">Andrea Parrott</option>
+                                                    option value="Mariah Jepson">Maria Jepson</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row highlight padding-right-15">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="pull-right text-right">Total vehicle cost: <span class="normal black">$120</span><span class="padding-left-15"><a href="" class="btn btn-primary btn-xs">Save</a></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
 	                        </div>
                         </div>
                     </div>
-                        
+
                     <!-- Manage -->
                     <div>
-                       <ul class="panel-menu">
+                       <ul class="panel-menu tight">
                             <li class="active"><a href="#n1" data-toggle="tab"><span>Details</span></a></li>
                             <li><a href="#n2" data-toggle="tab"><span>Settings</span></a></li>
                             <li><a href="#n3" data-toggle="tab"><span>Photo</span></a></li>
@@ -457,6 +710,7 @@
                                     </div>   
                                 </div>
                             </div>
+                            
                             <div class="tab-pane" id="n2">
                                 <div class="content clear padding-bottom-15 border-bottom">
                                      <h5 class="margin-top-20">Payment Options</h5>
@@ -484,17 +738,18 @@
                                 <div class="content clear padding-bottom-15 border-bottom">
                                     <h5 class="margin-top-20">Group Invitations</h5>
                                     <p class="margin-top-20">Which members of this group are allowed to invite others?</p>
-                                    <div class="padding-left-15">
-                                        <span class="margin-right-30"><input type="radio" value="Yes" name="email">Yes</span>
-                                        <span class="padding-left-15"><input type="radio" value="No" name="email">No</span>
+                                    <div class="padding-left-15 margin-top-20">
+                                        <span class="margin-right-30"><input type="radio" value="All Group Members" name="email">All Group Members</span>
+                                        <span class="padding-left-15"><input type="radio" value="Group Contact Only" name="email">Group Contact Only</span>
                                     </div>
                                     <div class="margin-top-20">
                                         <a class="btn btn-primary">Save Changes</a>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="tab-pane" id="n3">
-                                <div class="content clear padding-bottom-15">
+                                <div class="content clear padding-bottom-15 margin-top-20">
                                     <h5>Upload Group Photo</h5>
                                     <div class="bp-uploader-window">
                                         <div id="bp-upload-ui" style="position: relative;" class="drag-drop">
@@ -514,22 +769,83 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="n4">
-                                <div class="content clear padding-bottom-15">
-                                    <h5 class="margin-top-20">Group Contact</h5>
-                                    <img src="pics/tj-sm.jpg">
-                                    <div class="border-top">
-                                        <h5 class="margin-top-20">Group Members</h5>
-                                        
+                            
+                            <div class="tab-pane group-members" id="n4">
+                                <div>
+                                    <h2 class="margin-top-20 normal pull-left">Group Contact</h2>
+                                    <img src="pics/tj-sm.jpg" class="user-img pull-right">
+                                    <div class="clearer"></div>
+                                </div>   
+                              
+                                <div class="white clear pull-left margin-top-20">
+                                    <h2 class="normal">Group Members</h2>
+                                    <div class="padding-bottom-15 row group">
+                                        <img src="images/generic-user-avatar.jpg" class="user-img">
+                                        <div class="profile-content">
+                                            <h4>Bike Tour</h4>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Kick & Ban</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Promote to Group Contact</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Remove from Group</a>
+                                        </div>
+                                        <div class="clearer"></div>
+                                    </div>
+                                    <div class="padding-bottom-15 margin-top-20 row group">
+                                        <img src="images/generic-user-avatar.jpg" class="user-img">
+                                        <div class="profile-content">
+                                            <h4>Andrea Parrott</h4>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Kick & Ban</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Promote to Group Contact</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Remove from Group</a>
+                                        </div>
+                                        <div class="clearer"></div>
+                                    </div>
+                                    <div class="padding-bottom-15 margin-top-20 row group">
+                                        <img src="images/generic-user-avatar.jpg" class="user-img">
+                                        <div class="profile-content">
+                                            <h4>Mariah Jepson</h4>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Kick & Ban</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Promote to Group Contact</a>
+                                            <a href="" class="btn btn-primary btn-xs margin-bottom-10">Remove from Group</a>
+                                        </div>
+                                        <div class="clearer"></div>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="tab-pane" id="n5">
                                 <div class="content clear padding-bottom-15">
+                                    <h5 class="margin-top-20">Group Forum Settings</h5>
+                                    <p>Create a discussion forum to allow members of this group to communicate in a structured, bulletin-board style fashion.</p>
+                                    <div class="row margin-top-20">
+                                        <div class="checkbox">
+                                            <input type="checkbox" checked>Yes. I want this group to have a forum.
+                                            <div class="select-wrap margin-top-10">
+                                                <select class="wide">
+                                                    <option value="Ginger Beer">Ginger Beer</option>
+                                                    <option value="garlic" selected>Garlic</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="nota-bene">Saying no will not delete existing forum content.</p>
+                                    <div class="margin-top-20">
+                                        <h5 class="margin-top-20">Group Forum:</h5>
+                                        <p class="nota-bene">Network administrators can reconfigure which forum belongs to this group.</p>
+                                        <div class="margin-top-20">
+                                            <a class="btn btn-primary">Save Settings</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
                             <div class="tab-pane" id="n6">
-                                <div class="content clear padding-bottom-15">
+                                <div class="content clear padding-bottom-15 padding-top-15">
+                                    <p class="danger">WARNING: Deleting this group will completely remove ALL content associated with it and all members will be removed from the group. Registered riders that are a member of this group will need to join another group or ride as individuals.</p>
+                                    <p class="margin-top-20 danger strong">There is no way back, please be careful with this option.</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox">I understand the consequences of deleting this group.
+                                    </div>
+                                    <a href="" class="btn btn-xs btn-primary margin-top-20">Delete this group</a>
                                 </div>
                             </div>
                         </div>
@@ -539,9 +855,9 @@
         </div>
     </div>
 </div>
+
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/custom.js"></script>
 </body>
