@@ -9,16 +9,9 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lightgallery.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-    .forums .post p {
-        font-size: 17px;
-        line-height:26px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
-
 
 <!-- WRAPPER -->
 <div class="wrapper">
@@ -255,18 +248,18 @@ Latest reply from <a href="">Patricia Storlie 2 days, 19 hours ago</a>
 
                     <!-- ROW: pagination -->
                     <div class="row padding-top-30">
+                        <h2 class="screen-reader-text">pagination</h2>
                         <div class="col-sm-5 col-xs-12 bottom-pagination">
                             <p class="light-grey">Viewing 15 Posts - 1 to 10 (of 21 total)</p>  
                         </div>
                         <div class="col-sm-7 col-xs-12 text-right bottom-pagination padding-right-0">
-                            <ul class="pagination">
-                                <li><a href="#"><i class="custom-icon custom-icon-page-prev"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#"><i class="custom-icon custom-icon-page-next"></i></a></li>
+                            <ul class="page-numbers">
+                                <li><a class="prev page-numbers" href="http://ragbrai.dev/category/photo-galleries/"><i class="custom-icon custom-icon-page-prev"></i></a></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/'>1</a></li>
+                                <li><span class='page-numbers current'>2</span></li>
+                                <li><a class="next page-numbers" href="http://ragbrai.dev/category/photo-galleries/page/3/"><i class="custom-icon custom-icon-page-next"></i></a></li>
                             </ul>
                         </div>
-                        
                     </div>
                     <!-- /.row -->
                 </div>
@@ -437,13 +430,10 @@ Latest reply from <a href="">Patricia Storlie 2 days, 19 hours ago</a>
                     </div>
                     <!-- /.widget -->
 
-                
                 </div>
                 <!-- /.sidebar -->
             </div>
             <!-- /.row -->
-       
-           
         </div>
         <!-- /.container -->
     </div>
@@ -638,18 +628,11 @@ Latest reply from <a href="">Patricia Storlie 2 days, 19 hours ago</a>
 
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-
 <script src="js/jquery.plugins.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/lg.min.js"></script>
 <script src="js/lg-share-3.js"></script>
 <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
-<script>
-$('.lg-video').on('click', function() {
-        $(this).find('video').play();
-    });
-</script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/lightbox-script.js"></script>
 </body>

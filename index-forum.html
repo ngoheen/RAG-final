@@ -10,24 +10,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lightgallery.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    .new-topic {
-        padding: 20px;
-    }
-    .quicktags-toolbar .button {
-        padding: 0 10px;
-    }
-    textarea.wp-editor-area {
-        border: 1px solid #B3B3B3;
-    }
-    .legend {
-        border-bottom: none;
-    }
-    .bbp-form label {
-        margin-bottom: 5px;
-        margin-top: 15px;
-    }
-    </style>
 </head>
 <body>
 
@@ -187,7 +169,9 @@
                         <div class="col-md-2 col-xs-2 normal black smaller table-header-middle">Replies</div>
                         <div class="normal black col-md-4 col-xs-4 smaller table-header-last">Freshness</div>
                     </div>
+                    
                     <div class="border-bottom padding-top-15"></div>
+                    
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">Daily Rider Maps</h5>
@@ -235,7 +219,6 @@
                             </p>
                         </div>
                     </div>
-                    
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">just lookin for Fred & Mike....</h5>
@@ -247,8 +230,7 @@
                             <br>Cheeses my butt hurts
                             </p>
                         </div>
-                    </div>
-                    
+                    </div>  
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">lookin for RV pass</h5>
@@ -285,8 +267,7 @@
                             <br>ms262rnnr
                             </p>
                         </div>
-                    </div>
-                    
+                    </div>  
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">Team openings left Team Sop n Wet</h5>
@@ -311,7 +292,6 @@
                             </p>
                         </div>
                     </div>
-                    
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">Anyone riding from Spencer to La Crosse?</h5>
@@ -324,7 +304,6 @@
                             </p>
                         </div>
                     </div>
-                    
                     <div class="row group">
                         <div class="padding-left-0 col-md-7 col-xs-6">
                             <h5 class="normal">Overnight Town Bands <a class="badge" href="">1</a> <a class="badge" href="">2</a></h5>
@@ -400,10 +379,7 @@
                     </div>
                     
                     <div class="clear border-bottom padding-top-30"></div>            
-              
-              
-              
-              
+
                     <div class="clear row new-topic">
                         
                         <div id="new-topic-0" class="bbp-topic-form">
@@ -444,29 +420,31 @@
                                             </div>
                                         </div>
                                         
-							                <label for="bbp_topic_tags">Topic Tags:</label><br>
-							                <input type="text" value="" tabindex="103" size="40" name="bbp_topic_tags" id="bbp_topic_tags">
+                                        <label for="bbp_topic_tags">Topic Tags:</label>
+                                        <br>
+							            <input type="text" value="" tabindex="103" size="40" name="bbp_topic_tags" id="bbp_topic_tags">
 						              
-							                <label for="bbp_stick_topic">Topic Type:</label><br>
-		                                    <select name="bbp_stick_topic" id="bbp_stick_topic_select" tabindex="104">
-				                                <option value="unstick">Normal</option>
-				                                <option value="stick">Sticky</option>
-				                                <option value="super">Super Sticky</option>
-		                                    </select>
+							            <label for="bbp_stick_topic">Topic Type:</label>
+							            <br>
+		                                <select class="wide" name="bbp_stick_topic" id="bbp_stick_topic_select" tabindex="104">
+				                            <option value="unstick">Normal</option>
+				                            <option value="stick">Sticky</option>
+				                            <option value="super">Super Sticky</option>
+		                                </select>
 						             
-							                <label for="bbp_topic_status">Topic Status:</label><br>
-		                                    <select name="bbp_topic_status" id="bbp_topic_status_select" tabindex="105">
-				                                <option value="publish" selected="selected">Open</option>
-				                                <option value="closed">Closed</option>
-				                                <option value="spam">Spam</option>
-				                                <option value="trash">Trash</option>
-				                                <option value="pending">Pending</option>
-		                                    </select>
+							            <label for="bbp_topic_status">Topic Status:</label><br>
+		                                <select class="wide" name="bbp_topic_status" id="bbp_topic_status_select" tabindex="105">
+				                            <option value="publish" selected="selected">Open</option>
+				                            <option value="closed">Closed</option>
+				                            <option value="spam">Spam</option>
+				                            <option value="trash">Trash</option>
+				                            <option value="pending">Pending</option>
+		                                </select>
 						             
-							                <input name="bbp_topic_subscription" id="bbp_topic_subscription" type="checkbox" value="bbp_subscribe" tabindex="106">
-							                <label for="bbp_topic_subscription">Notify me of follow-up replies via email</label>
+							            <input name="bbp_topic_subscription" id="bbp_topic_subscription" type="checkbox" value="bbp_subscribe" tabindex="106">
+							            <label for="bbp_topic_subscription">Notify me of follow-up replies via email</label>
 										
-                                        <div class="bbp-submit-wrapper">
+                                        <div class="bbp-submit-wrapper margin-top-20">
                                             <button type="submit" tabindex="107" id="bbp_topic_submit" name="bbp_topic_submit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
@@ -481,24 +459,25 @@
                     </div>
                     
                     
-                    
-               <!-- ROW: pagination -->
+                    <div class="clear border-bottom"></div>
+                    <!-- ROW: pagination -->
                     <div class="row padding-top-30">
+                        <h2 class="screen-reader-text">pagination</h2>
                         <div class="col-sm-5 col-xs-12 bottom-pagination">
                             <p class="light-grey">Viewing Topics 1 to 10 (of 9,497 total)</p>  
                         </div>
                         <div class="col-sm-7 col-xs-12 text-right bottom-pagination padding-right-0">
-                            <ul class="pagination">
-                                <li><a href="#"><i class="custom-icon custom-icon-page-prev"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">…</a></li>
-                                <li><a href="#">36</a></li>
-                                <li><a href="#">37</a></li>
-                                <li><a href="#"><i class="custom-icon custom-icon-page-next"></i></a></li>
+                            <ul class='page-numbers'>
+                                <li><a class="prev page-numbers" href="http://ragbrai.dev/category/photo-galleries/"><i class="custom-icon custom-icon-page-prev"></i></a></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/'>1</a></li>
+                                <li><span class='page-numbers current'>2</span></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/page/3/'>3</a></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/page/4/'>4</a></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/page/5/'>5</a></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/page/6/'>6</a></li>
+                                <li><span class="page-numbers dots">&hellip;</span></li>
+                                <li><a class='page-numbers' href='http://ragbrai.dev/category/photo-galleries/page/14/'>14</a></li>
+                                <li><a class="next page-numbers" href="http://ragbrai.dev/category/photo-galleries/page/3/"><i class="custom-icon custom-icon-page-next"></i></a></li>
                             </ul>
                         </div>
                         
