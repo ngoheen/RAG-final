@@ -3320,10 +3320,13 @@ ul.social li a:hover i {
 }
 .results h2,
 .results h2 + p {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 0 !important;
     margin-bottom: 0;
+}
+.results h2 + p {
+    margin-bottom: 30px;
 }
 .results img {
     float: left;
@@ -3342,7 +3345,12 @@ ul.social li a:hover i {
     .results .row .row, .results .row + .row {
         margin-top: 35px;
     }
-
+    .results h2,
+    .results h2 + p {
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .results .select-holder {
         position: relative;
         float: left;
