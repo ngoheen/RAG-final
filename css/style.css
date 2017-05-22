@@ -1656,6 +1656,13 @@ a:hover .custom-icon-scrolltop {
     color:#999 !important;
 }
 
+.grey i {
+    margin-right: 8px;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
 .def-color{
     color: #666 !important;
 }
@@ -1696,6 +1703,7 @@ a.grey:hover{
 .border-bottom-0 {
     border-bottom: none !important;
 }
+
 .border-bottom {
     border-bottom: 1px solid #E0E0E0;
 }
@@ -1718,6 +1726,7 @@ li.no-dot {
 }
 
 .nav-tabs {
+    border: none;
     padding-top:0;
     padding-bottom:0;
 }
@@ -1765,7 +1774,7 @@ li.no-dot {
     }   
 }
 .nav-tabs > li > a:hover {
-    color:#e7543d;
+    color :#e7543d;
     background-color:transparent;
     border-color:transparent;
 }
@@ -1797,7 +1806,11 @@ li.no-dot {
 .nav-tabs > li:first-child > a span {
     border-left-color:transparent;
 }
-
+.products .nav-tabs>li.active>a,
+.products .nav-tabs>li.active>a:focus,
+.products .nav-tabs>li.active>a:hover {
+    border: none !important;
+}
 .tabs.plain .nav li {
     float:none;
     display:inline-block;
@@ -2043,13 +2056,6 @@ ul.page-numbers li i {
     box-shadow:0 5px 5px rgba(0,0,0,0.05);
 }
 
-/*.header.sticky .mainmenu .navbar-nav > li > a,
-.header.sticky .hbottom .col-md-1,
-.header.sticky .logo,
-.header.sticky .search [class*=col-] {
-    line-height:73px!important;
-}
-*/
 .header.sticky .logo a {
     font-size:32px;
 }
@@ -2162,6 +2168,10 @@ ul.page-numbers li i {
     font-weight:700;
     display:inline-block;
     vertical-align: middle;
+}
+
+.header .logo img {
+    max-width: 163px;    
 }
 
 .slogan {
@@ -2390,7 +2400,6 @@ a.a-menu {
 
 .sticky .navbar-toggle{
     line-height: 77px;
-    /*height: 77px;*/
 }
 
 
@@ -2502,6 +2511,8 @@ a.a-menu {
 }
 
 .navbar-collapse {
+    max-height: 340px;
+    overflow-y: scroll !important;
     padding-left:0;
     padding-right:0;
 }
@@ -2524,8 +2535,7 @@ a.a-menu {
     float:none;
 }
 
-.dropdown-menu li/*,
-.dropdown-submenu:hover>.dropdown-menu */{
+.dropdown-menu li {
     display:block;
 }
 
@@ -2806,6 +2816,10 @@ a.a-menu {
 [ 6. HOME ]
 -------------------------------------------------------------------*/
 
+.content.loading {
+    visibility: hidden;
+}
+
 .home {
     color: #fff;
     position: relative;
@@ -2858,6 +2872,7 @@ a.a-menu {
     width: calc( 100% - 335px);
 }
 .flexy img {
+    height: auto;
     width: 100%;
 }
 .hp-title {
@@ -2927,6 +2942,10 @@ p.lead {
     line-height: 40px;
     margin-bottom: 20px;
 }
+.announcement a {
+    margin-bottom: 0;
+    margin-left: 12px;
+}
 #maincarousel li img {
     height: 100%;
     width: auto;
@@ -2947,46 +2966,15 @@ p.lead {
     font-size: 17px;
     line-height: 26px;
 }
-.my-three {
-    background-image: url('../pics/slidethree.png');
+.owl-carousel.no-nav {
+
+}
+.owl-item .bg {
     background-size: contain;
     background-position: right;
     margin: 0 auto;
     right: 0;
     z-index: 2;
-}
-.my-two {
-    background-image: url('../pics/slidetwo.png');
-    background-size: contain;
-    background-position: right;
-    margin: 0 auto;
-    right: 0;
-    z-index: 2;
-}
-.my-about {
-    background-image: url('../pics/slideone.png');
-    background-size: contain;
-    background-position: right;
-    margin: 0 auto;
-    right: 0;
-    z-index: 2;
-}
-.shop-2 {
-    background-image: url('pics/shop2.png');
-    background-position: 85% center;
-    background-size: 50%
-}
-.shop-1 {
-    background-image: url('pics/shop1.png');
-    background-position: 85% center;
-    background-size: 50%
-}
-@media (max-width: 991px) {
-    .shop-1,
-    .shop-2 {
-        background-position: center;
-        background-size: contain
-    }
 }
 .container.vmiddle {
     position: relative;
@@ -3013,7 +3001,8 @@ input.submitButton,
     letter-spacing: 0;
     margin-bottom: 0;
 }
-#countdown {
+#countdown,
+#countdown-done {
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -3359,6 +3348,11 @@ ul.social li a:hover i {
         padding-left: 15px;
         padding-bottom: 30px;
         padding-top: 30px
+    }
+    .page505 .logo,
+    .page404 .logo {
+        max-width: 240px;
+        height: auto;
     }
 }
 @media (min-width: 768px) {
@@ -3765,7 +3759,8 @@ label > h4 + input[type=radio] {
     width: 750px;
 }
 
-#countdown > div {
+#countdown > div,
+#countdown-done > div {
     display: inline-block;
     vertical-align: top;
     width: 180px;
@@ -3777,7 +3772,8 @@ label > h4 + input[type=radio] {
 }
 
 
-#countdown span {
+#countdown span,
+#countdown-done span {
     color: #fff;
     display: block;
     font-size: 100px;
@@ -3819,7 +3815,6 @@ label > h4 + input[type=radio] {
 
 .slider {
     position:relative;
-    /*margin-bottom:100px;*/
     margin-bottom: 30px;
     margin-top: 30px;
     padding:0;
@@ -3974,10 +3969,13 @@ label > h4 + input[type=radio] {
     display: table;
     content: " ";
 }
+
 .oneslider:after,
 .home:after{
     clear: both;
 }
+
+
 .img-ecommerce{
     width: auto !important;
     height: 100%;
@@ -3985,6 +3983,7 @@ label > h4 + input[type=radio] {
     right: 0;
     top: 0;
 }
+
 .mask {
     position:absolute;
     left:0;
@@ -3996,9 +3995,11 @@ label > h4 + input[type=radio] {
     opacity:0;
     text-align:center;
 }
+
 .logos2 li{
     width: 500px
 }
+
 .mask > * {
     display:table-cell;
     vertical-align:middle;
@@ -4076,6 +4077,8 @@ li:hover .mask > *,
 .related-projects{
     font-size:1px;
 }
+
+
 .popupslider li:hover .mask,
 .related-projects li:hover .mask,
 .gallery [class*=col-]:hover .mask{
@@ -5210,6 +5213,12 @@ a.sclose {
 .loginform input[type=password] {
     padding-top:6px;
 }
+.login-group-name {
+    max-width: 230px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;    
+}
 i.fa-square-o {
     color: #ccc;
 }
@@ -5217,14 +5226,17 @@ i.fa-check-square {
      color: #e7543d;
 }
 .over {
-    position: absolute;
-    z-index: 30;
     background: rgba(0,0,0,0.25);
+    height: 100%;
+    position: absolute;
     width: 100%;
     height: 135px;
 }
 .loginform .checkbox {
     margin-bottom: 30px;
+}
+.loginform p {
+    white-space: normal;
 }
 
 .footlogin {
@@ -5744,6 +5756,22 @@ img.mfp-img {
     padding-top:15px;
 }
 
+.footer .forum-topics li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.footer a.bbp-forum-title:before {
+    color: #666;
+    content: "\f111";
+    display: inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    left: 0;
+    top: 6px;
+    position: absolute;
+}
+
 .latestposts li {
     margin-bottom:22px;
     line-height:24px;
@@ -5803,12 +5831,60 @@ ul.footer-list li p {
     height:80px;
 }
 
-.twitter-list li {
+.rsf-posts li {
     margin-bottom:20px;
     position:relative;
 }
 
-.twitter-list li .fa {
+/* CSS line clamping:; Start with fallback for browsers that don't support -webkit-line-clamp */
+.rsf-posts li p {
+  position: relative;
+  max-height: 72px;
+  margin: 0; 
+  overflow: hidden;
+}
+
+.rsf-posts li p:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 24px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+}
+
+/* Browsers that support -webkit-line-clamp */
+@supports (-webkit-line-clamp: 2) {
+  .rsf-posts li p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+  }
+
+  .rsf-posts li p:after {
+    display: none;
+  }
+}
+
+.rsf-posts .date {
+    font-size:14px;
+    line-height:20px;
+    color:#505050;
+}
+
+.rsf-posts .date a {
+    color: inherit;
+}
+
+.rsf-posts .date a:hover {
+    color: #8c8c8c;
+}
+
+.twitter-list li .fa-twitter {
     float:left;
     margin:5px 15px 0 0;
 }
@@ -6074,7 +6150,8 @@ ul.footer-list li p {
         float: none !important;
     }
 
-    #countdown span{
+    #countdown span,
+    #countdown-done span {
         font-size: 90px;
         font-weight: 600;
     }
@@ -6342,14 +6419,16 @@ ul.footer-list li p {
         font-size: 20px;
         text-align: center;
     }
-    #countdown {
+    #countdown,
+    #countdown-done {
         width: auto;
     }
     #countdown > div:first-child {
         margin-right: 0;
     }
 
-    #countdown span{
+    #countdown span,
+    #countdown-done span {
         font-size: 60px;
         height: 55px;
         font-weight: 600;
@@ -6589,7 +6668,8 @@ ul.footer-list li p {
         padding: 0 4px;
     }
 
-    #countdown span{
+    #countdown span,
+    #countdown-done span {
         font-size: 50px;
         font-weight: 600;
         height: 55px;
@@ -6744,7 +6824,19 @@ ul.footer-list li p {
     max-width: 90%;
     height: auto;
 }
-
+.shop-item-image {
+    display: inline-block;
+    padding-top: 95%;
+    position: relative;
+    width: 100%;    
+}
+.shop-item-image img {
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    top: 0;
+}
 .home.highlight.darker .overlay {
     background-color: rgb(227,220,211);
 }
@@ -6834,8 +6926,8 @@ ul.footer-list li p {
     /*top:50%;*/
     z-index:300;
 }
-.owl-nav.disabled .owl-prev,
-.owl-nav.disabled .owl-next {
+#maincarousel .owl-nav.disabled .owl-prev,
+#maincarousel .owl-nav.disabled .owl-next {
     display: none;
 }
 .owl-theme .owl-nav .disabled {
@@ -6922,7 +7014,7 @@ ul.footer-list li p {
 #events .owl-carousel .owl-item img,
 #sponsors .owl-carousel .owl-item img {
     width: auto !important;
-    height: 160px;
+    height: auto;
 }
 #events .owl-stage-outer,
 #sponsors .owl-stage-outer {
@@ -6937,6 +7029,7 @@ ul.footer-list li p {
 #sponsors .owl-centered .owl-item {
     display: table-cell;
     float: none;
+    height: 160px;
     text-align: center;
     vertical-align: middle;
 }
@@ -7146,6 +7239,9 @@ span.more-social:hover {
 .logo.pull-left img {
     margin-top: 10px
 }
+.logo.pull-left img.fallback-logo {
+    margin-top: 0px
+}
 #maincarousel .arrow.prev {
     left: 30px;
 }
@@ -7259,9 +7355,7 @@ span.more-social:hover {
         margin-bottom: 30px;
         width: 100%;
     }
-    .my-about,
-    .my-two,
-    .my-three {
+    .owl-item .bg{
         background-position: center 0;
     }
     
@@ -7302,6 +7396,12 @@ span.more-social:hover {
         text-align: center;
         margin-left: 0;
     }
+    .highlight .container.tab-content.woo-featured {
+        padding-top: 10px;
+    }
+    .woo-featured .grey {
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width: 800px) {
     .more-posts {
@@ -7316,8 +7416,7 @@ span.more-social:hover {
 
 @media screen and (min-width: 768px) {
     .logo.pull-left img {
-        margin-top: -18px;
-        max-width: 163px;
+        margin-top: -14px;
     }
 }
 .countdown-row {
@@ -7341,9 +7440,6 @@ span.more-social:hover {
     .header.sticky {
         width: 100%;
     } 
-    .announcement .btn {
-        margin: 0;
-    }
    /* .iconmenu {
         padding: 0;
         margin-right: 0;
@@ -7402,6 +7498,9 @@ span.more-social:hover {
     }
     .hbottom .col-md-1 a.a-search {
         margin-right: 0 !important;
+    }
+    .login-group-name {
+        max-width: 150px;
     }
 }
 
@@ -7652,10 +7751,10 @@ a.expand-link {
 .face {
     background: #3b5998;
 }
-.insta {
-    background: #dc0065;
+.pint {
+    background: #bd081c;
 }
-.insta i,
+.pint i,
 .face i,
 .twit i {
     color: #fff;
@@ -7688,6 +7787,7 @@ a.expand-link {
 .bottom-tool-bar .insta,
 .bottom-tool-bar .more-social,
 .bottom-tool-bar .face,
+.bottom-tool-bar .pint,
 .bottom-tool-bar .twit {
     height: 50px;
     width: 50px;
@@ -7825,6 +7925,7 @@ video {
         margin-left: 0;
         width: 100%;
     } 
+    .forums .col-fixed-300 .widget img,
     .blogs .col-fixed-300 .widget img,
     .post .col-fixed-300 .widget img {
         width: 100%;
@@ -8048,8 +8149,8 @@ h5+h5{
         overflow: hidden;
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 4px;
         margin-top:4px;
+        margin-bottom: 4px;
     }
 }
 @media (max-width: 767px) {
@@ -8358,6 +8459,9 @@ div[class$="something"] {
     color:  #e96148;
 }
 @media (max-width:414px) {
+    .menutable [class*=col-]{
+        float: none;
+    }
     .content.registration .loginform .btn {
         width: 100%;
     }
@@ -8381,12 +8485,6 @@ div[class$="something"] {
         vertical-align: middle;
     }
    
-   /* .group {
-        margin-left: -20px;
-        margin-right: -20px;
-        width: calc(100% + 40px);
-    }
-    */
     .group-desc {
         width: 100%;
     }
@@ -8437,12 +8535,8 @@ div[class$="something"] {
     }
     .forums .text-center{
         text-align: left;
-        }
- 
- /*   .table-header {
-        padding-left:0;
     }
-    */
+ 
      .table-header-last {
         padding-left:15px
     }
