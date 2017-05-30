@@ -27,6 +27,7 @@
 |__Search__     |[search results](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/search-result.html)              |
 |__Errors__     |[404 page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/404.html)                              |
 |               |[505 page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/505.html)                              |
+|__Contact__    |[contact page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/contact.html)                      |
 <br>
 
 ### Scripts used:
