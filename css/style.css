@@ -76,6 +76,7 @@ Last change:	10/24/14
     7.3. Search Results
     7.4. Facts
     7.5. Progresses
+    7.6. General Info Page
 8. Forms
     8.1. General Styles
     8.2. jSlider (input type 'range')
@@ -111,6 +112,7 @@ Last change:	10/24/14
 24. Footer
 25. Splash
 26. Responsive styles
+27. Contact page
 
 -------------------------------------------------------------------*/
 
@@ -503,7 +505,7 @@ body.container .footer .container:last-child{
     padding-top: 15px;
 }
 .padding-bottom-15 {
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
 }
 .padding-top-30 {
     padding-top: 30px;
@@ -1780,7 +1782,7 @@ li.no-dot {
     }   
 }
 .nav-tabs > li > a:hover {
-    color :#e7543d;
+    color:#e7543d;
     background-color:transparent;
     border-color:transparent;
 }
@@ -1899,15 +1901,11 @@ li.no-dot {
 
 /* [ 2.7. PAGINATION ] */
 
-ul.page-numbers {
-    margin:-3px 0 0 -15px;
-}
-
 ul.page-numbers li:before {
     display:none !important;
 }
-
 ul.page-numbers li {
+    margin-right: 2px;
     padding-left:0 !important;
     display:inline-block;
     vertical-align: top;
@@ -1915,60 +1913,158 @@ ul.page-numbers li {
 ul.page-numbers li span,
 ul.page-numbers li span.current,
 ul.page-numbers li a {
-    color:#000;
-    width:32px;
-    height:32px;
-    display:block;
-    line-height:32px;
-    text-align:center;
-    border-radius:3px;
-    border:1px solid transparent;
-    padding:0;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #000;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-left: -1px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 32px;
 }
 ul.page-numbers li span.current {
     color: #fff;
 }
-.page-numbers li a, 
-.page-numbers  li span {
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #000;
-    text-decoration: none;
-    background-color: #fff;
-}
 ul.page-numbers li a:hover {
     background-color:transparent;
-    color:#e7543d;
-    border-color:transparent;
+    border-color: transparent;
+    color: #e7543d;
 }
-
 ul.page-numbers li span.current.page-numbers,
 ul.page-numbers li span.current.page-numbers a:hover {
-    background-color: #E7543D;
+    background-color: #e7543d;
     border-color: transparent;
 }
-
+ul.page-numbers li a.second:hover,
 ul.page-numbers li:first-child a:hover,
 ul.page-numbers li:last-child a:hover {
-    border-color: #B3B3B3;
+    border-color: #b3b3b3;
 }
-
 ul.page-numbers li:first-child {
     margin-right: 5px;
 }
-
+.user-group ul.page-numbers li:first-child {
+    margin-right: 2px;
+}
 ul.page-numbers li:last-child {
     margin-left: 5px;
 }
-
+.user-group ul.page-numbers li:last-child {
+    margin-left: 2px;
+}
 ul.page-numbers li i {
     top: -2px;
 }
+ul.page-numbers li.disabled {
+    display: none;
+}
+.user-group ul.page-numbers li.second,
+.user-group ul.page-numbers li:last-child {
+    margin-left: 0;
+}
+.user-group ul.page-numbers li:last-child a,
+.user-group ul.page-numbers li:first-child a,
+.user-group ul.page-numbers li a.second {
+    background-color: #e8e8e8;
+}
+.user-group ul.page-numbers li.second,
+.user-group ul.page-numbers li:last-child {
+    margin-left: 0;
+}
+ul.search.page-numbers li i {
+    vertical-align: middle;  
+}
+ul.search.page-numbers {
+    float: none;
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
+}
+ul.search.page-numbers li {
+    display: inline-block;
+    list-style-type: none;
+}
+ul.search.page-numbers li a {
+    background: #e8e8e8;
+    height: 43px;
+    line-height: 36px;
+    vertical-align: bottom;
+    width: 43px;
+}
+.search.page-numbers li.blocky {
+    display: inline-block;
+}
+.user-group input.sm-input {
+    height: 32px;
+    margin-left: 0;
+    margin-right: 5px;
+    width: 32px;
+}
+.user-group .custom-icon-page-prev {
+    background-image: url(../images/iconic.png);
+    background-repeat: no-repeat;
+    background-position: -282px -39px;
+}
+.user-group .custom-icon-page-next {
+    background-image: url(../images/iconic.png);
+    background-repeat: no-repeat;
+    background-position: -262px -39px
+}
+.user-group .search-wrap input {
+    width: calc(100% - 96px);
+}
+.user-group .search-wrap .btn.btn-default {
+    line-height: 43px;
+}
+.user-group .page-wrap .page-numbers {
+    margin-bottom: 0;
+}
+.user-group .search-wrap,
+.user-group .page-wrap {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: left;
+}
+.user-group .page-wrap {
+    float: right;
+    margin-top: 15px;
+    text-align: right;
+}
+.user-group .page-wrap-bottom {
+    margin-top: 30px;
+    text-align: center;
+    width: auto;
+}
+.user-group .create-group-btn button {
+    text-align: left;
+    width: auto;
+}
 
-
+@media (max-width: 799px) {
+    .user-group .page-wrap,
+    .user-group .search-wrap {
+        clear: both;
+        float: none;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .user-group .search-wrap {
+        margin-top: 0;
+    }
+    .user-group .create-group-btn button {
+        width: 100%;
+        text-align: center;
+    }
+}
 /*------------------------------------------------------------------
 [ 3. PRELOADER ]
 -------------------------------------------------------------------*/
@@ -2541,12 +2637,6 @@ a.a-menu {
 .navbar-toggle .icon-bar{
     background-color: #808080;
 }
-.nav a.dropdown-toggle:after {
-    display:inline-block;
-    content:"\f107";
-    font-family: "FontAwesome";
-    padding-left: 5px;
-}
 .sticky .navbar-toggle{
     line-height: 77px;
 }
@@ -2579,7 +2669,12 @@ a.a-menu {
 .mainmenu li > a:hover {
     color:#e7543d;
 }
-
+.dropdown-toggle:after {
+    display: inline-block;
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-left: 4px;
+}
 .mainmenu.text-left {
     padding-left:0;
 }
@@ -2611,6 +2706,7 @@ a.a-menu {
     position:relative;
     padding:0 50px 0 25px;
 }
+
 .dropdown-submenu {
     position:relative;
 }
@@ -2794,15 +2890,14 @@ a.a-menu {
     background-color: #212121;
     box-sizing: border-box;
     color: #fff;
-    display: none;
     height: 100%;
     min-height: 100%;
     padding: 70px 40px 20px;
     position: fixed;
-    right: 0;
+    right: -350px;
     top: 0;
     overflow: auto;
-    width: 300px;
+    width: 350px;
     z-index: 100;
     -webkit-transition: right .3s ease;
     -ms-transition: right .3s ease;
@@ -3493,7 +3588,50 @@ ul.social li a:hover i {
     right: 15px;
     top: 60px;
 }
+
+/* Contact page */
+.contact-image {
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+    width:100px;
+}
+.contact-image img {
+    height: auto;
+    max-width: 100%;
+}
+.contact-details {
+    float: left;
+    width: calc( 100% - 130px );
+}
+.contact-details h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+.contact-details h3 {
+    color: #666;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 12px;
+}
+.contact-details p {
+    font-size: 17px;
+    line-height: 1;
+    margin: 0 0 12px;
+    font-weight: 300;
+}
+.registration p,
+.row.group p {
+    margin: 0 0 20px;
+}
 @media only screen and (max-width: 767px) {
+    .container.contact {
+        padding: 55px 15px 50px;
+    }
     .results .row .row, .results .row + .row {
         margin-top: 35px;
     }
@@ -3525,7 +3663,31 @@ ul.social li a:hover i {
     }
 }
 
-
+/* [7.6. General Info Page] */
+.general-information nav {
+    padding-top: 6px;
+}
+.gen-info-link {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.gen-info-link.no-list {
+    margin: 20px 0;
+}
+.gen-info-text {
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.gen-info-text.active {
+    background-color: #f2f2f2;
+}
+.gen-info-scroll-top + br {
+    display: none;  
+}
+.gen-info-text ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
 /*------------------------------------------------------------------
 [ 8. FORMS ]
 -------------------------------------------------------------------*/
@@ -3796,7 +3958,6 @@ label > h4 + input[type=radio] {
     height:46px;
     line-height:46px;
     border-radius:4px 4px 0 0;
-
 }
 .formwrap .chosen-container-single .chosen-single span {
     margin-left: 6px;
@@ -4881,7 +5042,6 @@ table.cart-total{
 .registration .accordion-content {
    margin-left: 0;
 }
-
 #log-in p {
     margin-bottom: 10px;
 }
@@ -7115,22 +7275,7 @@ ul.footer-list li p {
         width: 100%;
     }
 
-    ul.page-numbers li:first-child{
-        margin-right: 2px;
-    }
-
-    ul.page-numbers li:last-child{
-        margin-left: 2px;
-    }
-    ul.page-numbers li span.current,
-    ul.page-numbers li span,
-    ul.page-numbers li a {
-        line-height: 24px;
-        height: 27px;
-        width: 27px;
-        font-size: 15px;
-    }
-
+   
     .catalog > *{
         width: 100%;
     }
@@ -7322,7 +7467,15 @@ ul.footer-list li p {
 .owl-carousel .owl-stage {
     position: relative;
 }
-
+#photo-single .item {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+#photo-single .mask {
+    background-color: transparent;
+    opacity: 1;
+}
 #photos .owl-item .item,
 #videos .owl-item .item {
     width: 100%;
@@ -7586,6 +7739,9 @@ table .td-descr a {
     }
      h3.margin-top-30 {
         margin-top: 30px;
+    }
+    .user-group .btn {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -8638,33 +8794,7 @@ h5+h5{
   }
 }
 
-/* Registration */
-.bar {
-    width: 100%;
-}
-.bar h3 {
-    background: #ccc;
-    border-radius: 4px;
-    margin-left: -25px;
-    padding: 15px 25px;
-}
-.bar h3.open {
-    background: #333;
-}
-.bar h3 {
-    color: #fff;
-    font-weight: 400;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-left:0;
-    width: 100%;
-}
-.panel-body{
-    background:#fff;
-}
-.accordion-content {
-   margin-left: 0;
-}
+
 
 nav ul ul li {
     /*margin-left: 20px;*/
@@ -8678,20 +8808,6 @@ h4.totals {
     display: inline;
     font-size: 20px;
     font-weight: 400;
-}
-ul.search.page-numbers li i {
-    vertical-align: middle;  
-}
-
-ul.search.page-numbers li {
-    display: inline-block;
-    list-style-type: none;
-}
-ul.search.page-numbers li a {
-    background: #e8e8e8;
-    height: 43px;
-    vertical-align: bottom;
-    width: 43px;
 }
 .content.registration [class*=col] ul.register {
     margin-left: 20px;
@@ -8733,8 +8849,11 @@ ul.search.page-numbers li a {
     display: none;
 }
 .left-wrap {
-    width: calc(100% - 140px);
+    width: calc(100% - 75px);
     float: left;
+}
+.user-group .left-wrap {
+    width: calc(100% - 60px);
 }
 .group {
     background: #f8f8f8;
@@ -8761,7 +8880,7 @@ ul.search.page-numbers li a {
     width:calc(100% - 130px);
     float: left;
 }
-.join-group {
+.user-group .join-group {
     float: right;
     padding-right: 0;
     margin-left: 0;
@@ -8784,13 +8903,7 @@ h4.team-name {
 .a-menu {
     font-size: 18px !important;
 }
-.search.page-numbers {
-    width: 100%;
-    float: none;
-    padding-left: 0;
-}
-.border-btn,
-input.sm-input {
+.border-btn {
     background-color: #fff;
     float: left;
     height: 43px;
@@ -8816,9 +8929,6 @@ a.border-btn {
 .pushed {
     background-color: #ccc;
 }
-.search.page-numbers li.blocky {
-    display: inline-block;
-}
 .closed {
     background-color: #ccc !important;
 }
@@ -8827,6 +8937,9 @@ a.border-btn {
     margin-left: 8px;
     margin-right: 8px;
     padding-top: 9px;
+}
+.user-group .total-pages {
+    padding-top: 3px;
 }
 h6.register {
     color: #333;
@@ -8925,6 +9038,18 @@ div[class$="something"] {
 .widget .lab-tabs > li.active a {
     color:  #e96148;
 }
+@media (max-width: 767px) {
+    .group-desc {
+        width: 100%;
+    }
+    .left-wrap  {
+        width: calc( 100% - 75px);
+        float: left;
+    }
+    .join-group {
+        float: left;
+    }
+}
 @media (max-width:414px) {
     .menutable [class*=col-]{
         float: none;
@@ -8943,6 +9068,10 @@ div[class$="something"] {
     .loginform .pull-right {
         float: none !important;
         margin-top: 15px !important;
+        text-align: center;
+    }
+    .user-group .loginform .pull-right {
+        margin-top: 0 !important;
     }
     .content.registration .page-numbers {
         margin: 15px 0;
@@ -8951,26 +9080,10 @@ div[class$="something"] {
     ul.search.page-numbers li i {
         vertical-align: middle;
     }
-   
-    .group-desc {
-        width: 100%;
-    }
-    .left-wrap  {
-        width: calc( 100% - 75px);
-        float: left;
-    }
-    .join-group {
-        float: left;
-    }
-    .padding-bottom-30 {
+       .padding-bottom-30 {
         padding-bottom: 0;
         margin-bottom: 30px;
-    }
-   .col-md-6.col-sm-12.padding-right-0.pull-right.text-right {
-        float: none !important;
-        text-align: center;
-        padding-left: 0;
-    }
+    }  
     .search.page-numbers li.blocky {
         display: block;
         padding-bottom: 5px;
@@ -8981,20 +9094,6 @@ div[class$="something"] {
         line-height: 20px;
         padding: 15px 0;
     }
-    ul.search.page-numbers li a {
-        background: #e8e8e8;
-        height: 30px; 
-        vertical-align: top;
-        width: 30px;
-    }
-    input.sm-input {
-        height: 30px;
-        width: 30px;
-    }
-    .total-pages {
-        padding-top: 6px;
-    }
-
     .forums .ad-widget {
         width: calc( 100% + 40px);
         margin-left: -20px;
@@ -9278,7 +9377,7 @@ i.walker {
 ul.resp-tabs-list.hor_1 {
     margin-right: 25px;
 }
-ul.resp-tabs-list, p {
+ul.resp-tabs-list {
     margin: 0px;
     padding: 0px;
 }
@@ -9537,9 +9636,7 @@ table.invite-anyone-sent-invites th a,
 .profile-table td {
     white-space: normal
 }
-ul.page-numbers li.disabled {
-    display: none;
-}
+
 .messages-options-nav {
    background: #ddd;
    height: 100px;
@@ -9657,13 +9754,12 @@ table.group-nav-table tbody tr:last-child td {
     padding-bottom: 0;
 }
 .btn-wrap {
-        position: relative;
-        width: auto;
-    }
-
+    position: relative;
+    width: auto;
+}
 ul.item-desc {
-        margin-bottom: 0;
-    }
+    margin-bottom: 0;
+}
 .vehicles p {
     margin-top: 8px;
 }  
@@ -9745,6 +9841,28 @@ ul.item-desc {
     }
     .group-info ul {
         margin-bottom: 0;
+    }
+    .col-md-6.col-sm-12.padding-right-0.pull-right.text-right {
+        float: none !important;
+        text-align: center;
+        padding-left: 0;
+    }
+    ul.search.page-numbers {
+        margin-top: 20px;
+    }
+    ul.search.page-numbers li a {
+        background: #e8e8e8;
+        height: 30px; 
+        vertical-align: top;
+        width: 30px;
+    }
+    
+    input.sm-input {
+        height: 32px;
+        width: 32px;
+    }
+    .total-pages {
+        padding-top: 6px;
     }
 }
 @media screen and (max-width: 414px) {
