@@ -94,7 +94,7 @@ $(document).ready(function(){
         nav: true,
         navText: false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         margin: 0,
         thumbs: true,
         thumbsPrerendered: true

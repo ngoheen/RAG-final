@@ -2,33 +2,33 @@
 
 ### Links to flat pages:
 
-| Page Links    |                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------- |
-|__Homepage__   |[index page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/ragbrai-home.html)                   |
-| __Shop__      |[section front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-shop.html)           |
-|               |[product page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-product.html)                 |
-|               |[cart](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-cart.html)                            |
-|               |[checkout](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout.html)                    |
-|               |[payment](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-checkout2.html)                    |
-|               |[confirmation](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/shop-confirmation.html)            |
-|__Galleries__  |[photo gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-photogallery.html)   |
-|               |[video gallery](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-video.html)          |
-|               |[podcasts](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-podcast.html)             |
-|__Blog__       |[blog front](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-blog.html)              |
-|               |[blog post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/blog-post.html)                       |
-|__User__       |[create account](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-create-account.html)        |
-|               |[user profile](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-profile.html)                 |
-|               |[user group](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-group.html)                     |
-|               |[user group index](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/user-group-index.html)         |
-|__The Ride__   |[The Ride](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/the-ride.html)                         |
-|__Register__   |[Registration](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/registration.html)                 |
-|__Forums__     |[forums index](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/sectionfront-forums.html)          |
-|               |[forums post](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/forums-post.html)                   |
-|               |[forums index with create topic](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/index-forum.html)|
-|__Search__     |[search results](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/search-result.html)              |
-|__Errors__     |[404 page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/404.html)                              |
-|               |[505 page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/505.html)                              |
-|__Contact__    |[contact page](http://www.gannett-cdn.com/LDSN/desmoines/RAG-final/contact.html)                      |
+| Page Links    |                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------ |
+|__Homepage__   |[index page](http://www.gannett-cdn.com/LDSN/RAG-final/ragbrai-home.html)                   |
+| __Shop__      |[section front](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-shop.html)           |
+|               |[product page](http://www.gannett-cdn.com/LDSN/RAG-final/shop-product.html)                 |
+|               |[cart](http://www.gannett-cdn.com/LDSN/RAG-final/shop-cart.html)                            |
+|               |[checkout](http://www.gannett-cdn.com/LDSN/RAG-final/shop-checkout.html)                    |
+|               |[payment](http://www.gannett-cdn.com/LDSN/RAG-final/shop-checkout2.html)                    |
+|               |[confirmation](http://www.gannett-cdn.com/LDSN/RAG-final/shop-confirmation.html)            |
+|__Galleries__  |[photo gallery](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-photogallery.html)   |
+|               |[video gallery](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-video.html)          |
+|               |[podcasts](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-podcast.html)             |
+|__Blog__       |[blog front](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-blog.html)              |
+|               |[blog post](http://www.gannett-cdn.com/LDSN/RAG-final/blog-post.html)                       |
+|__User__       |[create account](http://www.gannett-cdn.com/LDSN/RAG-final/user-create-account.html)        |
+|               |[user profile](http://www.gannett-cdn.com/LDSN/RAG-final/user-profile.html)                 |
+|               |[user group](http://www.gannett-cdn.com/LDSN/RAG-final/user-group.html)                     |
+|               |[user group index](http://www.gannett-cdn.com/LDSN/RAG-final/user-group-index.html)         |
+|__The Ride__   |[The Ride](http://www.gannett-cdn.com/LDSN/RAG-final/the-ride.html)                         |
+|__Register__   |[Registration](http://www.gannett-cdn.com/LDSN/RAG-final/registration.html)                 |
+|__Forums__     |[forums index](http://www.gannett-cdn.com/LDSN/RAG-final/sectionfront-forums.html)          |
+|               |[forums post](http://www.gannett-cdn.com/LDSN/RAG-final/forums-post.html)                   |
+|               |[forums index with create topic](http://www.gannett-cdn.com/LDSN/RAG-final/index-forum.html)|
+|__Search__     |[search results](http://www.gannett-cdn.com/LDSN/RAG-final/search-result.html)              |
+|__Errors__     |[404 page](http://www.gannett-cdn.com/LDSN/RAG-final/404.html)                              |
+|               |[505 page](http://www.gannett-cdn.com/LDSN/RAG-final/505.html)                              |
+|__Contact__    |[contact page](http://www.gannett-cdn.com/LDSN/RAG-final/contact.html)                      |
 <br>
 
 ### Scripts used:

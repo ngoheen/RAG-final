@@ -95,7 +95,7 @@ Last change:	10/24/14
 11. Gallery
 12. Catalog
 13. Cart
-
+14. Forums
 
 16. Registration
 17. Vacancy
@@ -1707,7 +1707,14 @@ a.grey:hover{
 .border-top {
     border-top: 1px solid #E0E0E0;
 }
-
+.horiz-rule {
+    height: 1px;
+    width: 100%;
+    background: #e0e0e0;
+    float: left;
+    clear: both;
+    margin: 10px 0;
+}
 .border-bottom-0 {
     border-bottom: none !important;
 }
@@ -1930,6 +1937,7 @@ ul.page-numbers li a {
 }
 ul.page-numbers li span.current {
     color: #fff;
+    font-weight: 600;
 }
 ul.page-numbers li a:hover {
     background-color:transparent;
@@ -3230,6 +3238,8 @@ p.lead {
     margin: 0 auto;
     right: 0;
     z-index: 2;
+    max-width: 1170px;
+    height: 480px;
 }
 .container.vmiddle {
     position: relative;
@@ -3588,7 +3598,24 @@ ul.social li a:hover i {
     right: 15px;
     top: 60px;
 }
-
+.results img {
+    background-color: #f1f1f1;
+    height: 80px;
+    width: 80px;
+ }
+ .results .limit-lines {
+    display: -webkit-box;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.results .limit-lines.two {
+    -webkit-line-clamp: 2;
+}
+.results .limit-lines.three {
+    -webkit-line-clamp: 3;
+}
 /* Contact page */
 .contact-image {
     float: left;
@@ -4919,16 +4946,13 @@ table.product-variation tbody tr:first-child td {
 .cart {
     min-height:400px;
 }
-
 .cart-empty h3 {
     letter-spacing:0;
     margin-bottom:30px;
 }
-
 table.cart-total{
     margin-bottom: 45px;
 }
-
 .cart-total th,
 .compare-table th {
     border:0;
@@ -4938,39 +4962,32 @@ table.cart-total{
     color:#666;
     padding:0;
 }
-
 .cart-total td {
     color:#000;
     padding:0!important;
 }
-
 .compare-table {
     width:100%;
     margin-bottom:0;
 }
-
 .compare-table th {
     padding-right:20px;
     color:#000;
     vertical-align:top;
     padding-top:25px;
 }
-
 .compare-table td {
     text-align:center;
     white-space:normal;
     padding-top:25px;
     padding-bottom:25px;
 }
-
 .compare-table tr:last-child td {
     padding-top:50px;
 }
-
 .compare-table .pclose.small {
     margin-bottom:50px;
 }
-
 .compare-table .aimg {
     display:inline-block;
 }
@@ -4979,21 +4996,75 @@ table.cart-total{
     top:40px;
     left:0;
 }
-
 .compare-table h3 {
     margin-bottom:35px;
 }
-
 .compare-table img {
     width:100%;
 }
-
 .estimate-shipping .h3 {
     line-height:50px;
     margin-bottom:15px;
     display: inline-block;
 }
-
+/*------------------------------------------------------------------
+[ 14. FORUMS ]
+-------------------------------------------------------------------*/
+#bbpress-forums .bbp-pagination {
+    text-align: right;
+}
+#bbpress-forums ul {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#bbpress-forums .flexy-post ul.bbp-replies {
+    list-style:none;
+    margin: 0 !important;
+    padding: 0;
+}
+#bbpress-forums .bbp-reply-author img {
+    width: 80px;
+    height: 80px;
+}
+#bbpress-forums img.avatar.avatar-14.photo {
+    display: none;
+}
+#bbpress-forums li.bbp-footer,
+#bbpress-forums li.bbp-header {
+    display: none;
+}
+#bbpress-forums li:nth-child(2n) {
+    margin: 0 !important;
+}
+#bbpress-forums .bbp-body {
+    padding-top: 10px;
+}
+#bbpress-forums .bbp-reply-author {
+    width: 100px;
+    float: left;
+}
+#bbpress-forums .bbp-meta a,
+#bbpress-forums .bbp-reply-post-date {
+    font-size: 15px;
+}
+#bbpress-forums .bbp-reply-content {
+    float: left;
+    margin-left: 15px;
+    width: calc(100% - 115px );
+}
+#bbpress-forums .bbp-reply-header,
+#bbpress-forums .topic.type-topic {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+#bbpress-forums h2 {
+    margin-bottom: 0;
+}
+#bbpress-forums .bbp-body {
+    padding-top: 0;
+}
 /*------------------------------------------------------------------
 [ 16. REGISTRATION ]
 -------------------------------------------------------------------*/
@@ -6642,6 +6713,18 @@ ul.footer-list li p {
     }
 }
 @media only screen and (max-width: 991px) {
+    #bbpress-forums .bbp-pagination {
+        text-align: center;
+    }
+    .forums .ad-widget,
+    .blogs .ad-widget,
+    .page .ad-widget,
+    .post .ad-widget {
+        background: #fff;
+    }
+    .bbp-template-notice {
+        text-align: center;
+    }
     .mask h3 {
         font-size: 20px;
     }
@@ -7951,7 +8034,9 @@ span.more-social:hover {
         width: 100%;
     }
     .owl-item .bg{
-        background-position: center 0;
+        background-position: center 0 !important;
+        max-width: 960px;
+        height: 250px;
     }
     
     .container.vmiddle {
@@ -8503,6 +8588,10 @@ a.expand-link {
     margin-left: 20px;
     margin-top: 30px;
 }
+.flexy-post ul.page-numbers {
+    margin-top: 12px;
+}
+
 video {
     max-width: 100%;
     width: 100%;
@@ -8979,6 +9068,15 @@ h4 span {
     margin-top: 4px;
     padding: 3px 7px 4px;
 }
+.topic-pagination {
+    margin-left: 4px;
+}
+.topic-pagination .badge {
+    margin-top: -4px;
+}
+.topic-pagination .badge:hover {
+    color: #fff !important;
+}
 .content.registration .loginform .btn.border-btn {
     line-height: 40px;
     min-width: 60px;
@@ -9038,6 +9136,11 @@ div[class$="something"] {
 .widget .lab-tabs > li.active a {
     color:  #e96148;
 }
+.user-group .join-group {
+    float: right;
+    padding-right: 0;
+    margin-left: 0;
+}
 @media (max-width: 767px) {
     .group-desc {
         width: 100%;
@@ -9079,6 +9182,17 @@ div[class$="something"] {
     }
     ul.search.page-numbers li i {
         vertical-align: middle;
+    }
+   
+    .group-desc {
+        width: 100%;
+    }
+    .left-wrap  {
+        width: calc( 100% - 75px);
+        float: left;
+    }
+    .join-group {
+        float: left;
     }
        .padding-bottom-30 {
         padding-bottom: 0;
@@ -9345,6 +9459,9 @@ i.walker {
 }
 .forums a {
     color: #000;
+}
+.forums a:hover {
+    color: #e7543d;
 }
 .xs {
     font-size: 12px !important;
